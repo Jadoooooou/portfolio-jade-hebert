@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Jade Hébert - PORTFOLIO</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="accueil">
+        <div class="carte">
+            <div class="TITLE"><p>PORTFOLIO</p></div>
+            <div class="PROJECT-TITLES">
+                <a href="illustrations.html" class="text">ILLUSTRATIONS</a>
+                <hr class="separator" id="separator1">
+                <a href="touchdesigner.html" class="text">PROJET TOUCHDESIGNER</a>
+                <hr class="separator" id="separator2">
+                <a href="modeles3d.html" class="text">MODÈLES 3D</a>
+                <hr class="separator" id="separator3">
+            </div>
+            <div class="SIDE">
+                <div class="info">JADE HÉBERT</div>
+                <div class="info">2023 / 2025</div>
+            </div>
+            <div class="PROPOS">
+                <button class="btn-propos">À propos</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const links = document.querySelectorAll(".PROJECT-TITLES .text");
+        const carte = document.querySelector(".carte");
+      
+        links.forEach(link => {
+          link.addEventListener("click", function(event) {
+            event.preventDefault();
+      
+            carte.classList.add("expand");
+            setTimeout(() => {
+              window.location.href = link.getAttribute("href");
+            }, 800);
+          });
+        });
+      </script>
+  </body>
+</html>
