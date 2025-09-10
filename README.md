@@ -1,4 +1,4 @@
-# Portfolio-de-JADE-H-BERT
+# Portfolio de JADE HÉBERT
 Dans le cadre des cours Web 5 et Préparation au milieu de travail, réalisation d'un portfolio web à présenter aux employeurs potentiels
 
 Ce répertoire contient :
