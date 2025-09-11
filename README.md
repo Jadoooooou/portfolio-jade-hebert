@@ -5,3 +5,5 @@ Ce répertoire contient :
 - Le suivi du dossier de création
 - Un lien vers les maquettes d'inspiration – [Figma]
 - Un lien vers la planification du portfolio – [GitHub Project](https://github.com/users/Jadoooooou/projects/6)
+- Le choix de navigation :
+- Le choix de composante Vue.js :
