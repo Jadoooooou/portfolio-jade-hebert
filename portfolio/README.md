@@ -6,4 +6,6 @@ Dans ce dossier contient:
 - un dossier de médias
 
 ## Ce README sert à montrer la progression du dit portfolio   
+### Semaine du 14/09   
+   Recherche d'inspiration et création de maquettes
 ### Semaine du 21/09
