@@ -1,0 +1,120 @@
+body {
+  background-color: #e1e1de;
+  width: 100vw;
+  font-family: "Montserrat-Medium", Helvetica;
+}
+
+p {
+  color: #000000;
+}
+
+/* en tete */  
+.nav {
+  font-weight: 500;
+  font-size: 21px;
+  text-align: right;
+} 
+  
+.text-wrapper {
+  font-weight: 800;
+  font-size: 25px;
+}
+
+/* hero */  
+  
+.text-wrapper-2 {
+  font-weight: 800;
+  font-size: 45px;
+}
+  
+ .name {
+  font-weight: 800;
+  font-size: 35px;
+  text-align: right;
+}
+  
+.p {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: right;
+}
+  
+.rectangle {
+  height: 150px;
+}
+
+/* projets */  
+  
+.text-wrapper-3 {
+  font-weight: 800;
+  font-size: 35px;
+}
+  
+.text-wrapper-4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+  
+.projet img {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 270px;
+    height: 162px;
+    aspect-ratio: 1.67;
+}
+  
+.projets .button p {
+  font-weight: 500;
+  font-size: 10px;
+}
+
+/* a propos */  
+  
+.text-wrapper-4 {
+  font-weight: 800;
+  font-size: 35px;
+}
+  
+.a-propos img {
+  margin-left: 74px;
+  width: 292px;
+  height: 279px;
+  margin-top: 49px;
+}
+  
+.a-propos p {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: right;
+}
+
+.a-propos .button p {
+  font-weight: 500;
+  font-size: 10px;
+}
+
+/* contacts */  
+  
+.text-wrapper-5 {
+  font-weight: 800;
+  font-size: 35px;
+}
+  
+.contact p {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.mail {
+  font-weight: 800;
+  font-size: 40px;
+  text-align: right;
+}
+
+
+/* mobiles */  
+
+@media (max-width: 390px) {
+
+}
