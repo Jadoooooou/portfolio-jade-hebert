@@ -6,9 +6,25 @@ body {
 
 p {
   color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 400px;
 }
 
 /* en tete */  
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
 .nav {
   font-weight: 500;
   font-size: 21px;
@@ -21,7 +37,7 @@ p {
 }
 
 /* hero */  
-  
+
 .text-wrapper-2 {
   font-weight: 800;
   font-size: 45px;
@@ -31,6 +47,17 @@ p {
   font-weight: 800;
   font-size: 35px;
   text-align: right;
+}
+
+.name p:first-child {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.name p:last-child {
+  font-weight: 300;
+  font-size: 14px;
 }
   
 .p {
@@ -44,6 +71,11 @@ p {
 }
 
 /* projets */  
+
+.projets {
+  display: flex;
+  flex-direction: column;
+}
   
 .text-wrapper-3 {
   font-weight: 800;
@@ -54,14 +86,22 @@ p {
   font-weight: 500;
   font-size: 20px;
 }
+
+.projet {
+  display: flex;
+  flex-direction: column;
+}
   
 .projet img {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 270px;
-    height: 162px;
-    aspect-ratio: 1.67;
+  width: 100%;
+  height: auto;
+}
+
+.projet .button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 12px;
 }
   
 .projets .button p {
@@ -70,6 +110,11 @@ p {
 }
 
 /* a propos */  
+
+.a-propos {
+  display: flex;
+  flex-direction: column;
+}
   
 .text-wrapper-4 {
   font-weight: 800;
@@ -77,10 +122,8 @@ p {
 }
   
 .a-propos img {
-  margin-left: 74px;
-  width: 292px;
-  height: 279px;
-  margin-top: 49px;
+  width: 90%;
+  height: auto;
 }
   
 .a-propos p {
@@ -95,6 +138,11 @@ p {
 }
 
 /* contacts */  
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
   
 .text-wrapper-5 {
   font-weight: 800;
