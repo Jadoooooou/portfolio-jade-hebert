@@ -1,4 +1,4 @@
-body {
+html {
   background-color: #e1e1de;
   width: 100vw;
   font-family: "Montserrat-Medium", Helvetica;
@@ -14,7 +14,6 @@ p {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 400px;
 }
 
 /* en tete */  
@@ -38,26 +37,23 @@ p {
 
 /* hero */  
 
-.text-wrapper-2 {
+.portfolio {
   font-weight: 800;
   font-size: 45px;
-}
-  
- .name {
-  font-weight: 800;
-  font-size: 35px;
-  text-align: right;
+  margin: 25px 0px;
 }
 
 .name p:first-child {
   font-weight: 800;
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 35px;
+  text-align: right;
+  margin: 15px 0px;
 }
 
 .name p:last-child {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 20px;
+  margin: 15px 0px;
 }
   
 .p {
@@ -77,9 +73,10 @@ p {
   flex-direction: column;
 }
   
-.text-wrapper-3 {
+.text-wrapper-projet {
   font-weight: 800;
   font-size: 35px;
+  margin: 25px 0px;
 }
   
 .text-wrapper-4 {
@@ -91,22 +88,46 @@ p {
   display: flex;
   flex-direction: column;
 }
+
+.projet p {
+  margin: 15px 0px;
+}
   
 .projet img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: 15px 0px;
 }
 
 .projet .button {
-  align-self: flex-end;
-  padding: 5px 10px;
-  border: 1px solid black;
-  font-size: 12px;
+  display: flex; 
+  align-items: center; 
+  width: 50%;
+  padding: 10px 20px;  
+  border: 2px solid black;   
+  background: #e1e1de;           
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px black; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projet .button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px black;
 }
   
 .projets .button p {
+  margin: 0;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 15px;
+}
+
+.projet .button::after {
+  content: "→";  
+  margin-left: 10px;
+  font-size: 15px;
 }
 
 /* a propos */  
@@ -116,9 +137,10 @@ p {
   flex-direction: column;
 }
   
-.text-wrapper-4 {
+.text-wrapper-propos {
   font-weight: 800;
   font-size: 35px;
+  margin: 25px 0px;
 }
   
 .a-propos img {
@@ -126,15 +148,41 @@ p {
   height: auto;
 }
   
-.a-propos p {
+.a-propos-text {
   font-weight: 300;
   font-size: 20px;
+  margin: 15px 0px;
   text-align: right;
 }
 
+.a-propos .button {
+  display: flex; 
+  align-items: center; 
+  width: 50%;
+  padding: 10px 20px;  
+  border: 2px solid black;   
+  background: #e1e1de;           
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px black; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.a-propos .button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px black;
+}
+  
 .a-propos .button p {
   font-weight: 500;
-  font-size: 10px;
+  font-size: 15px;
+}
+
+.a-propos .button::after {
+  content: "→";  
+  margin-left: 10px;
+  font-size: 15px;
 }
 
 /* contacts */  
@@ -144,9 +192,10 @@ p {
   flex-direction: column;
 }
   
-.text-wrapper-5 {
+.text-wrapper-contact {
   font-weight: 800;
   font-size: 35px;
+  margin: 25px 0px;
 }
   
 .contact p {
