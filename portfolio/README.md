@@ -9,3 +9,7 @@ Dans ce dossier contient:
 ## Semaine du 14/09   
    Recherche d'inspiration et création de maquettes
 ## Semaine du 21/09
+   Création du code HTML et du CSS
+## Semaine du 28/09
+   Implantation de flexbox
+   Effet :hover sur les boutons
