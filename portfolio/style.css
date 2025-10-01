@@ -233,8 +233,60 @@ p {
 }
 
 
-/* mobiles */  
+/* desktop */  
 
-@media (max-width: 390px) {
+@media (min-width: 1440px) {
 
+  .portfolio {
+    font-size: 90px;
+  }
+
+  .hero img {
+    width: 50vw;
+    text-align: center;
+  }
+
+  .name p:first-child {
+    font-size: 90px;
+  }
+
+  .name p:last-child {
+    font-weight: 300;
+    font-size: 50px;
+    margin: 50px 0px;
+    padding-left: 15%;
+    padding-right: 20%;
+  }
+
+  .text-wrapper-projet {
+    font-size: 80px;
+    margin: 10vh 0px;
+  }
+
+  .projet p {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+
+  .projet img {
+    width: 50%;
+    height: auto;
+    margin: 15px 0px;
+  }
+
+  .text-wrapper-contact {
+    font-size: 80px;
+  }
+
+  .contact p:nth-of-type(1) {
+    font-size: 50px;  
+  }
+
+  .contact p:nth-of-type(2) {
+    font-size: 50px;
+  }
+
+  .mail {
+    font-size: 80px;
+  }
 }
