@@ -7,8 +7,6 @@ Ce répertoire contient :
 - Un lien vers la planification du portfolio – [GitHub Project](https://github.com/users/Jadoooooou/projects/6)
 - Le choix de navigation : Infinite scroll + Multiples pages (pour les projets)
 - Le choix de composante Vue.js : Galerie interactive / Carrousel / Lightbox
-
-# Suivis de progression de la création du portfolio
 ## Semaine du 14/09   
    Recherche d'inspiration et création de maquettes
 ## Semaine du 21/09
