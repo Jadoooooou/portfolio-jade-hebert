@@ -18,22 +18,20 @@ p {
 
 /* en tete */  
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
   border-bottom: 3px solid black;
   padding-bottom: 3vh;
 }
-.nav {
-  font-weight: 500;
-  font-size: 21px;
-  text-align: right;
-} 
   
 .text-wrapper {
   font-weight: 800;
   font-size: 25px;
+}
+
+.nav {
+  font-weight: 500;
+  font-size: 21px;
+  text-align: right;
 }
 
 /* hero */  
@@ -272,6 +270,17 @@ p {
     width: 50%;
     height: auto;
     margin: 15px 0px;
+  }
+
+  .a-propos {
+    align-items: unset 
+  }
+
+  .a-propos-text {
+    font-weight: 300;
+    font-size: 50px;
+    margin: 15px 0px;
+    text-align: left;
   }
 
   .text-wrapper-contact {
