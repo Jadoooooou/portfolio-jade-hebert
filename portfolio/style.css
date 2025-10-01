@@ -11,8 +11,6 @@ p {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   margin: auto;
 }
 
@@ -43,12 +41,7 @@ header {
 }
 
 .hero img {
-  width: 90vw;
   text-align: center;
-}
-
-.name {
-  text-align: right;
 }
 
 .name p:first-child {
@@ -74,37 +67,13 @@ header {
 }
 
 /* projets */  
-
-.projets {
-  display: flex;
-  flex-direction: column;
-  margin: 80px 0px 0px 0px;
-}
   
 .text-wrapper-projet {
   font-weight: 800;
   font-size: 35px;
-  margin: 25px 0px;
-}
-
-.projet {
-  display: flex;
-  flex-direction: column;
-}
-
-.projet p {
-  margin: 15px 0px;
-}
-  
-.projet img {
-  width: 80%;
-  height: auto;
-  margin: 15px 0px;
 }
 
 .projet .button {
-  display: flex; 
-  align-items: center; 
   width: 50%;
   padding: 10px 20px;  
   border: 2px solid black;   
@@ -134,13 +103,6 @@ header {
 }
 
 /* a propos */  
-
-.a-propos {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; 
-  margin: 80px 0px 0px 0px;
-}
   
 .text-wrapper-propos {
   font-weight: 800;
@@ -149,14 +111,7 @@ header {
 }
   
 .a-propos img {
-  width: 50vh;
-  height: auto;
-  margin-left: 15vw;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  filter: grayscale(100%);
-  border: 2px solid black;   
-  box-shadow: 3px 3px 0px black; 
+  filter: grayscale(100%); 
 }
   
 .a-propos-text {
@@ -167,7 +122,6 @@ header {
 }
 
 .a-propos .button {
-  display: flex; 
   width: 50%;
   padding: 10px 20px;  
   border: 2px solid black;   
@@ -198,17 +152,12 @@ header {
 /* contacts */  
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  margin: 80px 0px 0px 0px;
   border-bottom: 3px solid black;
-  padding-bottom: 3vh;
 }
   
 .text-wrapper-contact {
   font-weight: 800;
   font-size: 35px;
-  margin: 25px 0px;
 }
 
 .contact p:nth-of-type(1) {
@@ -220,13 +169,11 @@ header {
   font-weight: 300;
   font-size: 20px;
   margin-top: 50px;
-  text-align: right;
 }
 
 .mail {
   font-weight: 800;
   font-size: 40px;
-  text-align: right;
   margin-top: 10px;
 }
 
