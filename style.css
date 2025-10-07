@@ -84,7 +84,7 @@ p {
 .name p:last-child {
   font-weight: 300;
   font-size: 20px;
-    margin: 4vh 0;
+  margin: 4vh 0;
 }
 
 /* ---------- PROJETS ---------- */
@@ -141,20 +141,25 @@ p {
 
 .text-wrapper-propos {
   font-weight: 800;
-  font-size: 35px;
+  font-size: 45px;
 }
 
 .a-propos-content {
   display: grid;
   grid-template-columns: 1fr;
-  align-items: center;
+  gap: 2rem;
+}
+
+.a-propos-text {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 .a-propos-text p {
   font-weight: 300;
   font-size: 20px;
-  text-align: right;
+  text-align: left;
 }
 
 .a-propos img {
