@@ -11,6 +11,10 @@ Ce répertoire contient :
    Recherche d'inspiration et création de maquettes
 ## Semaine du 21/09
    Création du code HTML et du CSS
+   Selection des médias
 ## Semaine du 28/09
    Implantation de flexbox
    Effet :hover sur les boutons
+## Semaine du 05/10   
+   Remplacement de flexbox par Grille CSS
+   Création des pages secondaires
