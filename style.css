@@ -91,11 +91,14 @@ p {
 .projets {
   display: grid;
   gap: 3rem;
+  padding: 2vh;
+  margin-bottom: 10vh;
 }
 
 .text-wrapper-projet {
   font-weight: 800;
-  font-size: 35px;
+  font-size: 45px;
+  margin-bottom: 2vh;
 }
 
 .projet {
@@ -118,7 +121,6 @@ p {
   padding: 10px 20px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  justify-self: end;
 }
 
 .button:hover {
@@ -134,6 +136,7 @@ p {
 .a-propos {
   display: grid;
   gap: 2rem;
+  padding: 2vh;
 }
 
 .text-wrapper-propos {
