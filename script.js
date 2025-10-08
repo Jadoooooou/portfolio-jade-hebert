@@ -1,5 +1,20 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const container = document.querySelector(".projets-container");
+
+// Animation Horizontale
+gsap.to(container, {
+  xPercent: -100 * (container.children.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".projets",
+    pin: true, // fige la section pendant le scroll
+    scrub: 1,  // synchronise l’animation avec le scroll
+    end: () => "+=" + container.scrollWidth, // durée du scroll
+    invalidateOnRefresh: true, // recalcul automatique en cas de resize
+  }
+});
+
 const elements = gsap.utils.toArray([
   // Section Hero
   '.portfolio',
@@ -14,8 +29,7 @@ const elements = gsap.utils.toArray([
   '.a-propos button',
   // Section Contacts
   '.text-wrapper-contact',
-  '.contact p:first-of-type',
-  '.contact p:last-of-type'
+  '.contact p:first-of-type'
 ]);
 
 elements.forEach((el) => {
@@ -34,4 +48,8 @@ elements.forEach((el) => {
       }
     }
   );
+});
+
+window.addEventListener("load", () => {
+  ScrollTrigger.refresh();
 });
