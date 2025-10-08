@@ -28,4 +28,7 @@ Implantation de flexbox
 
 Remplacement de flexbox par Grille CSS  
  Création des pages secondaires  
- Ajout de clamp()
+ Ajout de clamp()  
+ Ajout du ScrollTrigger   
+ Ajout d'une section horizontale   
+ Possibilité de copier le couriel électronique
