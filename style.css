@@ -156,14 +156,8 @@ header, section, div {
   padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
   position: absolute;
   bottom: -20px;       
-  right: 22vw;       
+  right: 10vw;       
   z-index: 2;  
-}
-
-.button-apropos {
-  width: 40vw;
-  font-size: clamp(15px, 1.2vw, 20px);
-  padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
 }
 
 .button:hover {
@@ -177,6 +171,7 @@ header, section, div {
 
 /* ---------- À PROPOS ---------- */
 .a-propos {
+  position: relative; 
   display: grid;
   gap: 2rem;
   padding: 2vh;
@@ -216,6 +211,16 @@ header, section, div {
   filter: grayscale(100%);
   border: 2px solid black;
   box-shadow: 3px 3px 0px black;
+}
+
+.button-apropos {
+  width: 38vw;
+  font-size: clamp(15px, 1.2vw, 20px);
+  padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
+  position: absolute;  
+  top: 59rem;  
+  left: 60vw;
+  z-index: 2;
 }
 
 /* ---------- CONTACT ---------- */
@@ -291,6 +296,12 @@ header, section, div {
   .a-propos img {
     justify-self: end;
     width: 80%;
+  }
+
+  .button-apropos {
+    top: 35rem;  
+    left: 10vw;
+    z-index: 2;
   }
 
   .text-wrapper-projet,

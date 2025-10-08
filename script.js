@@ -10,6 +10,7 @@ gsap.to(container, {
     trigger: ".projets",
     pin: true, // fige la section pendant le scroll
     scrub: 1,  // synchronise l’animation avec le scroll
+    start: "top 5%",
     end: () => "+=" + (container.scrollWidth * 0.7), // durée du scroll
     invalidateOnRefresh: true, // recalcul automatique en cas de resize
   }
