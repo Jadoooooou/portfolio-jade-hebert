@@ -103,6 +103,9 @@ header, section, div {
 .projets {
   display: grid;
   gap: 3rem;
+  padding: 2vh;
+  margin-left: 2vh;
+  margin-bottom: 5vh;
   width: 100%;
   box-sizing: border-box;
 }
@@ -156,7 +159,7 @@ header, section, div {
   padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
   position: absolute;
   bottom: -20px;       
-  right: 10vw;       
+  right: 22vw;       
   z-index: 2;  
 }
 
@@ -171,7 +174,7 @@ header, section, div {
 
 /* ---------- À PROPOS ---------- */
 .a-propos {
-  position: relative; 
+  position: relative;
   display: grid;
   gap: 2rem;
   padding: 2vh;
