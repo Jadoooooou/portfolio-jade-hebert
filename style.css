@@ -74,7 +74,7 @@ header, section, div {
 .portfolio {
   text-align: center;
   font-weight: 800;
-  font-size: 70px;
+  font-size: clamp(70px, 8vw, 100px);
   margin-bottom: 2vh;
 }
 
@@ -95,7 +95,7 @@ header, section, div {
 
 .name p:last-child {
   font-weight: 300;
-  font-size: 20px;
+  font-size: clamp(20px, 8vw, 35px);
   margin: 4vh 0;
 }
 
@@ -116,25 +116,42 @@ header, section, div {
 }
 
 .projet {
-  display: grid;
+  position: relative; 
+  display: inline-block; 
   justify-items: start;
   gap: 1rem;
 }
 
 .projet img {
+  margin-top: 2vh;
   width: 80%;
   height: auto;
+  display: block;
 }
 
 .button {
   border: 2px solid black;
   background: #e1e1de;
   box-shadow: 3px 3px 0px black;
-  font-size: 15px;
   font-weight: 500;
-  padding: 10px 20px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-projet {
+  width: 40vw;
+  font-size: clamp(15px, 1.5vw, 22px);
+  padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
+  position: absolute;
+  bottom: -20px;       
+  right: 22vw;       
+  z-index: 2;  
+}
+
+.button-apropos {
+  width: 40vw;
+  font-size: clamp(15px, 1.2vw, 20px);
+  padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
 }
 
 .button:hover {
@@ -180,7 +197,7 @@ header, section, div {
 }
 
 .a-propos img {
-  width: 50vh;
+  width: 60vh;
   height: auto;
   justify-self: end;
   filter: grayscale(100%);
@@ -195,8 +212,7 @@ header, section, div {
   grid-template-rows: 1fr 1fr 10% 1fr;
   gap: 1rem;
   padding: 2vh;
-  border-bottom: 3px solid black;
-  margin: 0 auto 5vh auto;   
+  border-bottom: 3px solid black;  
   width: 100%;
   box-sizing: border-box;
 }
@@ -209,21 +225,21 @@ header, section, div {
 
 .contact p:first-of-type {
   font-weight: 500;
-  font-size: 25px;
+  font-size: clamp(25px, 6vw, 50px);
   margin-bottom: 5vh;
   grid-area: 2/1/3/3;
 }
 
 .contact p:last-of-type {
   font-weight: 300;
-  font-size: 20px;
+  font-size: clamp(20px, 6vw, 40px);
   text-align: right;
   grid-area: 3/1/3/3;
 }
 
 .mail {
   font-weight: 800;
-  font-size: 1.7rem;
+  font-size: clamp(20px, 6vw, 60px);
   text-align: right;
   text-transform: uppercase;
   grid-area: 4/1/4/3;
@@ -232,22 +248,22 @@ header, section, div {
 /* ---------- GRAND ÉCRAN ---------- */
 @media (min-width: 1000px) {
 
-  .portfolio {
-    font-size: 90px;
-  }
-
   .hero {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 33% auto 33%;
+    grid-template-rows: 20% auto auto auto;
     align-items: center;
+    gap: 0.5rem;
   }
 
   .hero img {
     width: 80%;
-    justify-self: center;
+    justify-self: left;
+    grid-area: 2/1/4/4;
   }
 
   .name {
-    text-align: left;
+    text-align: right;
+    grid-area: 4/1/4/4;
   }
 
   .a-propos-content {
@@ -255,13 +271,13 @@ header, section, div {
   }
 
   .a-propos-text p {
-    text-align: left;
-    font-size: 30px;
+    text-align: right;
+    font-size: 50px;
   }
 
   .a-propos img {
     justify-self: end;
-    width: 60%;
+    width: 80%;
   }
 
   .text-wrapper-projet,
@@ -269,8 +285,22 @@ header, section, div {
   .text-wrapper-contact {
     font-size: 70px;
   }
+}
 
-  .mail {
-    font-size: 60px;
+/* ---------- TRÈS GRAND ÉCRAN ---------- */
+@media (min-width: 1175px) {
+
+  .hero {
+    padding: 2vh 4vh 2vh 4vh;
   }
+
+  .hero img {
+    width: 60%;
+  }
+
+  .name {
+    margin: 0;
+    grid-area: 4/2/4/4;
+  }
+
 }
