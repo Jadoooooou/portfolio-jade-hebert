@@ -233,6 +233,7 @@ header, section, div {
   grid-template-rows: 1fr 1fr 10% 1fr;
   gap: 1rem;
   padding: 2vh;
+  margin-top: 20vh;
   border-bottom: 3px solid black;  
   width: 100%;
   box-sizing: border-box;
@@ -264,6 +265,10 @@ header, section, div {
   text-align: right;
   text-transform: uppercase;
   grid-area: 4/1/4/3;
+}
+
+.espace {
+  height: 10vh;
 }
 
 /* ---------- GRAND ÉCRAN ---------- */
