@@ -103,8 +103,6 @@ header, section, div {
 .projets {
   display: grid;
   gap: 3rem;
-  padding: 2vh;
-  margin-bottom: 5vh;
   width: 100%;
   box-sizing: border-box;
 }
