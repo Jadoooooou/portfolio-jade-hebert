@@ -1,9 +1,14 @@
-html, body {
+body, html{
   background-color: #e1e1de;
   font-family: "Montserrat-Medium", Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  width: 100vw;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -13,11 +18,15 @@ p {
   padding: 0;
 }
 
+header, section, div {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
-  max-width: 390px;
-  display: grid;
-  grid-template-columns: auto;
+  padding: 0 ;
+  box-sizing: border-box;
 }
 
 /* ---------- HEADER ---------- */
@@ -27,6 +36,8 @@ p {
   align-items: center;
   border-bottom: 3px solid black;
   padding: 2vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .text-wrapper {
@@ -56,6 +67,8 @@ p {
   grid-template-columns: 1fr;
   gap: 2rem;
   padding: 2vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .portfolio {
@@ -92,6 +105,8 @@ p {
   gap: 3rem;
   padding: 2vh;
   margin-bottom: 10vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .text-wrapper-projet {
@@ -137,6 +152,8 @@ p {
   gap: 2rem;
   padding: 2vh;
   margin-bottom: 5vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .text-wrapper-propos {
@@ -173,7 +190,6 @@ p {
 
 /* ---------- CONTACT ---------- */
 .contact {
-  width: 100vw;
   display: grid;
   grid-template-columns: 35% 1fr;
   grid-template-rows: 1fr 1fr 10% 1fr;
@@ -181,6 +197,8 @@ p {
   padding: 2vh;
   border-bottom: 3px solid black;
   margin: 0 auto 5vh auto;   
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .text-wrapper-contact {
