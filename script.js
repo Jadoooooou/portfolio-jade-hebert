@@ -54,3 +54,28 @@ elements.forEach((el) => {
 window.addEventListener("load", () => {
   ScrollTrigger.refresh();
 });
+
+// Créer le curseur
+const cursor = document.createElement('div');
+cursor.classList.add('cursor');
+cursor.textContent = 'copier';
+document.body.appendChild(cursor);
+
+// Suivi du mouvement de la souris
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+// Afficher le curseur quand on survole le bouton
+const copyMail = document.querySelectorAll('.mail');
+
+copyMail.forEach(btn => {
+  btn.addEventListener('mouseenter', () => {
+    cursor.style.opacity = 1;
+  });
+  btn.addEventListener('mouseleave', () => {
+    cursor.style.opacity = 0;
+  });
+});
+
