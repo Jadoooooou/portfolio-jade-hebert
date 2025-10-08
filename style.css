@@ -97,6 +97,9 @@ header, section, div {
   font-weight: 300;
   font-size: clamp(20px, 8vw, 35px);
   margin: 4vh 0;
+  /* ---------- animation ---------- */
+  opacity: 0;
+  transform: translateY(40px); 
 }
 
 /* ---------- PROJETS ---------- */
