@@ -21,11 +21,9 @@ const elements = gsap.utils.toArray([
   '.name p:last-child',
   // Section Projets
   '.text-wrapper-projet',
-  '.projet button',
   // Section À propos
   '.text-wrapper-propos',
   '.a-propos-content',
-  '.a-propos button',
   // Section Contacts
   '.text-wrapper-contact',
   '.contact p:first-of-type'

@@ -224,7 +224,7 @@ header, section, div {
   gap: 2rem;
   padding: 2vh;
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -380,8 +380,9 @@ header, section, div {
   }
 
   .button-apropos {
-    top: 35rem;  
-    left: 10vw;
+    width: 35vw;
+    top: 50rem;  
+    left: 60vw;
     z-index: 2;
   }
 
@@ -426,8 +427,8 @@ header, section, div {
   }
 
   .button-apropos {
-    width: 15vw;
-    top: 35rem;  
+    width: 20vw;
+    top: 48rem;  
     left: 33vw;
   }
 
