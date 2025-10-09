@@ -26,7 +26,9 @@ const elements = gsap.utils.toArray([
   '.a-propos-content',
   // Section Contacts
   '.text-wrapper-contact',
-  '.contact p:first-of-type'
+  '.contact p:first-of-type',
+  // À propos
+  '.moi p:last-child'
 ]);
 
 // Animations dévoilement des textes

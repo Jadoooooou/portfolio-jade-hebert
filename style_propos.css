@@ -69,8 +69,8 @@ header, section, div {
   box-shadow: 5px 5px 0px black;
 }
 
-.button p::after {
-  content: " →";
+.button p::before {
+  content: "← ";
 }
 
 /* ---------- HERO ---------- */
@@ -95,7 +95,12 @@ header, section, div {
   blink 500ms steps(50) infinite normal;
 }
 
-.name p:first-child {
+.moi {
+  margin: 5vh 0;
+  text-align: right;
+}
+
+.moi p:first-child {
   font-weight: 800;
   font-size: clamp(45px, 8vw, 85px);
   overflow: hidden;
@@ -104,7 +109,7 @@ header, section, div {
   blink 500ms steps(50) infinite normal;
 }
 
-.name p:last-child {
+.moi p:last-child {
   font-weight: 300;
   font-size: clamp(20px, 8vw, 55px);
   margin: 4vh 0;
@@ -125,6 +130,43 @@ header, section, div {
 @keyframes blink {
   from { border-right-color: rgba(0, 0, 0, 0.75); }
   to { border-right-color: transparent; }
+}
+
+/* ---------- COMPETENCES ---------- */
+.competences {
+  background-color: #000;
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  padding: 10vh 2vh 2vh 2vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.competences-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: #ffffff;
+}
+
+.competences-content p:first-of-type {
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 50px);
+  margin: 4vh 0;
+  text-align: right;
+  color: #ffffff;
+}
+
+.competences-content p:nth-of-type(2), .competences-content p:last-of-type {
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 50px);
+  margin: 4vh 0;
+  text-align: left;
+  color: #ffffff;
 }
 
 /* ---------- CONTACT ---------- */
