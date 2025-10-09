@@ -10,7 +10,7 @@ gsap.to(container, {
     trigger: ".projets",
     pin: true, // fige la section pendant le scroll
     scrub: 1,  // synchronise l’animation avec le scroll
-    start: "top 5%",
+    start: "bottom 90%",
     end: () => "+=" + (container.scrollWidth * 0.7), // durée du scroll
     invalidateOnRefresh: true, // recalcul automatique en cas de resize
   }
@@ -76,6 +76,23 @@ copyMail.forEach(btn => {
   });
   btn.addEventListener('mouseleave', () => {
     cursor.style.opacity = 0;
+  });
+});
+
+copyMail.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const mailText = btn.textContent;
+    navigator.clipboard.writeText(mailText)
+      .then(() => {
+        //console.log('Texte copié !');
+        btn.textContent = "C'est copié :)";
+        setTimeout(() => {
+          btn.textContent = mailText;
+        }, 1800);
+      })
+      .catch(err => {
+        console.error('Erreur de copie :', err);
+      });
   });
 });
 

@@ -90,12 +90,12 @@ header, section, div {
 
 .name p:first-child {
   font-weight: 800;
-  font-size: 45px;
+  font-size: clamp(45px, 8vw, 85px);
 }
 
 .name p:last-child {
   font-weight: 300;
-  font-size: clamp(20px, 8vw, 35px);
+  font-size: clamp(20px, 8vw, 55px);
   margin: 4vh 0;
 }
 
@@ -135,8 +135,8 @@ header, section, div {
 
 .projet img {
   flex: 0 0 100vw; 
-  width: 90%;
-  height: auto;
+  width: auto;
+  height: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,7 +275,7 @@ header, section, div {
 
 .cursor {
   position: fixed;
-  pointer-events: none; /* Pour que le curseur ne bloque pas le clic */
+  pointer-events: none;
   width: 80px;
   height: 80px;
   background-color: black;
@@ -288,7 +288,7 @@ header, section, div {
   font-family: sans-serif;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  opacity: 0; /* Invisible par défaut */
+  opacity: 0;
   transition: transform 0.1s ease, opacity 0.2s ease;
 }
 
@@ -311,6 +311,10 @@ header, section, div {
   .name {
     text-align: right;
     grid-area: 4/1/4/4;
+  }
+
+  .button-projet {
+    width: 30vw;
   }
 
   .a-propos-content {
@@ -348,12 +352,35 @@ header, section, div {
   }
 
   .hero img {
-    width: 60%;
+    width: 40%;
   }
 
   .name {
     margin: 0;
-    grid-area: 4/2/4/4;
+    grid-area: 4/1/4/4;
+  }
+
+  .name p:last-child {
+    margin-bottom: 40vh;
+  }
+
+  .projet img {
+    height: 30vw;
+  }
+
+  .button-projet {
+    width: 20vw;
+  }
+
+  .a-propos img {
+    width: 50vh;
+    margin-right: 10vw;
+  }
+
+  .button-apropos {
+    width: 15vw;
+    top: 35rem;  
+    left: 33vw;
   }
 
 }
