@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 body, html{
   background-color: #e1e1de;
   font-family: "Montserrat-Medium", Helvetica, sans-serif;
@@ -57,8 +59,24 @@ header, section, div {
   text-decoration: none;
 }
 
+/* ----- ANIMATION FONT ---- */
 .nav a:hover {
-  /* future animation */
+  animation: titre 1s infinite;
+}
+
+@keyframes titre {
+  0%, 100% {
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 0;
+  }
+  33% {
+    font-family: "Goma", sans-serif;
+    letter-spacing: 1px;
+  }
+  66% {
+    font-family: "Blob", sans-serif;
+    letter-spacing: -1px;
+  }
 }
 
 /* ---------- HERO ---------- */
@@ -76,6 +94,26 @@ header, section, div {
   font-weight: 800;
   font-size: clamp(70px, 8vw, 100px);
   margin-bottom: 2vh;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #000;
+  width: 0;
+  animation: typing 5s steps(50) 1s 1 normal both, 
+  blink 500ms steps(50) infinite normal;
+}
+
+
+/* ----- ANIMATION FONT ---- */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 12ch; }
+}
+
+@keyframes blink {
+  from { border-right-color: rgba(0, 0, 0, 0.75); }
+  to { border-right-color: transparent; }
 }
 
 .hero img {

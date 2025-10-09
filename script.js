@@ -18,8 +18,6 @@ gsap.to(container, {
 
 const elements = gsap.utils.toArray([
   // Section Hero
-  '.portfolio',
-  '.name p:first-child',
   '.name p:last-child',
   // Section Projets
   '.text-wrapper-projet',
