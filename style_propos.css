@@ -135,10 +135,9 @@ header, section, div {
 /* ---------- COMPETENCES ---------- */
 .competences {
   background-color: #000;
-  position: relative;
   display: grid;
   gap: 2rem;
-  padding: 10vh 2vh 2vh 2vh;
+  padding: 10vh 2vh;
   margin-top: 5vh;
   margin-bottom: 10vh;
   width: 100%;
@@ -153,9 +152,17 @@ header, section, div {
   color: #ffffff;
 }
 
+.competences-content h2{
+  font-weight: 600;
+  font-size: clamp(20px, 8vw, 50px);
+  margin: 4vh 0;
+  text-align: left;
+  color: #ffffff;
+}
+
 .competences-content p:first-of-type {
   font-weight: 300;
-  font-size: clamp(20px, 8vw, 50px);
+  font-size: clamp(20px, 8vw, 40px);
   margin: 4vh 0;
   text-align: right;
   color: #ffffff;
@@ -163,10 +170,16 @@ header, section, div {
 
 .competences-content p:nth-of-type(2), .competences-content p:last-of-type {
   font-weight: 300;
-  font-size: clamp(20px, 8vw, 50px);
+  font-size: clamp(20px, 8vw, 40px);
   margin: 4vh 0;
   text-align: left;
   color: #ffffff;
+}
+
+.button-cv {
+  width: 38vw;
+  font-size: clamp(15px, 1.2vw, 20px);
+  padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
 }
 
 /* ---------- CONTACT ---------- */
