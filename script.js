@@ -29,6 +29,7 @@ const elements = gsap.utils.toArray([
   '.contact p:first-of-type'
 ]);
 
+// Animations dévoilement des textes
 elements.forEach((el) => {
   gsap.fromTo(
     el,
@@ -47,23 +48,23 @@ elements.forEach((el) => {
   );
 });
 
+// Refresh les animations des textes
 window.addEventListener("load", () => {
   ScrollTrigger.refresh();
 });
 
-// Créer le curseur
+// Effet curseur
 const cursor = document.createElement('div');
 cursor.classList.add('cursor');
 cursor.textContent = 'copier';
 document.body.appendChild(cursor);
 
-// Suivi du mouvement de la souris
+// Suivi de la souris
 document.addEventListener('mousemove', (e) => {
   cursor.style.left = e.clientX + 'px';
   cursor.style.top = e.clientY + 'px';
 });
 
-// Afficher le curseur quand on survole le bouton
 const copyMail = document.querySelectorAll('.mail');
 
 copyMail.forEach(btn => {
@@ -82,15 +83,18 @@ copyMail.forEach(btn => {
     const mailText = btn.textContent;
     navigator.clipboard.writeText(mailText)
       .then(() => {
-        //console.log('Texte copié !');
         btn.textContent = "C'est copié :)";
         setTimeout(() => {
           btn.textContent = mailText;
         }, 1800);
       })
-      .catch(err => {
-        console.error('Erreur de copie :', err);
-      });
   });
 });
+
+// Boutons
+const btnPropos = document.querySelector(".button-apropos");
+btnPropos.addEventListener("click", function() {
+  window.location.href = "propos.html";
+});
+
 
