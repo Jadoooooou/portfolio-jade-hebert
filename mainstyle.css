@@ -258,12 +258,9 @@ header, section, div {
 }
 
 .button-apropos {
-  width: 38vw;
+  width: 100%;
   font-size: clamp(15px, 1.2vw, 20px);
   padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
-  position: absolute;  
-  top: 59rem;  
-  left: 60vw;
   z-index: 2;
 }
 
@@ -416,7 +413,7 @@ header, section, div {
   }
 
   .a-propos img {
-    width: 50vh;
+    width: 70%;
     margin-right: 10vw;
   }
 
