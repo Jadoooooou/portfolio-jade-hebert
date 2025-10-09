@@ -71,9 +71,11 @@ const copyMail = document.querySelectorAll('.mail');
 copyMail.forEach(btn => {
   btn.addEventListener('mouseenter', () => {
     cursor.style.opacity = 1;
+    document.body.style.cursor = 'none';
   });
   btn.addEventListener('mouseleave', () => {
     cursor.style.opacity = 0;
+    document.body.style.cursor = 'auto';
   });
 });
 
