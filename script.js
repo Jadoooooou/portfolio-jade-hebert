@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const container = document.querySelector(".projets-container");
-
+if (container) {
 // Animation Horizontale
 gsap.to(container, {
   xPercent: -80 * (container.children.length - 1),
@@ -15,6 +15,7 @@ gsap.to(container, {
     invalidateOnRefresh: true, // recalcul automatique en cas de resize
   }
 });
+}
 
 const elements = gsap.utils.toArray([
   // Section Hero
@@ -27,12 +28,11 @@ const elements = gsap.utils.toArray([
   // Section Contacts
   '.text-wrapper-contact',
   '.contact p:first-of-type',
-  // À propos
-  '.moi p:last-child'
 ]);
 
 // Animations dévoilement des textes
-elements.forEach((el) => {
+elements.forEach(el => {
+  if (el) {
   gsap.fromTo(
     el,
     { opacity: 0, y: 50 },
@@ -48,6 +48,7 @@ elements.forEach((el) => {
       }
     }
   );
+}
 });
 
 // Refresh les animations des textes
@@ -57,8 +58,15 @@ window.addEventListener("load", () => {
 
 // Boutons
 const btnPropos = document.querySelector(".button-apropos");
+if (btnPropos) {
 btnPropos.addEventListener("click", function() {
   window.location.href = "propos.html";
 });
+}
 
-
+const btnRevenir = document.querySelector(".revenir");
+if (btnRevenir) {
+  btnRevenir.addEventListener("click", () => {
+    window.location.href = "index.html";
+  });
+}
