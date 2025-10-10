@@ -28,6 +28,11 @@ const elements = gsap.utils.toArray([
   // Section Contacts
   '.text-wrapper-contact',
   '.contact p:first-of-type',
+  // Page À propos
+  '.moi p',
+  '.competences-content h2',
+  '.competences-content p',
+
 ]);
 
 // Animations dévoilement des textes
