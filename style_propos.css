@@ -41,36 +41,42 @@ header, section, div {
   overflow-x: hidden;
 }
 
-.text-wrapper {
+.revenir {
+  cursor: pointer;
   font-weight: 800;
   font-size: 25px;
 }
 
-.button {
-  border: 2px solid black;
-  background: #e1e1de;
-  box-shadow: 3px 3px 0px black;
+.nav {
   font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1.5rem;
+  text-align: right;
+  grid-area: 1/3/4/4;
 }
 
-.button-revenir {
-  width: 40vw;
-  font-size: clamp(15px, 1.5vw, 22px);
-  padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
-  position: absolute;      
-  right: 2vw;       
-  z-index: 2;  
+.nav a {
+  color: #000;
+  text-decoration: none;
 }
 
-.button:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0px black;
+/* ----- ANIMATION FONT ---- */
+.nav a:hover {
+  animation: titre 1s infinite;
 }
 
-.button p::before {
-  content: "← ";
+@keyframes titre {
+  0%, 100% {
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 0;
+  }
+  33% {
+    font-family: "Goma", sans-serif;
+    letter-spacing: 1px;
+  }
+  66% {
+    font-family: "Blob", sans-serif;
+    letter-spacing: -1px;
+  }
 }
 
 /* ---------- HERO ---------- */
@@ -93,6 +99,11 @@ header, section, div {
   border-right: 4px solid #000;
   animation: typing 1s steps(10) 0.5s 1 normal both, 
   blink 500ms steps(50) infinite normal;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
 }
 
 .moi {
@@ -162,7 +173,7 @@ header, section, div {
 
 .competences-content p:first-of-type {
   font-weight: 300;
-  font-size: clamp(20px, 8vw, 40px);
+  font-size: clamp(20px, 8vw, 30px);
   margin: 4vh 0;
   text-align: right;
   color: #ffffff;
@@ -170,16 +181,28 @@ header, section, div {
 
 .competences-content p:nth-of-type(2), .competences-content p:last-of-type {
   font-weight: 300;
-  font-size: clamp(20px, 8vw, 40px);
+  font-size: clamp(20px, 8vw, 30px);
   margin: 4vh 0;
   text-align: left;
   color: #ffffff;
 }
 
-.button-cv {
-  width: 38vw;
-  font-size: clamp(15px, 1.2vw, 20px);
-  padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
+.button {
+  width: 200px;
+  height: 70px;
+  font-size: 30px;
+  border: 2px solid #e1e1de;
+  color: #ffffff;
+  background: #000000;
+  box-shadow: 3px 3px 0px #e1e1de;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #e1e1de;
 }
 
 /* ---------- CONTACT ---------- */
