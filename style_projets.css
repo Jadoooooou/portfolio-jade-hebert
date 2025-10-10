@@ -75,3 +75,200 @@ header, section, div {
     letter-spacing: -1px;
   }
 }
+
+/* ---------- HERO ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.hero-text{
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(70px, 8vw, 100px);
+  margin-bottom: 2vh;
+  overflow: hidden;
+  border-right: 4px solid #000;
+  animation: typing 1s steps(10) 0.5s 1 normal both, 
+  blink 500ms steps(50) infinite normal;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.moi {
+  margin: 5vh 0;
+}
+
+.moi h2{
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 35px);
+  text-align: center;
+  margin: 4vh 0;
+}
+
+.moi p:last-child {
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 35px);
+  text-align: right;
+  margin: 4vh 0;
+}
+
+/* ----- ANIMATIONS FONT ---- */
+/* https://codepen.io/frankeno/pen/QWmmxQb */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 12ch; }
+}
+
+@keyframes blink {
+  from { border-right-color: rgba(0, 0, 0, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+/* ---------- OBJECTIF ---------- */
+.objectif {
+  display: grid;
+  gap: 2rem;
+  padding: 10vh 2vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.objectif img {
+  width: 60%;
+  height: auto;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0px black;
+}
+
+/* ---------- PROCESSUS ---------- */
+.processus {
+  background-color: #000;
+  color: #ffffff;
+  display: grid;
+  gap: 2rem;
+  padding: 10vh 2vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.processus-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: #ffffff;
+}
+
+.processus-content p {
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 30px);
+  margin: 4vh 0;
+  color: #ffffff;
+}
+
+.button {
+  width: 200px;
+  height: 70px;
+  font-size: 30px;
+  border: 2px solid #e1e1de;
+  color: #ffffff;
+  background: #000000;
+  box-shadow: 3px 3px 0px #e1e1de;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #e1e1de;
+}
+
+.remerciements p {
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 30px);
+  margin: 4vh 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: 1fr 1fr 10% 1fr;
+  gap: 1rem;
+  padding: 2vh;
+  margin-top: 10vh;
+  border-bottom: 3px solid black;  
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-wrapper-contact {
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 1vh;
+}
+
+.contact p:first-of-type {
+  font-weight: 500;
+  font-size: clamp(25px, 6vw, 50px);
+  margin-bottom: 5vh;
+  grid-area: 2/1/3/3;
+}
+
+.contact p:last-of-type {
+  font-weight: 300;
+  font-size: clamp(20px, 6vw, 40px);
+  text-align: right;
+  grid-area: 3/1/3/3;
+}
+
+.mail {
+  font-weight: 800;
+  font-size: clamp(20px, 6vw, 60px);
+  text-align: right;
+  text-transform: uppercase;
+  grid-area: 4/1/4/3;
+}
+
+.espace {
+  height: 10vh;
+  overflow-x: hidden;
+}
+
+/* ---------- CURSEUR ---------- */
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  opacity: 0;
+  transition: transform 0.1s ease, opacity 0.2s ease;
+}
