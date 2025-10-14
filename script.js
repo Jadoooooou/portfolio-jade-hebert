@@ -1,22 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const container = document.querySelector(".projets-container");
-if (container) {
-// Animation Horizontale
-gsap.to(container, {
-  xPercent: -80 * (container.children.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".projets",
-    pin: true, // fige la section pendant le scroll
-    scrub: 1,  // synchronise l’animation avec le scroll
-    start: "top 10%",
-    end: () => "+=" + (container.scrollWidth * 0.7), // durée du scroll
-    invalidateOnRefresh: true, // recalcul automatique en cas de resize
-  }
-});
-}
-
 const elements = gsap.utils.toArray([
   // Section Hero
   '.name p:last-child',
