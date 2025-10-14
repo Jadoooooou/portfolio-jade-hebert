@@ -46,29 +46,10 @@
 
       <div class="projets-container">
 
-      <div class="projet">
-        <p>[ 1 ] Animation générative</p>
-        <img src="medias/animation_generative_01.jpg" alt="Projet animation générative">
-        <button id="1" class="button button-projet"><p>voir plus</p></button>
-      </div>
-
-      <div class="projet">
-        <p>[ 2 ] Portfolio de photos</p>
-        <img src="medias/portfolio_accueil.png" alt="Projet animation générative">
-        <button id="2" class="button button-projet"><p>voir plus</p></button>
-      </div>
-
-      <div class="projet">
-        <p>[ 3 ] Déconnexion - Projet paysage</p>
-        <img src="medias/paysage_03.jpg" alt="Projet animation générative">
-        <button id="3" class="button button-projet"><p>voir plus</p></button>
-      </div>
-
-
-      <div class="projet">
-        <p>[ 4 ] TEST générative</p>
-        <img src="medias/animation_generative_01.jpg" alt="Projet animation générative">
-        <button id="4" class="button button-projet"><p>voir plus</p></button>
+      <div class="projet" v-for="project in projects">
+        <p>[ {{ project.id }} ] {{ project.title }} </p>
+        <img :src="project.images[0]" :alt="'Projet ${project.title}'">
+        <button :id="project.id" class="button button-projet"><p>voir plus</p></button>
       </div>
 
       </div>
@@ -97,6 +78,7 @@
     <div class="espace"></div>
   </main>
   <script src="script.js"></script>
+  <script src="vue.js"></script>
   <script src="cursor.js"></script>
 </body>
 </html>

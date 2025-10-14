@@ -2,19 +2,27 @@ const app = Vue.createApp({
 
     data() {
         return {
-            message: "Chargement..."
+            projects: [], // Tableau qui va contenir les données
         };
     },
     mounted() {
         console.log("L'app Vue a été créée et montée au DOM (mounted) !");
 
-        this.message = "Vue a été chargé et montée au DOM (mounted) !";
-
-        // C'est ici qu'on récupère (fetch) les données, qu'on manipule le DOM ou qu'on itinitialise des librairies
+        // C'est ici qu'on récupère (fetch) les donnée
+        fetch("projects.json")
+            .then((response) => {
+                return response.json(); // conversion en JSON
+            })
+            .then((data) => {
+                this.projects = data; // stockage des projets
+            })
+            .catch((error) => {
+                console.log("Erreur"); // si FETCH n'a pas marché
+            });
     },
     methods: {
         // ...
     }
 });
 
-app.mount('#menu');
+const vm = app.mount('.projets-container');
