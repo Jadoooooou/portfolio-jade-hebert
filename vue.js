@@ -21,7 +21,9 @@ const app = Vue.createApp({
             });
     },
     methods: {
-        // ...
+        voirPlus(project) {
+            window.location.href = project.link; // pages de projet
+        },
     }
 });
 

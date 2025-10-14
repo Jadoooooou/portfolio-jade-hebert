@@ -61,36 +61,6 @@ window.addEventListener("load", () => {
   ScrollTrigger.refresh();
 });
 
-// Boutons
-const btn1 = document.getElementById("1");
-if (btn1) {
-btn1.addEventListener("click", function() {
-  console.log("COOOOL");
-  window.location.href = "projets/anim_gen.html";
-});
-}
-
-const btn2 = document.getElementById("2");
-if (btn2) {
-btn2.addEventListener("click", function() {
-  window.location.href = "projets/projets.html";
-});
-}
-
-const btn3 = document.getElementById("3");
-if (btn3) {
-btn3.addEventListener("click", function() {
-  window.location.href = "projets/projets.html";
-});
-}
-
-const btn4 = document.getElementById("4");
-if (btn4) {
-btn4.addEventListener("click", function() {
-  window.location.href = "projets/projets.html";
-});
-}
-
 const btnPropos = document.querySelector(".button-apropos");
 if (btnPropos) {
 btnPropos.addEventListener("click", function() {

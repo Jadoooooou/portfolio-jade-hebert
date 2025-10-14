@@ -49,7 +49,7 @@
       <div class="projet" v-for="project in projects">
         <p>[ {{ project.id }} ] {{ project.title }} </p>
         <img :src="project.images[0]" :alt="'Projet ${project.title}'">
-        <button :id="project.id" class="button button-projet"><p>voir plus</p></button>
+        <button class="button button-projet" @click="voirPlus(project)"><p>voir plus</p></button>
       </div>
 
       </div>
