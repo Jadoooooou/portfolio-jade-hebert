@@ -3,19 +3,19 @@
     "id": 1,
     "title": "Animation générative",
     "images": ["medias/animation_generative_01.jpg"],
-    "link": "projets/anim_gem.html"
+    "link": "anim_gen.html"
   },
   {
     "id": 2,
     "title": "Portfolio de photos",
     "images": ["medias/portfolio_accueil.png"],
-    "link": "projets/ptfo_phto.html"
+    "link": "ptfo_phto.html"
   },
   {
     "id": 3,
     "title": "Déconnexion - Projet paysage",
     "images": ["medias/animation_generative_01.jpg"],
-    "link": "projets/proj_pays.html"
+    "link": "proj_pays.html"
   },
   {
     "id": 4,
