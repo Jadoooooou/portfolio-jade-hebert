@@ -308,16 +308,17 @@ header, section, div {
 }
 
 .a-propos img {
-  width: 60%;
+  width: 40%;
   height: auto;
-  justify-self: end;
+  justify-self: center;
   filter: grayscale(100%);
   border: 2px solid black;
   box-shadow: 3px 3px 0px black;
 }
 
 .button-apropos {
-  width: 100%;
+  width: 60%;
+  justify-self: center;
   font-size: clamp(15px, 1.2vw, 20px);
   padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
   z-index: 2;
@@ -429,8 +430,6 @@ header, section, div {
 
   .button-apropos {
     width: 35vw;
-    top: 50rem;  
-    left: 60vw;
     z-index: 2;
   }
 
@@ -465,15 +464,23 @@ header, section, div {
     width: 20vw;
   }
 
+  .a-propos-content {
+    grid-template-columns: 60% 1fr;
+  }
+
+  .a-propos-text p {
+    text-align: right;
+    font-size: 50px;
+  }
+
   .a-propos img {
-    width: 70%;
-    margin-right: 10vw;
+    width: 60%;
+    margin-right: 30%;
   }
 
   .button-apropos {
-    width: 20vw;
-    top: 49.5rem;  
-    left: 33vw;
+    width: 35vw;
+    z-index: 2;
   }
 
 }
