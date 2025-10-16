@@ -1,5 +1,3 @@
-
-
 const btnPropos = document.querySelector(".button-apropos");
 if (btnPropos) {
 btnPropos.addEventListener("click", function() {

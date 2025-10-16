@@ -49,7 +49,7 @@ const app = Vue.createApp({
                 },
             });
         },
-// ✅ Dévoilement des textes au scroll
+// Dévoilement des textes au scroll
     initTextAnimations() {
       const elements = gsap.utils.toArray([
         '.name p:last-child',
