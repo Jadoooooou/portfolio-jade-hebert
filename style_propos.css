@@ -42,7 +42,6 @@ header, section, div {
 }
 
 .revenir {
-  cursor: pointer;
   font-weight: 800;
   font-size: 25px;
 }
@@ -91,14 +90,11 @@ header, section, div {
 }
 
 .hero-text{
-  text-align: center;
+  text-align: left;
   font-weight: 800;
   font-size: clamp(70px, 8vw, 100px);
   margin-bottom: 2vh;
   overflow: hidden;
-  border-right: 4px solid #000;
-  animation: typing 1s steps(10) 0.5s 1 normal both, 
-  blink 500ms steps(50) infinite normal;
 }
 
 .hero img {
@@ -121,18 +117,6 @@ header, section, div {
   font-weight: 300;
   font-size: clamp(20px, 8vw, 55px);
   margin: 4vh 0;
-}
-
-/* ----- ANIMATIONS FONT ---- */
-/* https://codepen.io/frankeno/pen/QWmmxQb */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 10.5ch; }
-}
-
-@keyframes blink {
-  from { border-right-color: rgba(0, 0, 0, 0.75); }
-  to { border-right-color: transparent; }
 }
 
 /* ---------- COMPETENCES ---------- */

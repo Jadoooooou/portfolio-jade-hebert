@@ -63,14 +63,10 @@ header, section, div {
 
 @keyframes titre {
   0%, 100% {
-    font-family: "Rubik", sans-serif;
-    letter-spacing: 0;
-  }
-  33% {
     font-family: "Goma", sans-serif;
     letter-spacing: 1px;
   }
-  66% {
+  50% {
     font-family: "Blob", sans-serif;
     letter-spacing: -1px;
   }
@@ -88,14 +84,11 @@ header, section, div {
 }
 
 .hero-text{
-  text-align: center;
+  text-align: left;
   font-weight: 800;
   font-size: clamp(70px, 8vw, 100px);
   margin-bottom: 2vh;
   overflow: hidden;
-  border-right: 4px solid #000;
-  animation: typing 1s steps(10) 0.5s 1 normal both, 
-  blink 500ms steps(50) infinite normal;
 }
 
 .hero img {
@@ -111,26 +104,15 @@ header, section, div {
   font-weight: 300;
   font-size: clamp(20px, 8vw, 35px);
   text-align: center;
-  margin: 4vh 0;
+  margin: 8vh 0;
 }
 
 .moi p:last-child {
-  font-weight: 300;
+  font-weight: 800;
+  color: gray;
   font-size: clamp(20px, 8vw, 35px);
   text-align: right;
-  margin: 4vh 0;
-}
-
-/* ----- ANIMATIONS FONT ---- */
-/* https://codepen.io/frankeno/pen/QWmmxQb */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 12ch; }
-}
-
-@keyframes blink {
-  from { border-right-color: rgba(0, 0, 0, 0.75); }
-  to { border-right-color: transparent; }
+  margin-top: 20vh;
 }
 
 /* ---------- OBJECTIF ---------- */
