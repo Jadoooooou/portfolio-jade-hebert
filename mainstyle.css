@@ -400,10 +400,8 @@ header, section, div {
     gap: 0.5rem;
   }
 
-  .hero img {
-    width: 80%;
-    justify-self: left;
-    grid-area: 2/1/4/4;
+  .portfolio {
+    grid-area: 1/1/4/4;
   }
 
   .name {
@@ -450,17 +448,13 @@ header, section, div {
     padding: 2vh 4vh 2vh 4vh;
   }
 
-  .hero img {
-    width: 40%;
-  }
-
   .name {
     margin: 0;
     grid-area: 4/1/4/4;
   }
 
   .name p:last-child {
-    margin-bottom: 40vh;
+    margin-bottom: 20vh;
   }
 
   .projet img {
