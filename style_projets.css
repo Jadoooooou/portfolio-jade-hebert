@@ -87,7 +87,6 @@ header, section, div {
   text-align: left;
   font-weight: 800;
   font-size: clamp(70px, 8vw, 100px);
-  margin-bottom: 2vh;
   overflow: hidden;
 }
 
@@ -96,23 +95,17 @@ header, section, div {
   height: auto;
 }
 
-.moi {
-  margin: 5vh 0;
-}
-
 .moi h2{
-  font-weight: 300;
-  font-size: clamp(20px, 8vw, 35px);
-  text-align: center;
-  margin: 8vh 0;
+  font-weight: 800;
+  font-size: clamp(20px, 8vw, 55px);
+  margin: 4vh 0;
 }
 
 .moi p:last-child {
-  font-weight: 800;
+  font-weight: 300;
   color: gray;
-  font-size: clamp(20px, 8vw, 35px);
-  text-align: right;
-  margin-top: 20vh;
+  font-size: 20px;
+  text-align: left;
 }
 
 /* ---------- OBJECTIF ---------- */

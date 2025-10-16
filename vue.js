@@ -58,6 +58,7 @@ const app = Vue.createApp({
         '.a-propos-content',
         '.text-wrapper-contact',
         '.contact p:first-of-type',
+        '.moi h2',
         '.moi p',
         '.competences-content h2',
         '.competences-content p',

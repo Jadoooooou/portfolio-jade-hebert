@@ -187,9 +187,6 @@ header, section, div {
   font-weight: 800;
   font-size: clamp(45px, 8vw, 85px);
   overflow: hidden;
-/* ----- border-right: 4px solid #000;---- */
-  animation: typing2 1s steps(10) 0.5s 1 normal both, 
-  blink 500ms steps(50) infinite normal;
 }
 
 .name p:last-child {
