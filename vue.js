@@ -58,10 +58,13 @@ const app = Vue.createApp({
         '.a-propos-content',
         '.text-wrapper-contact',
         '.contact p:first-of-type',
-        '.moi h2',
-        '.moi p',
-        '.competences-content h2',
-        '.competences-content p',
+        '.donnees',
+        '.hero h2',
+        '#objectif h2',
+        '.objectif',
+        '#processus h2',
+        '.processus-content',
+        
       ]);
 
       elements.forEach((el) => {
@@ -90,4 +93,4 @@ const app = Vue.createApp({
   },
 });
 
-const vm = app.mount('.projets-container');
+const vm = app.mount('.container');

@@ -183,12 +183,6 @@ header, section, div {
   text-align: right;
 }
 
-.name p:first-child {
-  font-weight: 800;
-  font-size: clamp(45px, 8vw, 85px);
-  overflow: hidden;
-}
-
 .name p:last-child {
   font-weight: 300;
   font-size: clamp(20px, 8vw, 55px);

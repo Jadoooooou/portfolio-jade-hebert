@@ -84,7 +84,6 @@ header, section, div {
 }
 
 .hero-text{
-  text-align: left;
   font-weight: 800;
   font-size: clamp(70px, 8vw, 100px);
   overflow: hidden;
@@ -95,23 +94,17 @@ header, section, div {
   height: auto;
 }
 
-.moi h2{
-  font-weight: 800;
+.hero h2{
+  text-align: right;
+  font-weight: 300;
   font-size: clamp(20px, 8vw, 55px);
   margin: 4vh 0;
 }
 
-.moi p:last-child {
-  font-weight: 300;
-  color: gray;
-  font-size: 20px;
-  text-align: left;
-}
-
 /* ---------- OBJECTIF ---------- */
-.objectif {
+#objectif {
   display: grid;
-  gap: 2rem;
+  grid-template-columns: 60% 1fr;
   padding: 10vh 2vh;
   margin-top: 5vh;
   margin-bottom: 10vh;
@@ -120,15 +113,34 @@ header, section, div {
   overflow-x: hidden;
 }
 
-.objectif img {
-  width: 60%;
-  height: auto;
+#objectif img {
+  width: 95%;
   border: 2px solid black;
   box-shadow: 3px 3px 0px black;
 }
 
+.donnees {
+  font-weight: 300;
+  color: gray;
+  font-size: 20px;
+  align-self:flex-end;
+}
+
+#objectif h2 {
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 2vh;
+}
+
+.objectif {
+  grid-area: 3/1/3/3;
+  font-weight: 500;
+  font-size: 30px;
+  align-self:flex-end;
+}
+
 /* ---------- PROCESSUS ---------- */
-.processus {
+#processus {
   background-color: #000;
   color: #ffffff;
   display: grid;
@@ -141,14 +153,13 @@ header, section, div {
   overflow-x: hidden;
 }
 
-.processus-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  color: #ffffff;
+#processus h2 {
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 2vh;
 }
 
-.processus-content p {
+.processus-content {
   font-weight: 300;
   font-size: clamp(20px, 8vw, 30px);
   margin: 4vh 0;
