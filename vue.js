@@ -75,11 +75,11 @@ const app = Vue.createApp({
             {
               opacity: 1,
               y: 0,
-              duration: 1.2,
+              duration: 1.5,
               ease: "power2.out",
               scrollTrigger: {
                 trigger: el,
-                start: "top 90%",
+                start: "top 95%",
                 toggleActions: "play none none reverse",
               },
             }
@@ -87,6 +87,16 @@ const app = Vue.createApp({
         }
       });
 
+      // Animation de superposition
+      ScrollTrigger.create({
+        trigger: "#a-propos", 
+        start: "top top",
+        end: "+=100%", 
+        pin: true, 
+        pinSpacing: false, 
+      });
+
+  
       // Force un refresh du layout GSAP une fois tout monté
       ScrollTrigger.refresh();
     },

@@ -86,7 +86,6 @@ header, section, div {
 .portfolio {
   text-align: left;
   font-weight: 800;
-  font-size: 80px;
   margin-top: 5vh;
   margin-bottom: 2vh;
   overflow: hidden;
@@ -95,7 +94,7 @@ header, section, div {
 /* ----- ANIMATION FONT ---- */
 /* ----- https://codepen.io/Juxtopposed/pen/OJrLZvb?editors=1100 ---- */
 .key {
-  font-size: 15vw;
+  font-size: 15rem;
   display: inline-block;
   letter-spacing: -1vw;
   transition: transform 0.2s;
@@ -273,6 +272,7 @@ header, section, div {
   margin-bottom: 10vh;
   width: 100%;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .text-wrapper-propos {
@@ -298,7 +298,27 @@ header, section, div {
   text-align: right;
 }
 
-.a-propos img {
+.a-propos-text .logiciels {
+  text-align: right;
+}
+
+.logiciels img {
+  width: 10%;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.logiciels img:last-child {
+  width: 8%;
+}
+
+.logiciels img:hover {
+  filter: grayscale(0%);
+  transform: translate(-2px, -2px);
+  transition-delay: 0.1s;
+}
+
+.a-propos .portrait {
   width: 40%;
   height: auto;
   justify-self: center;
@@ -317,6 +337,8 @@ header, section, div {
 
 /* ---------- COMPETENCES ---------- */
 .competences {
+  height: 100vh;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 2rem;
@@ -324,6 +346,7 @@ header, section, div {
   color: #fff;
   padding: 10vh 5vw;
   align-items: start;
+  z-index: 2;
 }
 
 .competences-content {
@@ -467,7 +490,7 @@ header, section, div {
     font-size: 50px;
   }
 
-  .a-propos img {
+  .a-propos .portrait {
     justify-self: end;
     width: 80%;
   }
@@ -488,7 +511,7 @@ header, section, div {
 @media (min-width: 1175px) {
 
   .hero {
-    padding: 2vh 4vh 2vh 4vh;
+    padding: 0vh 4vh 2vh 4vh;
   }
 
   .name {
@@ -499,7 +522,11 @@ header, section, div {
   .name p:last-child {
     margin-bottom: 20vh;
   }
-
+  
+  .projets {
+    gap: 1rem;
+  }
+  
   .projet img {
     height: 30vw;
   }
@@ -517,7 +544,7 @@ header, section, div {
     font-size: 50px;
   }
 
-  .a-propos img {
+  .a-propos .portrait {
     width: 60%;
     margin-right: 30%;
   }
