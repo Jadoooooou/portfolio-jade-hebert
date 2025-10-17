@@ -41,11 +41,11 @@ const app = Vue.createApp({
                 ease: "none",
                 scrollTrigger: {
                 trigger: ".projets",
-                pin: true, // fige la section pendant le scroll
-                scrub: 1,  // synchronise l’animation avec le scroll
+                pin: true, 
+                scrub: 1,  
                 start: "top top",
-                end: () => "+=" + (container.scrollWidth * 0.7), // durée du scroll
-                invalidateOnRefresh: true, // recalcul automatique en cas de resize
+                end: () => "+=" + (container.scrollWidth * 0.7), 
+                invalidateOnRefresh: true, 
                 },
             });
         },
