@@ -62,7 +62,6 @@ header, section, div {
 }
 
 @keyframes titre {
-
   0%, 100% {
     font-family: "Goma", sans-serif;
     letter-spacing: 1px;
@@ -87,7 +86,7 @@ header, section, div {
   text-align: left;
   font-weight: 800;
   font-size: 80px;
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-bottom: 2vh;
   overflow: hidden;
 }
@@ -313,6 +312,50 @@ header, section, div {
   font-size: clamp(15px, 1.2vw, 20px);
   padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
   z-index: 2;
+}
+
+/* ---------- COMPETENCES ---------- */
+.competences {
+  background-color: #000;
+  display: grid;
+  gap: 2rem;
+  padding: 10vh 2vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.competences-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: #ffffff;
+}
+
+.competences-content h2{
+  font-weight: 600;
+  font-size: clamp(20px, 8vw, 50px);
+  margin: 4vh 0;
+  text-align: left;
+  color: #ffffff;
+}
+
+.competences-content p:first-of-type {
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 30px);
+  margin: 4vh 0;
+  text-align: right;
+  color: #ffffff;
+}
+
+.competences-content p:nth-of-type(2), .competences-content p:last-of-type {
+  font-weight: 300;
+  font-size: clamp(20px, 8vw, 30px);
+  margin: 4vh 0;
+  text-align: left;
+  color: #ffffff;
 }
 
 /* ---------- CONTACT ---------- */
