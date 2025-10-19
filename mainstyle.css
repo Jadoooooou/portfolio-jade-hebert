@@ -94,7 +94,7 @@ header, section, div {
 /* ----- ANIMATION FONT ---- */
 /* ----- https://codepen.io/Juxtopposed/pen/OJrLZvb?editors=1100 ---- */
 .key {
-  font-size: 5rem;
+  font-size: 8rem;
   display: inline-block;
   letter-spacing: -1vw;
   transition: transform 0.2s;
@@ -318,13 +318,8 @@ header, section, div {
   transition-delay: 0.1s;
 }
 
-.a-propos .portrait {
-  width: 40%;
-  height: auto;
-  justify-self: center;
-  filter: grayscale(100%);
-  border: 2px solid black;
-  box-shadow: 3px 3px 0px black;
+.portrait {
+  display: none;
 }
 
 .button-apropos {
@@ -468,7 +463,11 @@ header, section, div {
 }
 
 /* ---------- MOBILE ---------- */
-@media (max-width: 768px) {
+@media (max-width: 390px) {
+
+  .key {
+    font-size: 5rem;
+  }
 
   /* Désactive la disposition horizontale */
   .projets {
@@ -522,6 +521,10 @@ header, section, div {
     grid-area: 1/1/4/4;
   }
 
+  .key {
+    font-size: 15rem;
+  }
+
   .name {
     text-align: right;
     grid-area: 4/1/4/4;
@@ -537,13 +540,19 @@ header, section, div {
 
   .a-propos-text p {
     text-align: right;
-    font-size: 50px;
+    font-size: 35px;
   }
 
   .a-propos .portrait {
-    justify-self: end;
+    display: unset;
     width: 80%;
+    height: auto;
+    justify-self: end;
+    filter: grayscale(100%);
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
   }
+
 
   .button-apropos {
     width: 35vw;

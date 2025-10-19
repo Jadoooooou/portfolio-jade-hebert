@@ -33,7 +33,7 @@ const app = Vue.createApp({
       if (!container) return;
 
       // Pour mobiles
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 390) {
         gsap.set(container, { xPercent: 0 });
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         return;
@@ -114,7 +114,7 @@ const app = Vue.createApp({
               ease: "power2.out",
               scrollTrigger: {
                 trigger: el,
-                start: startValue,
+                start: "top 90%",
                 toggleActions: "play none none reverse",
               },
             }
