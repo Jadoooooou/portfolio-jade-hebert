@@ -4,6 +4,7 @@ body, html{
   width: 100%;
   height: 100vh;
   margin: 0;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -169,24 +170,29 @@ header, section, div {
   color: #ffffff;
 }
 
-.button {
-  width: 200px;
-  height: 70px;
-  font-size: 30px;
-  border: 2px solid #e1e1de;
-  color: #ffffff;
-  background: #000000;
-  box-shadow: 3px 3px 0px #e1e1de;
+#ref-img {
+  width: 40%; 
+  opacity: 50%;
+}
+
+.button-voir {
+  width: 40%;
+  font-size: clamp(15px, 1.5vw, 22px);
+  padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);          
+  z-index: 2;  
+  border: 2px solid white;
+  color: white;
+  background: black;
+  box-shadow: 3px 3px 0px white;
   font-weight: 500;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.button:hover {
+.button-voir:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0px #e1e1de;
+  box-shadow: 5px 5px 0px white;
 }
-
 .remerciements p {
   font-weight: 300;
   font-size: clamp(20px, 8vw, 30px);
@@ -202,7 +208,7 @@ header, section, div {
   grid-template-rows: 1fr 1fr 10% 1fr;
   gap: 1rem;
   padding: 2vh;
-  margin-top: 10vh;
+  margin-top: 2vh;
   border-bottom: 3px solid black;  
   width: 100%;
   box-sizing: border-box;
@@ -289,41 +295,25 @@ header, section, div {
 /* ---------- GRAND ÉCRAN ---------- */
 @media (min-width: 1000px) {
 
-  #objectif {
-    display: grid;
-    grid-template-columns: 60% 1fr;
-    padding: 10vh 2vh;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  .hero-text{
+    font-size: 8rem;
   }
-  
-  #objectif img {
-    width: 95%;
-    border: 2px solid black;
-    box-shadow: 3px 3px 0px black;
-  }
-  
+
   .donnees {
-    font-weight: 300;
-    color: gray;
-    font-size: 20px;
-    align-self:flex-end;
+    font-size: 25px;
   }
-  
+
   #objectif h2 {
     font-weight: 800;
-    font-size: 45px;
-    margin-bottom: 2vh;
+    font-size: 5rem;
   }
-  
+
   .objectif {
-    grid-area: 3/1/3/3;
-    font-weight: 500;
-    font-size: 30px;
-    align-self:flex-end;
+    font-size: 35px;
+  }
+
+  .text-wrapper-contact {
+    font-size: 70px;
   }
 
 }
