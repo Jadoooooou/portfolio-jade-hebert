@@ -39,5 +39,5 @@ Remplacement de flexbox par Grille CSS
 
 ## Semaine du 19/10
 
-À FAIRE !! RÉCUPÉRER LE PARAMÈTRE D'URL !!
+À FAIRE !! RÉCUPÉRER LE PARAMÈTRE D'URL !! VALIDER CODE SUR W3SCHOOL !!
 
