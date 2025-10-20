@@ -32,3 +32,12 @@ Remplacement de flexbox par Grille CSS
  Ajout du ScrollTrigger   
  Ajout d'une section horizontale   
  Possibilité de copier le couriel électronique
+
+## Semaine du 12/10
+
+
+
+## Semaine du 19/10
+
+À FAIRE !! RÉCUPÉRER LE PARAMÈTRE D'URL !!
+
