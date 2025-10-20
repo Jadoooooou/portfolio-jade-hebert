@@ -33,7 +33,7 @@ const app = Vue.createApp({
       if (!container) return;
 
       // Pour mobiles
-      if (window.innerWidth < 390) {
+      if (window.innerWidth < 400) {
         gsap.set(container, { xPercent: 0 });
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         return;
@@ -84,7 +84,7 @@ const app = Vue.createApp({
     });
 
     console.log("Animations GSAP désactivées sur mobile");
-    return; // ⛔ Stoppe ici la fonction
+    return; 
   }
       const elements = gsap.utils.toArray([
         '.name p:last-child',
