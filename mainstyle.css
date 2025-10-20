@@ -234,15 +234,6 @@ header, section, div {
   margin-top: 4vh;
 }
 
-.button {
-  border: 2px solid black;
-  background: #e1e1de;
-  box-shadow: 3px 3px 0px black;
-  font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
 .button-projet {
   width: 40%;
   font-size: clamp(15px, 1.5vw, 22px);
@@ -251,15 +242,17 @@ header, section, div {
   bottom: -20px;
   left: 90%;           
   z-index: 2;  
+  border: 2px solid black;
+  background: #e1e1de;
+  box-shadow: 3px 3px 0px black;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.button:hover {
+.button-projet:hover {
   transform: translate(-2px, -2px);
   box-shadow: 5px 5px 0px black;
-}
-
-.button p::after {
-  content: " →";
 }
 
 /* ---------- À PROPOS ---------- */
@@ -322,20 +315,9 @@ header, section, div {
   display: none;
 }
 
-.button-apropos {
-  width: 60%;
-  justify-self: center;
-  font-size: clamp(15px, 1.2vw, 20px);
-  padding: clamp(8px, 0.9vw, 18px) clamp(18px, 1.8vw, 35px);
-  z-index: 2;
-}
-
 /* ---------- COMPETENCES ---------- */
 .competences {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 2rem;
   background-color: #000;
   color: #fff;
   padding: 10vh 5vw;
@@ -344,10 +326,9 @@ header, section, div {
 }
 
 .competences-content {
-  grid-area: 1/2/3/3;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto auto;
+  margin: 0 4vw 0 4vw;
 }
 
 .competence-item h3 {
@@ -372,7 +353,22 @@ header, section, div {
 }
 
 .button-cv {
-  grid-area: 3/1/4/2;
+  width: 40%;
+  font-size: clamp(15px, 1.5vw, 22px);
+  padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);          
+  z-index: 2;  
+  border: 2px solid white;
+  color: white;
+  background: black;
+  box-shadow: 3px 3px 0px white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-cv:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px white;
 }
 
 /* ---------- CONTACT ---------- */
@@ -439,6 +435,10 @@ header, section, div {
   font-weight: 500;
   font-size: x-small;
   text-decoration: none;
+}
+
+.button p::after {
+  content: " →";
 }
 
 /* ---------- CURSEUR ---------- */
@@ -553,10 +553,12 @@ header, section, div {
     box-shadow: 3px 3px 0px black;
   }
 
+  .competences {
+    grid-template-columns: 5% 3fr;
+  }
 
-  .button-apropos {
-    width: 35vw;
-    z-index: 2;
+  .competence-item p {
+    font-size: 35px;
   }
 
   .text-wrapper-projet,
@@ -594,6 +596,10 @@ header, section, div {
     width: 20vw;
   }
 
+  .contact {
+    padding: 0 8vw 0 8vw;
+  }
+
   .a-propos-content {
     grid-template-columns: 60% 1fr;
   }
@@ -608,9 +614,12 @@ header, section, div {
     margin-right: 30%;
   }
 
-  .button-apropos {
-    width: 35vw;
-    z-index: 2;
+  .logiciels {
+    margin-bottom: 10vh;
+  }
+
+  .competence-item {
+    margin-bottom: 10vh;
   }
 
 }
