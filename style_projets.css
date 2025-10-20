@@ -4,6 +4,7 @@ body, html{
   width: 100%;
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -47,7 +48,7 @@ header, section, div {
 
 .nav {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: right;
 }
 
@@ -80,13 +81,11 @@ header, section, div {
   padding: 2vh;
   width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 .hero-text{
   font-weight: 800;
-  font-size: clamp(70px, 8vw, 100px);
-  overflow: hidden;
+  font-size: 3rem;
 }
 
 .hero img {
@@ -104,8 +103,9 @@ header, section, div {
 /* ---------- OBJECTIF ---------- */
 #objectif {
   display: grid;
-  grid-template-columns: 60% 1fr;
-  padding: 10vh 2vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  padding: 5vh 2vh;
   margin-top: 5vh;
   margin-bottom: 10vh;
   width: 100%;
@@ -114,26 +114,29 @@ header, section, div {
 }
 
 #objectif img {
-  width: 95%;
+  width: 90vw;
   border: 2px solid black;
   box-shadow: 3px 3px 0px black;
 }
 
 .donnees {
+  grid-area: 2/1/3/3;
+  margin: 2vh 0 2vh 0;
   font-weight: 300;
   color: gray;
-  font-size: 20px;
+  font-size: 15px;
   align-self:flex-end;
 }
 
 #objectif h2 {
+  grid-area: 3/1/4/2;
   font-weight: 800;
   font-size: 45px;
-  margin-bottom: 2vh;
+  margin: 0 0 2vh 0;
 }
 
 .objectif {
-  grid-area: 3/1/3/3;
+  grid-area: 4/1/5/3;
   font-weight: 500;
   font-size: 30px;
   align-self:flex-end;
@@ -234,8 +237,32 @@ header, section, div {
 }
 
 .espace {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 10vh;
   overflow-x: hidden;
+}
+
+.espace p {
+  grid-area: 1/2/2/3;
+  align-self: center;
+  text-align: center;
+  font-size: small;
+}
+
+.espace a {
+  grid-area: 1/3/2/3;
+  align-self: center;
+  text-align: right;
+  padding-right: 2vh;
+  color: #000;
+  font-weight: 500;
+  font-size: x-small;
+  text-decoration: none;
+}
+
+.button p::after {
+  content: " →";
 }
 
 /* ---------- CURSEUR ---------- */
@@ -257,4 +284,46 @@ header, section, div {
   z-index: 9999;
   opacity: 0;
   transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+/* ---------- GRAND ÉCRAN ---------- */
+@media (min-width: 1000px) {
+
+  #objectif {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    padding: 10vh 2vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  #objectif img {
+    width: 95%;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+  }
+  
+  .donnees {
+    font-weight: 300;
+    color: gray;
+    font-size: 20px;
+    align-self:flex-end;
+  }
+  
+  #objectif h2 {
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 2vh;
+  }
+  
+  .objectif {
+    grid-area: 3/1/3/3;
+    font-weight: 500;
+    font-size: 30px;
+    align-self:flex-end;
+  }
+
 }

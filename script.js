@@ -1,5 +1,4 @@
 
-
 const btnRevenir = document.querySelector(".revenir");
 if (btnRevenir) {
   btnRevenir.addEventListener("click", () => {
