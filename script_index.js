@@ -48,7 +48,6 @@ const app = Vue.createApp({
           ease: "none",
           scrollTrigger: {
           trigger: ".projets",
-          pin: true, 
           scrub: 1,  
           start: "top top",
           end: () => "+=" + (container.scrollWidth * 0.7), 
@@ -127,8 +126,6 @@ const app = Vue.createApp({
         trigger: "#a-propos", 
         start: "top top",
         end: "+=100%", 
-        pin: true, 
-        pinSpacing: false, 
       });
 
       // Force un refresh du layout GSAP une fois tout monté
