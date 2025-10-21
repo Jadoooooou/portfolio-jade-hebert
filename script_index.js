@@ -24,7 +24,7 @@ const app = Vue.createApp({
   },
   methods: {
     voirPlus(project) {
-        window.location.href = project.link; // pages de projet
+        window.location.href = `projets.html?id=${project.id}`; // pages de projet
     },
 
     // Section horizontale
@@ -140,9 +140,5 @@ const app = Vue.createApp({
 const vm = app.mount('.container');
 
 // Refresh sur resize/orientation 
-window.addEventListener("resize", () => {
-  ScrollTrigger.refresh();
-});
-window.addEventListener("orientationchange", () => {
-  ScrollTrigger.refresh();
-});
+window.addEventListener("resize", () => {ScrollTrigger.refresh();});
+window.addEventListener("orientationchange", () => {ScrollTrigger.refresh();});

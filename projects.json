@@ -3,23 +3,104 @@
     "id": 1,
     "title": "Animation générative",
     "images": ["medias/animation_generative_01.jpg"],
-    "link": "anim_gen.html"
+    "link": "anim_gen.html",
+
+    "titleHero": "ANIMATION GÉNÉRATIVE",
+    "imgHero": ["medias/animation_generative_02.jpg"],
+    "descriptionHero": "Créer une courte animation générative, alliant expérimentation et créativité.",
+
+    "imgObj": ["medias/animation_generative_01.jpg"],
+
+    "classDonnees": "[ Animation 3D ]",
+    "collabDonnees": "[ Individuel ]",
+    "workDonnees": "[ Recherche d'inspiration, génération et montage ]",
+    "appDonnees": "[ MAYA & DaVinci ]",
+
+    "objectifObj": "Le projet avait pour objectif de créer une animation 3D à l’aide des systèmes d'animations génératifs de MAYA. Il était demandé d’avoir une approche autonome et expérimentale,  combinant recherche de solutions techniques, créativité et flexibilité pour surmonter les défis d’animation.",
+
+    "text1Process": "Tout commence par l’idéation. Le choix s’est porté sur le système de nParticules de MAYA, car cette animation évoquait l’organisation du système solaire. Comme tous mes projets, je voulais procurer un sentiment immersif. Une première tentative a été réalisée qui représentait la Voie Lactée.",
+    "img1Process": ["medias/animation_generative_v1.jpg"],
+    "text2Process": "Insatisfaite du résultat initial et conformément à la consigne de ne pas s’éterniser sur le travail, j'ai recommencer mon projet dans une nouvelle approche, toujours en utilisant le système nParticules. Une fois l'animation complétée, j'ai rajouter de la texture et de la lumière pour renforcer la cohérence. Cette texture provient d'ailleurs de POLIIGON",
+    "img2Process": ["medias/GroundSand005_Sphere.png"],
+    "text3Process": "Les images rendues ont ensuite été montées dans DaVinci, et le tout a été stylisé en intégrant un son, accentuant ainsi l’impact spectaculaire de l’animation malgré sa courte durée.",
+    "creditsProcess": "Sous la direction artistique et technique de Charlène"
+
   },
   {
     "id": 2,
     "title": "Portfolio de photos",
     "images": ["medias/portfolio_accueil.png"],
-    "link": "ptfo_phto.html"
+    "link": "ptfo_phto.html",
+
+    "titleHero": "ANIMATION GÉNÉRATIVE",
+    "imgHero": ["medias/animation_generative_02.jpg"],
+    "descriptionHero": "Le projet avait pour objectif de créer une animation 3D à l’aide des systèmes d'animations génératifs de MAYA. Il était demandé d’avoir une approche autonome et expérimentale,  combinant recherche de solutions techniques, créativité et flexibilité pour surmonter les défis d’animation.",
+
+    "imgObj": ["medias/animation_generative_01.jpg"],
+
+    "ClassDonnees": "ANIMATION GÉNÉRATIVE",
+    "collabDonnees": "ANIMATION GÉNÉRATIVE",
+    "workDonnees": "ANIMATION GÉNÉRATIVE",
+    "appDonnees": "ANIMATION GÉNÉRATIVE",
+    
+    "objectifObj": "ANIMATION GÉNÉRATIVE",
+
+    "text1Process": "ANIMATION GÉNÉRATIVE",
+    "img1Process": ["medias/animation_generative_v1.jpg"],
+    "text2Process": "ANIMATION GÉNÉRATIVE",
+    "img2Process": "ANIMATION GÉNÉRATIVE",
+    "text3Process": "ANIMATION GÉNÉRATIVE",
+    "creditsProcess": "ANIMATION GÉNÉRATIVE"
   },
   {
     "id": 3,
     "title": "Déconnexion - Projet paysage",
     "images": ["medias/paysage_03.jpg"],
-    "link": "proj_pays.html"
+    "link": "proj_pays.html",
+
+    "titleHero": "ANIMATION GÉNÉRATIVE",
+    "imgHero": ["medias/animation_generative_02.jpg"],
+    "descriptionHero": "Le projet avait pour objectif de créer une animation 3D à l’aide des systèmes d'animations génératifs de MAYA. Il était demandé d’avoir une approche autonome et expérimentale,  combinant recherche de solutions techniques, créativité et flexibilité pour surmonter les défis d’animation.",
+
+    "imgObj": ["medias/animation_generative_01.jpg"],
+
+    "ClassDonnees": "ANIMATION GÉNÉRATIVE",
+    "collabDonnees": "ANIMATION GÉNÉRATIVE",
+    "workDonnees": "ANIMATION GÉNÉRATIVE",
+    "appDonnees": "ANIMATION GÉNÉRATIVE",
+    
+    "objectifObj": "ANIMATION GÉNÉRATIVE",
+
+    "text1Process": "ANIMATION GÉNÉRATIVE",
+    "img1Process": ["medias/animation_generative_v1.jpg"],
+    "text2Process": "ANIMATION GÉNÉRATIVE",
+    "img2Process": "ANIMATION GÉNÉRATIVE",
+    "text3Process": "ANIMATION GÉNÉRATIVE",
+    "creditsProcess": "ANIMATION GÉNÉRATIVE"
   },
   {
     "id": 4,
     "title": "TEST",
-    "images": ["medias/animation_generative_01.jpg"]
+    "images": ["medias/animation_generative_01.jpg"],
+
+    "titleHero": "ANIMATION GÉNÉRATIVE",
+    "imgHero": ["medias/animation_generative_02.jpg"],
+    "descriptionHero": "Le projet avait pour objectif de créer une animation 3D à l’aide des systèmes d'animations génératifs de MAYA. Il était demandé d’avoir une approche autonome et expérimentale,  combinant recherche de solutions techniques, créativité et flexibilité pour surmonter les défis d’animation.",
+
+    "imgObj": ["medias/animation_generative_01.jpg"],
+
+    "ClassDonnees": "ANIMATION GÉNÉRATIVE",
+    "collabDonnees": "ANIMATION GÉNÉRATIVE",
+    "workDonnees": "ANIMATION GÉNÉRATIVE",
+    "appDonnees": "ANIMATION GÉNÉRATIVE",
+    
+    "objectifObj": "ANIMATION GÉNÉRATIVE",
+
+    "text1Process": "ANIMATION GÉNÉRATIVE",
+    "img1Process": ["medias/animation_generative_v1.jpg"],
+    "text2Process": "ANIMATION GÉNÉRATIVE",
+    "img2Process": "ANIMATION GÉNÉRATIVE",
+    "text3Process": "ANIMATION GÉNÉRATIVE",
+    "creditsProcess": "ANIMATION GÉNÉRATIVE"
   }
 ]

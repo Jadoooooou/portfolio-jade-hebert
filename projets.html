@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets -  {{  }}</title>
+    <link rel="stylesheet" href="../style_projets.css"/>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Draggable.min.js"></script>
+</head>
+<body>
+  <main id="app" class="container" v-if="projet">
+
+    <!-- En-tête -->
+    <header id="header" class="header">
+      <p class="revenir" @click="retourAccueil()">PORT<br>FOLIO</p>
+      <nav class="nav">
+        [ 
+        <a href="#objectif">Objectif</a>, 
+        <a href="#processus">Processus</a>, 
+        <a href="#contact">Contact</a> 
+        ]
+      </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero">
+      <h1 class="hero-text"> {{ projet.titleHero }} </h1>
+      <img :src="projet.imgHero[0]" alt="Animation générative">
+      <h2>{{ projet.descriptionHero }}</h2>
+    </section>
+
+    <!-- Section Objectf -->
+    <section id="objectif">
+      <img :src="projet.imgObj[0]" alt="Animation générative">
+      <p class="donnees"> {{ projet.classDonnees }} <br> {{ projet.collabDonnees }} <br> {{ projet.workDonnees }} <br> {{ projet.appDonnees }} </p>
+      <h2>OBJECTIF</h2>
+      <p class="objectif">{{ projet.objectifObj }}</p>
+    </section>
+
+    <!-- Section Processus -->
+    <section id="processus">
+      <h2>PROCESSUS</h2>
+      <p class="processus-content"> {{ projet.text1Process }} </p>
+      <img :src="projet.img1Process[0]" alt="Premier rendu">
+      <p class="processus-content"> {{ projet.text2Process }} </p>
+      <img id="ref-img" :src="projet.img2Process[0]" alt="Texture 3D">
+      <p class="processus-content"> {{ projet.text3Process }} </p>
+      <button class="button-voir">voir le projet</button>
+      <div class="remerciements"><p>{{ projet.creditsProcess }}</p></div>
+    </section>
+
+    <!-- Section Contacts -->
+    <section id="contact" class="contact">
+      <h2 class="text-wrapper-contact">CONTACTS</h2>
+      <p>Travaillons ensemble !</p>
+      <p>[Écrivez-moi un message]</p>
+      <div class="mail">jade.hebert@gmail.com</div>
+    </section>
+
+    <div class="espace">
+      <p>© 2025 Jade Hébert. Tous droits réservés.</p>
+      <a href="#header">[ VERS LE HAUT ]</a>
+    </div>
+  </main>
+  <script src="script_projets.js"></script>
+  <script src="cursor.js"></script>
+</body>
+</html>
