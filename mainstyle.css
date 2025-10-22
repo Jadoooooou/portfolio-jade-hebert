@@ -192,39 +192,38 @@ header, section, div {
 /* ---------- PROJETS ---------- */
 .projets {
   display: grid;
-  gap: 3rem;
-  padding: 2vh;
+  grid-template-rows: auto auto;
+  padding-left: 2vh;
   margin-bottom: 5vh;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   box-sizing: border-box;
-}
-
-/* ----- HORIZONTAL ---- */
-.projets-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 5%;
-  flex-wrap: nowrap;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.swiper-wrapper {
-  display: flex;
-}
-
-.swiper-slide {
-  flex-shrink: 0;
-  width: auto; 
-  scroll-snap-align: start;
 }
 
 .text-wrapper-projet {
   font-weight: 800;
   font-size: 45px;
-  margin-bottom: 2vh;
+}
+
+/* ----- HORIZONTAL ---- */
+.swiper.projets-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center; 
+  height: 100%;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 60vw !important; /* pour écraser le style de base */
+  height: 100% !important;
+  margin-right: 20vw !important;
+  scroll-snap-align: start;
 }
 
 .projet {
@@ -250,9 +249,7 @@ header, section, div {
   width: 60%;
   font-size: clamp(15px, 1.5vw, 22px);
   padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
-  position: absolute;
-  bottom: 150px;
-  left: 40%;           
+  margin-top: 2vh;        
   z-index: 2;  
   border: 2px solid black;
   background: #e1e1de;
@@ -486,24 +483,40 @@ header, section, div {
     font-size: 5rem;
   }
 
-  /* Désactive la disposition horizontale */
   .projets {
-    padding: 0vh;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 2vh 2vh;
+    margin-bottom: 10vh;
   }
 
-  .projets-container {
-    display: grid;
-    grid-template-columns: 100vw;
-    gap: 2rem;
+  /* Désactivation du Swiper */
+  .swiper.projets-container {
     width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    flex-direction: column;
+    align-items: center;
     height: auto;
   }
 
+  .swiper-slide {
+    width: 100% !important;
+    margin-bottom: 4rem;
+  }
+
   .projet {
-    width: 100vh;
-    padding: 2vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+    position: relative;
   }
 
   .projet img {
@@ -512,7 +525,7 @@ header, section, div {
   }
 
   .button-projet {
-    width: 40%;
+    width: 50%;
     position: absolute;
     bottom: -30px;
     left: 45%;           
@@ -547,6 +560,10 @@ header, section, div {
     grid-area: 4/1/4/4;
   }
 
+  .swiper-slide {
+    margin-right: 12vw !important;
+  }
+  
   .button-projet {
     width: 30vw;
     bottom: 10px;
@@ -605,10 +622,15 @@ header, section, div {
   
   .projets {
     gap: 1rem;
+    height: auto;
+  }
+
+  .swiper-slide {
+    margin-right: -12vw !important;
   }
   
   .projet img {
-    height: 30vw;
+    height: 22vw;
   }
 
   .button-projet {

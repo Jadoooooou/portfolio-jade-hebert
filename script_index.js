@@ -40,23 +40,14 @@ const app = Vue.createApp({
        // Créer le swiper
       const projetsSwiper = new Swiper('.projets-container', {
         slidesPerView: 'auto',
-        spaceBetween: 6,
+        spaceBetween: 8,
         grabCursor: true,
-        loop: false,
         speed: 800,
         mousewheel: {
           forceToAxis: true,
         },
       });
     },
-
-    //  const projetsSwiper = new Swiper('.projets-container', {
-    //  slidesPerView: 'auto',
-    //  spaceBetween: 6,
-    //  autoplay: {
-    //      delay: 1200,
-    //  }
-    //});
   
     // Dévoilement vertical
     initTextAnimations() {
