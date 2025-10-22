@@ -37,22 +37,26 @@ const app = Vue.createApp({
         return;
       }
 
-      // Réinitialise les éventuels anciens ScrollTrigger
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-
-      // Animation horizontale
-      gsap.to(container, {
-          xPercent: -80 * (container.children.length - 1),
-          ease: "none",
-          scrollTrigger: {
-          trigger: ".projets",
-          scrub: 1,  
-          start: "top top",
-          end: () => "+=" + (container.scrollWidth * 0.7), 
-          invalidateOnRefresh: true, 
-          },
+       // Créer le swiper
+      const projetsSwiper = new Swiper('.projets-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 6,
+        grabCursor: true,
+        loop: false,
+        speed: 800,
+        mousewheel: {
+          forceToAxis: true,
+        },
       });
     },
+
+    //  const projetsSwiper = new Swiper('.projets-container', {
+    //  slidesPerView: 'auto',
+    //  spaceBetween: 6,
+    //  autoplay: {
+    //      delay: 1200,
+    //  }
+    //});
   
     // Dévoilement vertical
     initTextAnimations() {

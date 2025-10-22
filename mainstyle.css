@@ -206,7 +206,18 @@ header, section, div {
   gap: 5%;
   flex-wrap: nowrap;
   height: 100%;
-  width: 33%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto; 
+  scroll-snap-align: start;
 }
 
 .text-wrapper-projet {
