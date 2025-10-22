@@ -196,6 +196,7 @@ header, section, div {
   padding: 2vh;
   margin-bottom: 5vh;
   width: 100%;
+  height: 90vh;
   box-sizing: border-box;
 }
 
@@ -223,7 +224,6 @@ header, section, div {
 .text-wrapper-projet {
   font-weight: 800;
   font-size: 45px;
-  padding: 2vh;
   margin-bottom: 2vh;
 }
 
@@ -251,8 +251,8 @@ header, section, div {
   font-size: clamp(15px, 1.5vw, 22px);
   padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
   position: absolute;
-  bottom: -20px;
-  left: 90%;           
+  bottom: 150px;
+  left: 40%;           
   z-index: 2;  
   border: 2px solid black;
   background: #e1e1de;
@@ -549,6 +549,8 @@ header, section, div {
 
   .button-projet {
     width: 30vw;
+    bottom: 10px;
+    left: 60%;  
   }
 
   .a-propos-content {
