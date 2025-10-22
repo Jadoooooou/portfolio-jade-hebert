@@ -8,8 +8,6 @@ const app = Vue.createApp({
     };
   },
   mounted() {
-    console.log("L'app Vue a été créée et montée au DOM (mounted) !");
-
     // C'est ici qu'on récupère (fetch) les donnée
     fetch("projects.json")
         .then((response) => response.json())

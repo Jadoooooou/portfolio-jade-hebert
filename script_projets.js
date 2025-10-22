@@ -1,8 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
-
 const app = Vue.createApp({
+
   data() {
     return {
+      // 
       projet: null,
     };
   },
@@ -21,7 +22,8 @@ const app = Vue.createApp({
       });
   },
   methods: {
-    retourAccueil() {
+    // Pour revenir à la page d'accueil
+    revenir() {
       window.location.href = "index.html";
     },
 

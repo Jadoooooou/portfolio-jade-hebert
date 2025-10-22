@@ -95,7 +95,7 @@ header, section, div {
 /* ----- ANIMATION FONT ---- */
 /* ----- https://codepen.io/Juxtopposed/pen/OJrLZvb?editors=1100 ---- */
 .key {
-  font-size: 8rem;
+  font-size: 6.2rem;
   display: inline-block;
   letter-spacing: -1vw;
   transition: transform 0.2s;
@@ -236,7 +236,7 @@ header, section, div {
 }
 
 .button-projet {
-  width: 40%;
+  width: 60%;
   font-size: clamp(15px, 1.5vw, 22px);
   padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
   position: absolute;
@@ -351,6 +351,11 @@ header, section, div {
 
 .competence-item:last-of-type {
   grid-area: 2/1/3/2;
+}
+
+.competences button {
+  margin-top: 5vh;
+  justify-self: right;
 }
 
 .button-cv {
@@ -523,7 +528,7 @@ header, section, div {
   }
 
   .key {
-    font-size: 15rem;
+    font-size: 14rem;
   }
 
   .name {
