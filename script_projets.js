@@ -17,7 +17,29 @@ const app = Vue.createApp({
         this.projet = data.find(p => p.id == projetId);
 
         this.$nextTick(() => {
+          // Attendre le chargement complet des images
+        const images = document.querySelectorAll('img');
+        let loaded = 0;
+        if (images.length === 0) {
           this.initTextAnimations();
+          return;
+        }
+
+        images.forEach(img => {
+          if (img.complete) loaded++;
+          else img.addEventListener('load', () => {
+            loaded++;
+            if (loaded === images.length) {
+              this.initTextAnimations();
+              setTimeout(() => ScrollTrigger.refresh(), 300);
+            }
+          });
+        });
+
+        if (loaded === images.length) {
+          this.initTextAnimations();
+          setTimeout(() => ScrollTrigger.refresh(), 300);
+        }
         });
       });
   },
@@ -38,6 +60,9 @@ const app = Vue.createApp({
           '.objectif',
           '#processus h2',
           '.processus-content',
+          '#processus img',
+          '.button-voir',
+          '.remerciements',
         ]);
 
         elements.forEach((el) => {
@@ -59,16 +84,20 @@ const app = Vue.createApp({
         '.objectif',
         '#processus h2',
         '.processus-content',
+        '#processus img',
+        '.button-voir',
+        '.remerciements',
       ]);
 
       elements.forEach((el) => {
         if (el) {
-          gsap.fromTo(el,
+          gsap.fromTo(
+            el,
             { opacity: 0, y: 50 },
             {
               opacity: 1,
               y: 0,
-              duration: 1.2,
+              duration: 1.5,
               ease: "power2.out",
               scrollTrigger: {
                 trigger: el,
