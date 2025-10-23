@@ -164,14 +164,22 @@ header, section, div {
 }
 
 .processus-content {
-  font-weight: 300;
-  font-size: clamp(20px, 8vw, 30px);
-  margin: 4vh 0;
+  width: 90vw;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 1vh 0;
   color: #ffffff;
 }
 
-#ref-img {
+#processus img:first-of-type {
+  width: 90vw; 
+  margin: 2vh 0;
+  justify-self: center;
+}
+
+#processus img:last-of-type {
   width: 40%; 
+  justify-self: center;
   opacity: 50%;
 }
 
