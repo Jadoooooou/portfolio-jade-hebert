@@ -42,7 +42,6 @@ const app = Vue.createApp({
         slidesPerView: 'auto',
         spaceBetween: 8,
         grabCursor: true,
-        speed: 800,
         mousewheel: {
           forceToAxis: true,
         },
