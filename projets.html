@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets -  {{  }}</title>
+    <title>Projets</title>
     <link rel="stylesheet" href="../style_projets.css"/>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
@@ -47,7 +47,7 @@
       <p class="processus-content"> {{ projet.text1Process }} </p>
       <img :src="projet.img1Process[0]" alt="Premier rendu">
       <p class="processus-content"> {{ projet.text2Process }} </p>
-      <img id="ref-img" :src="projet.img2Process[0]" alt="Texture 3D">
+      <img :src="projet.img2Process[0]" alt="Texture 3D">
       <p class="processus-content"> {{ projet.text3Process }} </p>
       <button class="button-voir">voir le projet</button>
       <div class="remerciements"><p>{{ projet.creditsProcess }}</p></div>
