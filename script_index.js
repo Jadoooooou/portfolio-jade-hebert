@@ -53,30 +53,30 @@ const app = Vue.createApp({
       
       // Désactiver l'animation sur mobile
       if (window.innerWidth < 768) {
-      const elements = gsap.utils.toArray([
-        '.name p:last-child',
-        '.text-wrapper-projet',
-        '.text-wrapper-propos',
-        '.a-propos-content',
-        '.text-wrapper-contact',
-        '.contact p:first-of-type',
-        '.donnees',
-        '.hero h2',
-        '#objectif h2',
-        '.objectif',
-        '#processus h2',
-        '.processus-content',
-      ]);
+        const elements = gsap.utils.toArray([
+          '.name p:last-child',
+          '.text-wrapper-projet',
+          '.text-wrapper-propos',
+          '.a-propos-content',
+          '.text-wrapper-contact',
+          '.contact p:first-of-type',
+          '.donnees',
+          '.hero h2',
+          '#objectif h2',
+          '.objectif',
+          '#processus h2',
+          '.processus-content',
+        ]);
 
-    elements.forEach((el) => {
-      if (el) {
-        gsap.set(el, { opacity: 1, y: 0 });
+        elements.forEach((el) => {
+          if (el) {
+            gsap.set(el, { opacity: 1, y: 0 });
+          }
+        });
+
+        console.log("Animations GSAP désactivées sur mobile");
+        return; 
       }
-    });
-
-    console.log("Animations GSAP désactivées sur mobile");
-    return; 
-  }
       const elements = gsap.utils.toArray([
         '.name p:last-child',
         '.text-wrapper-projet',

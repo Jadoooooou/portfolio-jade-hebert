@@ -33,10 +33,10 @@
     "link": "ptfo_phto.html",
 
     "titleHero": "PORTFOLIO DE PHOTOS",
-    "imgHero": ["medias/animation_generative_02.jpg"],
+    "imgHero": ["medias/portfolio_accueil.png"],
     "descriptionHero": "Création d’un prototype interactif d’un portfolio créatif, original et qui reflète ma personnalité.",
 
-    "imgObj": ["medias/animation_generative_01.jpg"],
+    "imgObj": ["medias/portfolio_graphique.png"],
 
     "ClassDonnees": "[ Design graphique ]",
     "collabDonnees": "[ Individuel ]",
@@ -46,9 +46,9 @@
     "objectifObj": "Le projet avait pour objectif de concevoir le design d’un portfolio à l’aide de Figna, en suivant un processus complet allant de la création de maquettes graphiques à la réalisation d’un prototype interactif : recherche d’inspirations et élaboration d’une planche d’ambiance, puis sélection et présentation des styles finaux dans une planche de styles.",
 
     "text1Process": "Pour développer mon concept visuel, je me suis inspirée de sites web au design épuré et fonctionnel, combinant une esthétique moderne proche des magazines avec une expérience utilisateur intuitive. J’ai exploré différents styles visuels — du brutalisme digital à des compositions plus fluides et colorées.",
-    "img1Process": ["medias/animation_generative_v1.jpg"],
+    "img1Process": ["medias/portfolio_moodboard_01.png"],
     "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une oage de contact et un logo.",
-    "img2Process": ["medias/animation_generative_v1.jpg"],
+    "img2Process": ["medias/portfolio_prototype.png"],
     "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio, puis j'ai incorporé mes couleurs de mon moodboard ainsi que ma police, les élements UI (bouton et carroussel) et j'ai disposé mes images et textes comme les sites d'inspirations. Finalement, j'ai créé un prototype interactif sur Figma, simulant les animations et le comportement de mon portfolio.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle"
   },
@@ -59,10 +59,10 @@
     "link": "proj_pays.html",
 
     "titleHero": "DÉCONNEXION",
-    "imgHero": ["medias/animation_generative_02.jpg"],
+    "imgHero": ["medias/paysage_03.jpg"],
     "descriptionHero": "Réalisation d’un environnement 3D et de plusieurs séquences d’animation autour du même thème, inspiré du montage sonore créé dans le cours d'audio. ",
 
-    "imgObj": ["medias/animation_generative_01.jpg"],
+    "imgObj": ["medias/paysage_01.jpg"],
 
     "ClassDonnees": "[ Animation 3D ]",
     "collabDonnees": "[ Individuel ]",
@@ -72,9 +72,9 @@
     "objectifObj": "Le projet avait pour objectif de réaliser un court métrage d'un environnement 3D d’une durée minimale de 60 secondes. L’intention était de capter l’attention du spectateur et de faire vivre un court moment de contemplation ou d’émotions fortes.",
 
     "text1Process": "Je suis partie en fonction de ma trame sonore (ambiance de sortie en boîte de nuit), guidant ainsi le choix des modèles 3D et de l'environnement visuel. J'ai d'ailleurs porter mon choix sur le modèle de GGG",
-    "img1Process": ["medias/animation_generative_v1.jpg"],
+    "img1Process": ["medias/paysage_moodboard.png"],
     "text2Process": "Une fois le modèle importé dans MAYA, j'ai refait la palette de couleur pour qu'il concorde avec mon ambiance désiré et enrichis l'éclairage pour renforcer l'immersion du spectateur. La caméra a ensuite été animée et la scène découpée et recréée pour l'animée. Je voulais recréer la sensation de chaos de formes, où les repères se dissolvent, le temps s'étire et le lâcher prise devient inévitable.",
-    "img2Process": ["medias/animation_generative_v1.jpg"],
+    "img2Process": ["medias/paysage_02.jpg"],
     "text3Process": "Quatres séquences ont été rendues : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. Ses séquences ont ensuite été montées dans DaVinci, où les visuels et la trame sonore ont été combinés pour former une composition cohérente.",
     "creditsProcess": "Sous la direction artistique et technique de Charlène"
   },
