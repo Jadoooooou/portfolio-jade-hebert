@@ -319,6 +319,20 @@ header, section, div {
   .objectif {
     font-size: 35px;
   }
+  
+  #objectif img {
+    width: 50vw;
+  }
+
+  #processus img:first-of-type {
+    width: 40vw; 
+    justify-self: left;
+  }
+
+  #processus img:last-of-type {
+    width: 40vw; 
+    justify-self: left;
+  }
 
   .text-wrapper-contact {
     font-size: 70px;
