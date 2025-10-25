@@ -45,6 +45,7 @@ header, section, div {
 .revenir {
   font-weight: 800;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .nav {
@@ -185,6 +186,7 @@ header, section, div {
 
 .button-voir {
   width: 40%;
+  justify-self: center;
   font-size: clamp(15px, 1.5vw, 22px);
   padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);          
   z-index: 2;  
@@ -326,12 +328,10 @@ header, section, div {
 
   #processus img:first-of-type {
     width: 40vw; 
-    justify-self: left;
   }
 
   #processus img:last-of-type {
     width: 40vw; 
-    justify-self: left;
   }
 
   .text-wrapper-contact {
