@@ -194,7 +194,6 @@ header, section, div {
   display: grid;
   grid-template-rows: auto auto;
   padding-left: 2vh;
-  margin-bottom: 5vh;
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
@@ -253,6 +252,7 @@ header, section, div {
   margin-top: 2vh;        
   z-index: 2;  
   border: 2px solid black;
+  color: black;
   background: #e1e1de;
   box-shadow: 3px 3px 0px black;
   font-weight: 500;
