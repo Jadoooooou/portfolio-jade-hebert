@@ -23,7 +23,7 @@
     "text2Process": "Insatisfaite du résultat initial et conformément à la consigne de ne pas s’éterniser sur le travail, j'ai recommencer mon projet dans une nouvelle approche, toujours en utilisant le système nParticules. Une fois l'animation complétée, j'ai rajouter de la texture et de la lumière pour renforcer la cohérence. Cette texture provient d'ailleurs de POLIIGON",
     "img2Process": ["medias/GroundSand005_Sphere.png"],
     "text3Process": "Les images rendues ont ensuite été montées dans DaVinci, et le tout a été stylisé en intégrant un son, accentuant ainsi l’impact spectaculaire de l’animation malgré sa courte durée.",
-    "creditsProcess": "Sous la direction artistique et technique de Charlène"
+    "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
 
   },
   {
@@ -50,7 +50,7 @@
     "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une oage de contact et un logo.",
     "img2Process": ["medias/portfolio_prototype.png"],
     "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio, puis j'ai incorporé mes couleurs de mon moodboard ainsi que ma police, les élements UI (bouton et carroussel) et j'ai disposé mes images et textes comme les sites d'inspirations. Finalement, j'ai créé un prototype interactif sur Figma, simulant les animations et le comportement de mon portfolio.",
-    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle"
+    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   },
   {
     "id": 3,
@@ -76,31 +76,31 @@
     "text2Process": "Une fois le modèle importé dans MAYA, j'ai refait la palette de couleur pour qu'il concorde avec mon ambiance désiré et enrichis l'éclairage pour renforcer l'immersion du spectateur. La caméra a ensuite été animée et la scène découpée et recréée pour l'animée. Je voulais recréer la sensation de chaos de formes, où les repères se dissolvent, le temps s'étire et le lâcher prise devient inévitable.",
     "img2Process": ["medias/paysage_02.jpg"],
     "text3Process": "Quatres séquences ont été rendues : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. Ses séquences ont ensuite été montées dans DaVinci, où les visuels et la trame sonore ont été combinés pour former une composition cohérente.",
-    "creditsProcess": "Sous la direction artistique et technique de Charlène"
+    "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
   },
   {
     "id": 4,
-    "title": "TEST",
-    "images": ["medias/animation_generative_01.jpg"],
+    "title": "Publicité web",
+    "images": ["medias/publicite_02.png"],
 
-    "titleHero": "ANIMATION GÉNÉRATIVE",
-    "imgHero": ["medias/animation_generative_02.jpg"],
-    "descriptionHero": "Le projet avait pour objectif de créer une animation 3D à l’aide des systèmes d'animations génératifs de MAYA. Il était demandé d’avoir une approche autonome et expérimentale,  combinant recherche de solutions techniques, créativité et flexibilité pour surmonter les défis d’animation.",
+    "titleHero": "PUBLICITÉ WEB",
+    "imgHero": ["medias/publicite_01.png"],
+    "descriptionHero": "Réaliser la bannière publicitaire dans divers formats numérique pour promouvoir une même campagne marketing",
 
-    "imgObj": ["medias/animation_generative_01.jpg"],
+    "imgObj": ["medias/publicite_02.png"],
 
-    "ClassDonnees": "ANIMATION GÉNÉRATIVE",
-    "collabDonnees": "ANIMATION GÉNÉRATIVE",
-    "workDonnees": "ANIMATION GÉNÉRATIVE",
-    "appDonnees": "ANIMATION GÉNÉRATIVE",
+    "ClassDonnees": "[ Design graphique ]",
+    "collabDonnees": "[ Individuel ]",
+    "workDonnees": "[ Recherche de sujet, analyse de communication visuelle et conception de bannières publicitaires ]",
+    "appDonnees": "[ Figma ]",
     
-    "objectifObj": "ANIMATION GÉNÉRATIVE",
+    "objectifObj": "Le projet avait pour objectif de réaliser une affiche publicitaire web selon les structures de communications et en faisant une analyse du message. Design graphique par la suite de formats de publicité numérique (pop-ups, instagram, facebook) pour un sujet culturel choisi.",
 
     "text1Process": "ANIMATION GÉNÉRATIVE",
-    "img1Process": ["medias/animation_generative_v1.jpg"],
+    "img1Process": ["medias/publicite_moodboard.png"],
     "text2Process": "ANIMATION GÉNÉRATIVE",
-    "img2Process": "ANIMATION GÉNÉRATIVE",
+    "img2Process": ["medias/publicite_03.png"],
     "text3Process": "ANIMATION GÉNÉRATIVE",
-    "creditsProcess": "ANIMATION GÉNÉRATIVE"
+    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   }
 ]
