@@ -49,7 +49,7 @@
       <p class="processus-content"> {{ projet.text2Process }} </p>
       <img :src="projet.img2Process[0]" alt="Texture 3D">
       <p class="processus-content"> {{ projet.text3Process }} </p>
-      <button class="button-voir">voir le projet</button>
+      <button class="button-voir" @click="voirProjet">voir le projet</button>
       <div class="remerciements"><p>{{ projet.creditsProcess }}</p></div>
     </section>
 

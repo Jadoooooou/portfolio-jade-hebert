@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Animation générative",
     "images": ["medias/animation_generative_01.jpg"],
-    "link": "anim_gen.html",
+    "link": "https://youtu.be/GNn2kjDuReM",
 
     "titleHero": "ANIMATION GÉNÉRATIVE",
     "imgHero": ["medias/animation_generative_02.jpg"],
@@ -30,7 +30,7 @@
     "id": 2,
     "title": "Portfolio de photos",
     "images": ["medias/portfolio_accueil.png"],
-    "link": "ptfo_phto.html",
+    "link": "https://www.figma.com/design/PJl1QVdefYJRyqASUitmoR/hebert_jade__T04_582-201MO?t=oRpOyULxuzdznX5q-1",
 
     "titleHero": "PORTFOLIO DE PHOTOS",
     "imgHero": ["medias/portfolio_accueil.png"],
@@ -54,9 +54,9 @@
   },
   {
     "id": 3,
-    "title": "Déconnexion - Projet paysage",
+    "title": "Déconnexion",
     "images": ["medias/paysage_03.jpg"],
-    "link": "proj_pays.html",
+    "link": "https://youtu.be/oxHs42J_gNQ",
 
     "titleHero": "DÉCONNEXION",
     "imgHero": ["medias/paysage_03.jpg"],
@@ -82,6 +82,7 @@
     "id": 4,
     "title": "Publicité web",
     "images": ["medias/publicite_02.png"],
+    "link": "https://www.figma.com/design/NMTBFsotgb1tqf7dX7TT7C/hebert_jade__T02_582-201MO?t=oRpOyULxuzdznX5q-1",
 
     "titleHero": "PUBLICITÉ WEB",
     "imgHero": ["medias/publicite_02.png"],
