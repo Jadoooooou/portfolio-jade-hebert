@@ -21,7 +21,7 @@
     "text1Process": "Tout commence par l’idéation. Le choix s’est porté sur le système de nParticules de MAYA, car cette animation évoquait l’organisation du système solaire. Comme tous mes projets, je voulais procurer un sentiment immersif. Une première tentative a été réalisée qui représentait la Voie Lactée.",
     "img1Process": ["medias/animation_generative_v1.jpg"],
     "text2Process": "Insatisfaite du résultat initial et conformément à la consigne de ne pas s’éterniser sur le travail, j'ai recommencer mon projet dans une nouvelle approche, toujours en utilisant le système nParticules. Une fois l'animation complétée, j'ai rajouter de la texture et de la lumière pour renforcer la cohérence. Cette texture provient d'ailleurs de POLIIGON",
-    "img2Process": ["medias/GroundSand005_Sphere.png"],
+    "img2Process": ["medias/animation_generative_docu.png"],
     "text3Process": "Les images rendues ont ensuite été montées dans DaVinci, et le tout a été stylisé en intégrant un son, accentuant ainsi l’impact spectaculaire de l’animation malgré sa courte durée.",
     "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
 
@@ -38,7 +38,7 @@
 
     "imgObj": ["medias/portfolio_graphique.png"],
 
-    "ClassDonnees": "[ Design graphique ]",
+    "classDonnees": "[ Design graphique ]",
     "collabDonnees": "[ Individuel ]",
     "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphique, et création d'un prototype ]",
     "appDonnees": "[ Figma ]",
@@ -64,7 +64,7 @@
 
     "imgObj": ["medias/paysage_01.jpg"],
 
-    "ClassDonnees": "[ Animation 3D ]",
+    "classDonnees": "[ Animation 3D ]",
     "collabDonnees": "[ Individuel ]",
     "workDonnees": "[ Recherche d'inspiration, animation et montage ]",
     "appDonnees": "[ MAYA & DaVinci ]",
@@ -84,23 +84,23 @@
     "images": ["medias/publicite_02.png"],
 
     "titleHero": "PUBLICITÉ WEB",
-    "imgHero": ["medias/publicite_01.png"],
+    "imgHero": ["medias/publicite_02.png"],
     "descriptionHero": "Réaliser la bannière publicitaire dans divers formats numérique pour promouvoir une même campagne marketing",
 
-    "imgObj": ["medias/publicite_02.png"],
+    "imgObj": ["medias/publicite_01.png"],
 
-    "ClassDonnees": "[ Design graphique ]",
+    "classDonnees": "[ Design graphique ]",
     "collabDonnees": "[ Individuel ]",
     "workDonnees": "[ Recherche de sujet, analyse de communication visuelle et conception de bannières publicitaires ]",
     "appDonnees": "[ Figma ]",
     
     "objectifObj": "Le projet avait pour objectif de réaliser une affiche publicitaire web selon les structures de communications et en faisant une analyse du message. Design graphique par la suite de formats de publicité numérique (pop-ups, instagram, facebook) pour un sujet culturel choisi.",
 
-    "text1Process": "ANIMATION GÉNÉRATIVE",
+    "text1Process": "Puique j'aime beaucoup les festivals de musique, j'ai décidé de faire une campagne sur le célèbre festival d'OSHEAGA. Pour développer mon concept visuel, je me suis inspirée d'images mêlant le glitch, le collage et l'effet thermique, d'où j'en ai tirer ma palette de couleur.",
     "img1Process": ["medias/publicite_moodboard.png"],
-    "text2Process": "ANIMATION GÉNÉRATIVE",
+    "text2Process": "La campagne devait respecter les structures de communication et une analyse du message devait être élaborée. Suite à quoi, j'ai conçu en premier lieu une bannière de type pop-up, en y intégrant les éléments de ma planche de style.",
     "img2Process": ["medias/publicite_03.png"],
-    "text3Process": "ANIMATION GÉNÉRATIVE",
+    "text3Process": "Finalement, j'ai conçu trois différentes formes de publicité médiatique selon des modèles préconçus. J'ai adapté mon modèle de publicité original pour que ce dernier s'adapte aux differentes applications ( Instagram et Facebook ) en respectant les règles du design.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   }
 ]
