@@ -14,34 +14,37 @@ const app = Vue.createApp({
         .then((data) => {
         this.projects = data; 
 
+        // Attends que le DOM soit mis à jour avant d’exécuter le code suivant
         this.$nextTick(() => {
-          this.initScrollAnimation(); // Section horizontal
+          this.initSwiper(); // Section horizontal des projets
           this.initTextAnimations(); // Devoilement vertical
         });
     });
   },
   methods: {
+    
     voirPlus(project) {
-        window.location.href = `projets.html?id=${project.id}`; // pages de projet
+      // Envoi l'utilisateur sur la page Projets en chargeant les données propre au projet en récupérant le paramètre URL
+      window.location.href = `projets.html?id=${project.id}`; // pages de projet
     },
 
-    // Section horizontale
-    initScrollAnimation() {
+    // Section horizontale des projets
+    initSwiper() {
       const container = document.querySelector(".projets-container");
-      if (!container) return;
+      if (!container) return;  // S'il n'y pas de .projets-container, n'applique pas le reste de la fonction
 
       // Pour mobiles
-      if (window.innerWidth < 400) {
-        gsap.set(container, { xPercent: 0 });
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      if (window.innerWidth < 400) { // Si l'écran est moins de 400px
+        gsap.set(container, { xPercent: 0 }); // Désactive GSAP
+        ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // Enlève les ScrollTriggers
         return;
       }
 
-       // Créer le swiper
+      // Créer le swiper sur le container
       const projetsSwiper = new Swiper('.projets-container', {
         slidesPerView: 'auto',
         spaceBetween: 8,
-        grabCursor: true,
+        grabCursor: true, // Le curseur affiche une main qui aggripe
         mousewheel: {
           forceToAxis: true,
         },
@@ -52,7 +55,8 @@ const app = Vue.createApp({
     initTextAnimations() {
       
       // Désactiver l'animation sur mobile
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 768) { // Si l'écran est moins de 768px
+        // Liste des éléments qui ont l'animation
         const elements = gsap.utils.toArray([
           '.name p:last-child',
           '.text-wrapper-projet',
@@ -74,9 +78,11 @@ const app = Vue.createApp({
           }
         });
 
-        console.log("Animations GSAP désactivées sur mobile");
+        // console.log("Animations GSAP désactivées sur mobile");
         return; 
       }
+
+      // Liste des éléments qui ont l'animation
       const elements = gsap.utils.toArray([
         '.name p:last-child',
         '.text-wrapper-projet',
@@ -93,11 +99,12 @@ const app = Vue.createApp({
         
       ]);
 
+      // Animations pour chacun
       elements.forEach((el) => {
         if (el) {
           gsap.fromTo(
             el,
-            { opacity: 0, y: 50 },
+            { opacity: 0, y: 50 },  // Oppacité de 0 à 50%
             {
               opacity: 1,
               y: 0,
@@ -105,7 +112,7 @@ const app = Vue.createApp({
               ease: "power2.out",
               scrollTrigger: {
                 trigger: el,
-                start: "top 90%",
+                start: "top 90%", // Quand l'animation se déclanche
                 toggleActions: "play none none reverse",
               },
             }
