@@ -104,7 +104,7 @@ const app = Vue.createApp({
         if (el) {
           gsap.fromTo(
             el,
-            { opacity: 0, y: 50 },  // Oppacité de 0 à 50%
+            { opacity: 0, y: 50 }, 
             {
               opacity: 1,
               y: 0,
@@ -118,13 +118,6 @@ const app = Vue.createApp({
             }
           );
         }
-      });
-
-      // Animation de superposition section Competences
-      ScrollTrigger.create({
-        trigger: "#a-propos", 
-        start: "top top",
-        end: "+=100%", 
       });
 
       // Force un refresh du layout GSAP une fois tout monté

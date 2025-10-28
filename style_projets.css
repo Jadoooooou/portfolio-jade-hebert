@@ -148,40 +148,57 @@ header, section, div {
 #processus {
   background-color: #000;
   color: #ffffff;
-  display: grid;
-  gap: 2rem;
-  padding: 10vh 2vh;
-  margin-top: 5vh;
-  margin-bottom: 10vh;
-  width: 100%;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8vh;
+  padding: 0 4vw 0 4vw;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 #processus h2 {
+  align-self: flex-start;
   font-weight: 800;
   font-size: 45px;
   margin-bottom: 2vh;
 }
 
-.processus-content {
-  width: 90vw;
-  font-weight: 500;
-  font-size: 25px;
-  margin: 1vh 0;
-  color: #ffffff;
+.processus-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vw;
+  flex-wrap: wrap;
 }
 
-#processus img:first-of-type {
-  width: 90vw; 
-  margin: 2vh 0;
-  justify-self: center;
+.processus-step:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-#processus img:last-of-type {
-  width: 60%; 
-  justify-self: center;
-  opacity: 50%;
+.processus-step img {
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  filter: brightness(0.6);
+  transition: filter 0.4s ease;
+}
+
+.processus-step img:hover {
+  filter: brightness(1);
+}
+
+.processus-step p {
+  width: 85%;
+  font-size: clamp(25px, 2vw, 35px);
+  color: #e1e1de;
+  box-sizing: border-box;
+}
+
+/* Premier et dernier paragraphes alignés à droite */
+.processus-step:nth-of-type(1) p,
+.processus-step:nth-of-type(3) p {
+  text-align: right;
 }
 
 .button-voir {
@@ -204,11 +221,12 @@ header, section, div {
   box-shadow: 5px 5px 0px white;
 }
 .remerciements p {
-  font-weight: 300;
-  font-size: clamp(20px, 8vw, 30px);
+  font-weight: 800;
+  font-size: clamp(10px, 8vw, 20px);
   margin: 4vh 0;
-  color: #ffffff;
+  color: #777777;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* ---------- CONTACT ---------- */

@@ -3,21 +3,26 @@ const app = Vue.createApp({
 
   data() {
     return {
-      // 
+      // Retourne le tableau qui contient les données de départ vide
       projet: null,
     };
   },
   mounted() {
+    // Affiche un projet précis selon son  ID et charge dynamiquement les données JSON
     const params = new URLSearchParams(window.location.search);
     const projetId = params.get("id");
 
+    // C'est ici qu'on récupère (fetch) les donnée
     fetch("projects.json")
-      .then((r) => r.json())
+      .then((response) => response.json())
       .then((data) => {
+        // Récupère les données (date) seulon le ID du projet
         this.projet = data.find(p => p.id == projetId);
 
+        // Attends que le DOM soit mis à jour avant d’exécuter le code suivant
         this.$nextTick(() => {
-          // Attendre le chargement complet des images
+
+        // Attend le chargement complet des images
         const images = document.querySelectorAll('img');
         let loaded = 0;
         if (images.length === 0) {
@@ -36,7 +41,9 @@ const app = Vue.createApp({
           });
         });
 
+        // Si toutes les images sont chargées l'animations de texte se lance
         if (loaded === images.length) {
+          // Animation de textes par ScrollTrigger
           this.initTextAnimations();
           setTimeout(() => ScrollTrigger.refresh(), 300);
         }
@@ -49,14 +56,16 @@ const app = Vue.createApp({
       window.location.href = "index.html";
     },
 
+    // Pour voir les projet selon le lein dans le fichier JSON dans un nouvel onglet
     voirProjet() {
       window.open(this.projet.link, "_blank");
     },
 
+    // Animation de textes par ScrollTrigger
     initTextAnimations() {
-
       // Désactiver l'animation sur mobile
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 768) { // Si l'écran est moins de 768px
+        // Liste des éléments qui ont l'animation
         const elements = gsap.utils.toArray([
           '.donnees',
           '.hero h2',
@@ -75,12 +84,11 @@ const app = Vue.createApp({
           }
         });
 
-        console.log("Animations GSAP désactivées sur mobile");
+        // console.log("Animations GSAP désactivées sur mobile");
         return; 
       }
 
-      if (!this.projet) return;
-
+      // Liste des éléments qui ont l'animation
       const elements = gsap.utils.toArray([
         '.donnees',
         '.hero h2',
@@ -93,6 +101,7 @@ const app = Vue.createApp({
         '.remerciements',
       ]);
 
+      // Animations pour chacun
       elements.forEach((el) => {
         if (el) {
           gsap.fromTo(
@@ -105,7 +114,7 @@ const app = Vue.createApp({
               ease: "power2.out",
               scrollTrigger: {
                 trigger: el,
-                start: "top 90%",
+                start: "top 90%", // Quand l'animation se déclanche
                 toggleActions: "play none none reverse",
               },
             }
@@ -113,6 +122,7 @@ const app = Vue.createApp({
         }
       });
 
+      // Force un refresh du layout GSAP une fois tout monté
       ScrollTrigger.refresh();
     }
   }
@@ -120,5 +130,6 @@ const app = Vue.createApp({
 
 const vm = app.mount('#app');
 
+// Refresh sur resize/orientation
 window.addEventListener("resize", () => ScrollTrigger.refresh());
 window.addEventListener("orientationchange", () => ScrollTrigger.refresh());
