@@ -53,34 +53,6 @@ const app = Vue.createApp({
   
     // Dévoilement vertical
     initTextAnimations() {
-      
-      // Désactiver l'animation sur mobile
-      if (window.innerWidth < 768) { // Si l'écran est moins de 768px
-        // Liste des éléments qui ont l'animation
-        const elements = gsap.utils.toArray([
-          '.name p:last-child',
-          '.text-wrapper-projet',
-          '.text-wrapper-propos',
-          '.a-propos-content',
-          '.text-wrapper-contact',
-          '.contact p:first-of-type',
-          '.donnees',
-          '.hero h2',
-          '#objectif h2',
-          '.objectif',
-          '#processus h2',
-          '.processus-content',
-        ]);
-
-        elements.forEach((el) => {
-          if (el) {
-            gsap.set(el, { opacity: 1, y: 0 });
-          }
-        });
-
-        // console.log("Animations GSAP désactivées sur mobile");
-        return; 
-      }
 
       // Liste des éléments qui ont l'animation
       const elements = gsap.utils.toArray([
@@ -101,26 +73,32 @@ const app = Vue.createApp({
 
       // Animations pour chacun
       elements.forEach((el) => {
-        if (el) {
-          gsap.fromTo(
-            el,
-            { opacity: 0, y: 50 }, 
-            {
-              opacity: 1,
-              y: 0,
-              duration: 1.5,
-              ease: "power2.out",
-              scrollTrigger: {
-                trigger: el,
-                start: "top 90%", // Quand l'animation se déclanche
-                toggleActions: "play none none reverse",
-              },
-            }
-          );
-        }
+        // Si l'élément est déjà visible dans le viewport => le montrer immédiatement
+        const rect = el.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        // Et désactiver l'animation sur mobile (écran de moins de 768)
+        if (isVisible && window.innerWidth < 768) {gsap.set(el, { opacity: 1, y: 0 }); return;}
+  
+        gsap.fromTo(
+          el,
+          { opacity: 0, y: 50 }, 
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power2.out",
+            immediateRender: false, // N'applique pas l'état initial trop tôt
+            scrollTrigger: {
+              trigger: el,
+              start: "top bottom", // Quand l'animation se déclanche (ente dans le viewport)
+              toggleActions: "play none none reverse",
+              invalidateOnRefresh: true,  // Recalculer si ScrollTrigger refresh
+            },
+          }
+        );
       });
 
-      // Force un refresh du layout GSAP une fois tout monté
+      // Force un refresh une fois les animations créées
       ScrollTrigger.refresh();
     },
   },

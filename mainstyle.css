@@ -192,10 +192,9 @@ header, section, div {
 /* ---------- PROJETS ---------- */
 .projets {
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 1fr;
   padding-left: 2vh;
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -215,13 +214,11 @@ header, section, div {
 .swiper-wrapper {
   display: flex;
   align-items: center; 
-  height: 100%;
 }
 
 .swiper-slide {
   flex-shrink: 0;
   width: 60vw !important; /* pour écraser le style de base */
-  height: 100% !important;
   margin-right: 20vw !important;
   scroll-snap-align: start;
 }
@@ -231,17 +228,14 @@ header, section, div {
   position: relative; 
   display: inline-block; 
   justify-items: start;
+  padding-left: 2vw;
   gap: 1rem;
 }
 
 .projet img {
-  flex: 0 0 100%; 
   width: auto;
   height: 40vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block;
   margin-top: 4vh;
 }
 
