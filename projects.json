@@ -13,16 +13,16 @@
 
     "classDonnees": "[ Animation 3D ]",
     "collabDonnees": "[ Individuel ]",
-    "workDonnees": "[ Recherche d'inspiration, génération et montage ]",
+    "workDonnees": "[ Recherche d'inspirations, génération et montage ]",
     "appDonnees": "[ MAYA & DaVinci ]",
 
-    "objectifObj": "Le projet avait pour objectif de créer une animation 3D à l’aide des systèmes d'animations génératifs de MAYA. Il était demandé d’avoir une approche autonome et expérimentale,  combinant recherche de solutions techniques, créativité et flexibilité pour surmonter les défis d’animation.",
+    "objectifObj": "Le projet avait pour objectif de créer une animation 3D à l’aide des systèmes d'animations génératives de MAYA. Il était demandé d’avoir une approche autonome et expérimentale,  combinant recherche de solutions techniques, créativité et flexibilité pour surmonter les défis d’animation.",
 
-    "text1Process": "Tout commence par l’idéation. Le choix s’est porté sur le système de nParticules de MAYA, car cette animation évoquait l’organisation du système solaire. Comme tous mes projets, je voulais procurer un sentiment immersif. Une première tentative a été réalisée qui représentait la Voie Lactée.",
+    "text1Process": "Tout commence par la recherche d'idées. Le choix s’est porté sur le système de nParticules de MAYA, car cette animation évoquait l’organisation du système solaire. Comme tous mes projets, je voulais procurer un sentiment immersif. Une première tentative a été réalisée qui représentait la Voie Lactée.",
     "img1Process": ["medias/animation_generative_v1.jpg"],
-    "text2Process": "Insatisfaite du résultat initial et conformément à la consigne de ne pas s’éterniser sur le travail, j'ai recommencer mon projet dans une nouvelle approche, toujours en utilisant le système nParticules. Une fois l'animation complétée, j'ai rajouter de la texture et de la lumière pour renforcer la cohérence. Cette texture provient d'ailleurs de POLIIGON",
+    "text2Process": "Insatisfaite du résultat initial et conformément à la consigne de ne pas s’éterniser sur le travail, j'ai recommencé mon projet avec une nouvelle approche, toujours en utilisant le système nParticules. Une fois l'animation complétée, j'ai rajouté de la texture et de la lumière pour renforcer la cohérence. Cette texture provient d'ailleurs de POLIIGON",
     "img2Process": ["medias/animation_generative_docu.png"],
-    "text3Process": "Les images rendues ont ensuite été montées dans DaVinci, et le tout a été stylisé en intégrant un son, accentuant ainsi l’impact spectaculaire de l’animation malgré sa courte durée.",
+    "text3Process": "Les images rendues ont été ensuite montées dans DaVinci, et le tout a été harmonisé en intégrant la bande sonore de DUNE, accentuant ainsi l’impact spectaculaire de l’animation malgré sa courte durée.",
     "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
 
   },
@@ -40,16 +40,16 @@
 
     "classDonnees": "[ Design graphique ]",
     "collabDonnees": "[ Individuel ]",
-    "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphique, et création d'un prototype ]",
+    "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphiques, création d'un prototype ]",
     "appDonnees": "[ Figma ]",
     
-    "objectifObj": "Le projet avait pour objectif de concevoir le design d’un portfolio à l’aide de Figna, en suivant un processus complet allant de la création de maquettes graphiques à la réalisation d’un prototype interactif : recherche d’inspirations et élaboration d’une planche d’ambiance, puis sélection et présentation des styles finaux dans une planche de styles.",
+    "objectifObj": "Le projet avait pour objectif de concevoir le design d’un portfolio à l’aide de Figna, en suivant un processus complet allant de la création de maquettes graphiques à la réalisation d’un prototype interactif : recherche d’inspirations et élaboration d’un moodboard, puis sélection et présentation des styles finaux dans une planche de styles.",
 
-    "text1Process": "Pour développer mon concept visuel, je me suis inspirée de sites web au design épuré et fonctionnel, combinant une esthétique moderne proche des magazines avec une expérience utilisateur intuitive. J’ai exploré différents styles visuels — du brutalisme digital à des compositions plus fluides et colorées.",
+    "text1Process": "Pour développer mon concept visuel, je me suis inspirée de sites web au design épuré et fonctionnel, combinant un esthétique moderne proche des magazines avec une expérience utilisateur intuitive. J’ai exploré différents styles visuels — du brutalisme digital à des compositions plus fluides et colorées.",
     "img1Process": ["medias/portfolio_moodboard_01.png"],
-    "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une oage de contact et un logo.",
+    "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une page de contact et un logo.",
     "img2Process": ["medias/portfolio_prototype.png"],
-    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio, puis j'ai incorporé mes couleurs de mon moodboard ainsi que ma police, les élements UI (bouton et carroussel) et j'ai disposé mes images et textes comme les sites d'inspirations. Finalement, j'ai créé un prototype interactif sur Figma, simulant les animations et le comportement de mon portfolio.",
+    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Finalement, j'ai créé un prototype interactif sur Figma, simulant les animations et le comportement de mon portfolio.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   },
   {
@@ -60,22 +60,22 @@
 
     "titleHero": "DÉCONNEXION",
     "imgHero": ["medias/paysage_03.jpg"],
-    "descriptionHero": "Réalisation d’un environnement 3D et de plusieurs séquences d’animation autour du même thème, inspiré du montage sonore créé dans le cours d'audio. ",
+    "descriptionHero": "Réalisation d’un environnement 3D et de plusieurs séquences d’animations autour du même thème, inspiré du montage sonore créé dans le cours d'audio. ",
 
     "imgObj": ["medias/paysage_01.jpg"],
 
     "classDonnees": "[ Animation 3D ]",
     "collabDonnees": "[ Individuel ]",
-    "workDonnees": "[ Recherche d'inspiration, animation et montage ]",
+    "workDonnees": "[ Recherche d'inspirations, animation et montage ]",
     "appDonnees": "[ MAYA & DaVinci ]",
     
     "objectifObj": "Le projet avait pour objectif de réaliser un court métrage d'un environnement 3D d’une durée minimale de 60 secondes. L’intention était de capter l’attention du spectateur et de faire vivre un court moment de contemplation ou d’émotions fortes.",
 
-    "text1Process": "Je suis partie en fonction de ma trame sonore (ambiance de sortie en boîte de nuit), guidant ainsi le choix des modèles 3D et de l'environnement visuel. J'ai d'ailleurs porter mon choix sur le modèle de onerockett",
-    "img1Process": ["medias/paysage_moodboard.png"],
-    "text2Process": "Une fois le modèle importé dans MAYA, j'ai refait la palette de couleur pour qu'il concorde avec mon ambiance désiré et enrichis l'éclairage pour renforcer l'immersion du spectateur. La caméra a ensuite été animée et la scène découpée et recréée pour l'animée. Je voulais recréer la sensation de chaos de formes, où les repères se dissolvent, le temps s'étire et le lâcher prise devient inévitable.",
+    "text1Process": "Je suis partie de ma trame sonore, une ambiance de sortie en boîte de nuit créer dans le logiciel de traitement audio Max, guidant ainsi le choix des modèles 3D et de l'environnement visuel. J'ai d'ailleurs porté mon choix sur le modèle 3D créer par ONEROCKETT, illustrant un bar retro-futuriste à l'allure asiatique.",
+    "img1Process": ["medias/paysage_modele3D.png"],
+    "text2Process": "Une fois le modèle importé dans MAYA, j'ai refait la palette de couleur pour qu'il concorde avec mon ambiance désiré et enrichi l'éclairage pour renforcer l'immersion du spectateur. La caméra a ensuite été animée et la scène découpée et recréée pour l'animer. Je voulais recréer la sensation de chaos de formes, où les repères se dissolvent, le temps s'étire et le lâcher prise devient inévitable.",
     "img2Process": ["medias/paysage_02.jpg"],
-    "text3Process": "Quatres séquences ont été rendues : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. Ses séquences ont ensuite été montées dans DaVinci, où les visuels et la trame sonore ont été combinés pour former une composition cohérente.",
+    "text3Process": "Quatre séquences ont été rendues : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. Ces séquences ont ensuite été montées dans DaVinci, où les visuels et la trame sonore ont été combinés pour former une composition cohérente.",
     "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
   },
   {
@@ -86,7 +86,7 @@
 
     "titleHero": "PUBLICITÉ WEB",
     "imgHero": ["medias/publicite_02.png"],
-    "descriptionHero": "Réaliser la bannière publicitaire dans divers formats numérique pour promouvoir une même campagne marketing",
+    "descriptionHero": "Réaliser une bannière publicitaire dans divers formats numériques pour promouvoir une même campagne marketing",
 
     "imgObj": ["medias/publicite_01.png"],
 
@@ -95,13 +95,13 @@
     "workDonnees": "[ Recherche de sujet, analyse de communication visuelle et conception de bannières publicitaires ]",
     "appDonnees": "[ Figma ]",
     
-    "objectifObj": "Le projet avait pour objectif de réaliser une affiche publicitaire web selon les structures de communications et en faisant une analyse du message. Design graphique par la suite de formats de publicité numérique (pop-ups, instagram, facebook) pour un sujet culturel choisi.",
+    "objectifObj": "Le projet avait pour objectif de réaliser une affiche publicitaire numérique selon les structures de communication et en faisant une analyse du message. Puis, faire la conception du design graphique pour les divers formats numériques sélectionnés (pop-ups, instagram, facebook) pour un sujet culturel choisi.",
 
-    "text1Process": "Puique j'aime beaucoup les festivals de musique, j'ai décidé de faire une campagne sur le célèbre festival d'OSHEAGA. Pour développer mon concept visuel, je me suis inspirée d'images mêlant le glitch, le collage et l'effet thermique, d'où j'en ai tirer ma palette de couleur.",
+    "text1Process": "Puique j'aime beaucoup les festivals de musique, j'ai décidé de faire une campagne sur le célèbre festival d'OSHEAGA. Pour développer mon concept visuel, je me suis inspirée d'images mêlant le glitch, le collage et l'effet thermique, d'où j'en ai tiré ma palette de couleurs.",
     "img1Process": ["medias/publicite_moodboard.png"],
-    "text2Process": "La campagne devait respecter les structures de communication et une analyse du message devait être élaborée. Suite à quoi, j'ai conçu en premier lieu une bannière de type pop-up, en y intégrant les éléments de ma planche de style.",
+    "text2Process": "La campagne devait respecter les structures de communication et une analyse du message devait être élaborée. Suite à quoi, j'ai conçu en premier lieu une bannière de type pop-up, en y intégrant les éléments de ma planche de styles.",
     "img2Process": ["medias/publicite_03.png"],
-    "text3Process": "Finalement, j'ai conçu trois différentes formes de publicité médiatique selon des modèles préconçus. J'ai adapté mon modèle de publicité original pour que ce dernier s'adapte aux differentes applications ( Instagram et Facebook ) en respectant les règles du design.",
+    "text3Process": "Finalement, j'ai conçu trois différentes formes de publicité médiatique selon des modèles préconçus. J'ai adapté mon modèle de publicité original pour que ce dernier s'adapte aux différentes applications (Instagram et Facebook) en respectant les règles du design.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   }
 ]

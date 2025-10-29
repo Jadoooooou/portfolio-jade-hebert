@@ -223,6 +223,21 @@ header, section, div {
   scroll-snap-align: start;
 }
 
+.coup-de-coeur {
+  color: #e63946;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(16px, 1.2vw, 18px);
+  margin-left: 1vw;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0.5 }
+}
+
+
 .projet {
   width: 80%;
   position: relative; 
