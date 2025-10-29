@@ -224,18 +224,7 @@ header, section, div {
 }
 
 .coup-de-coeur {
-  display: unset;
-  color: #e63946;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.6vw;
-  margin-left: 1vw;
-  animation: pulse 1.8s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1 }
-  50% { opacity: 0.5 }
+  display: none;
 }
 
 .projet {
@@ -572,7 +561,17 @@ header, section, div {
 
   .coup-de-coeur {
     display: unset;
+    color: #e63946;
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: 1.6vw;
+    margin-left: 1vw;
+    animation: pulse 1.8s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1 }
+    50% { opacity: 0.5 }
   }
 
   .swiper-slide {
