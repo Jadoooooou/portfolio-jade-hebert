@@ -224,7 +224,18 @@ header, section, div {
 }
 
 .coup-de-coeur {
-  display: none;
+  display: unset;
+  color: #e63946;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.6vw;
+  margin-left: 1vw;
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0.5 }
 }
 
 .projet {
@@ -450,10 +461,6 @@ header, section, div {
   text-decoration: none;
 }
 
-.button p::after {
-  content: " →";
-}
-
 /* ---------- CURSEUR ---------- */
 
 .cursor {
@@ -488,6 +495,10 @@ header, section, div {
     height: auto;
     padding: 2vh 2vh;
     margin-bottom: 10vh;
+  }
+
+  .coup-de-coeur {
+    display: none;
   }
 
   /* Désactivation du Swiper */
@@ -560,17 +571,8 @@ header, section, div {
   }
 
   .coup-de-coeur {
-    color: #e63946;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: clamp(16px, 1.2vw, 18px);
-    margin-left: 1vw;
-    animation: pulse 1.8s infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1 }
-    50% { opacity: 0.5 }
+    display: unset;
+    font-size: 1.6vw;
   }
 
   .swiper-slide {
