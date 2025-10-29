@@ -65,6 +65,7 @@
 
           <!-- Récupération des données de chaque projets dans le tableau projects par une boucle (v-for)-->
           <div class="swiper-slide projet" v-for="project in projects" :key="project.id"> 
+            <!-- Affiche le titre et le ID des projets (boucle) + affiche la mention coup de coeur au projet ID 3-->
             <p>[ {{ project.id }} ] {{ project.title }} <span v-if="project.id === 3" class="coup-de-coeur">♥ Prix coup de cœur</span> </p>
             <img :src="project.images[0]" :alt="'Projet ${project.title}'">
             <!-- Bouton qui amène l'utilisateur à la page Projets et charge les données selon une méthode Vue -->

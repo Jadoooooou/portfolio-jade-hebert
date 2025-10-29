@@ -224,19 +224,8 @@ header, section, div {
 }
 
 .coup-de-coeur {
-  color: #e63946;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: clamp(16px, 1.2vw, 18px);
-  margin-left: 1vw;
-  animation: pulse 1.8s infinite;
+  display: none;
 }
-
-@keyframes pulse {
-  0%, 100% { opacity: 1 }
-  50% { opacity: 0.5 }
-}
-
 
 .projet {
   width: 80%;
@@ -568,6 +557,20 @@ header, section, div {
   .name {
     text-align: right;
     grid-area: 4/1/4/4;
+  }
+
+  .coup-de-coeur {
+    color: #e63946;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(16px, 1.2vw, 18px);
+    margin-left: 1vw;
+    animation: pulse 1.8s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1 }
+    50% { opacity: 0.5 }
   }
 
   .swiper-slide {
