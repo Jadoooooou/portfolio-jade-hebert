@@ -201,6 +201,23 @@ header, section, div {
 .text-wrapper-projet {
   font-weight: 800;
   font-size: 45px;
+  position: relative;
+}
+
+.text-wrapper-projet::after {
+  content: "➔"; 
+  position: absolute;
+  right: 0;
+  padding-right: 2vw;
+  transform: translateY(-50%);
+  font-size: 5rem;
+  color: black;
+  animation: arrow 1.8s infinite;
+}
+
+@keyframes arrow {
+  0%, 100% { transform: translateX(-50%); }
+  50% { transform: translateX(0%); }
 }
 
 /* ----- HORIZONTAL ---- */
@@ -260,7 +277,7 @@ header, section, div {
 
 .button-projet:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0px black;
+  box-shadow: 5px 15px 0px black;
 }
 
 /* ---------- À PROPOS ---------- */

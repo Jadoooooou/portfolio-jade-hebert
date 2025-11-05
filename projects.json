@@ -103,5 +103,31 @@
     "img2Process": ["medias/publicite_03.png"],
     "text3Process": "Finalement, j'ai conçu trois différentes formes de publicité médiatique selon des modèles préconçus. J'ai adapté mon modèle de publicité original pour que ce dernier s'adapte aux différentes applications (Instagram et Facebook) en respectant les règles du design.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
+  },
+  {
+    "id": 5,
+    "title": "Cocktails de l'Avent",
+    "images": ["medias/publicite_02.png"],
+    "link": "",
+
+    "titleHero": "COCKTAILS DE L'AVENT",
+    "imgHero": ["medias/publicite_02.png"],
+    "descriptionHero": "Réalisation de 24 petites cartes de cocktails afin de connaître la recette et un petit fait anodin.",
+
+    "imgObj": ["medias/publicite_01.png"],
+
+    "classDonnees": "[ Design graphique ]",
+    "collabDonnees": "[ Individuel ]",
+    "workDonnees": "[ Recherche de sujet, analyse de communication visuelle et conception de bannières publicitaires ]",
+    "appDonnees": "[ Figma ]",
+    
+    "objectifObj": "Le projet avait pour objectif de réaliser une affiche publicitaire numérique selon les structures de communication et en faisant une analyse du message. Puis, faire la conception du design graphique pour les divers formats numériques sélectionnés (pop-ups, instagram, facebook) pour un sujet culturel choisi.",
+
+    "text1Process": "Puique j'aime beaucoup les festivals de musique, j'ai décidé de faire une campagne sur le célèbre festival d'OSHEAGA. Pour développer mon concept visuel, je me suis inspirée d'images mêlant le glitch, le collage et l'effet thermique, d'où j'en ai tiré ma palette de couleurs.",
+    "img1Process": ["medias/publicite_moodboard.png"],
+    "text2Process": "La campagne devait respecter les structures de communication et une analyse du message devait être élaborée. Suite à quoi, j'ai conçu en premier lieu une bannière de type pop-up, en y intégrant les éléments de ma planche de styles.",
+    "img2Process": ["medias/publicite_03.png"],
+    "text3Process": "Finalement, j'ai conçu trois différentes formes de publicité médiatique selon des modèles préconçus. J'ai adapté mon modèle de publicité original pour que ce dernier s'adapte aux différentes applications (Instagram et Facebook) en respectant les règles du design.",
+    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   }
 ]
