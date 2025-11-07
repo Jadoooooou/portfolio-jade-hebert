@@ -107,14 +107,14 @@
   {
     "id": 5,
     "title": "Cocktails de l'Avent",
-    "images": ["medias/publicite_02.png"],
-    "link": "",
+    "images": ["medias/calendrier_01.png"],
+    "link": "https://www.canva.com/design/DAGWf2aV2Yk/xzuQSpn_TLjJj8-Q1FUjRg/view?utm_content=DAGWf2aV2Yk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb991a82282",
 
     "titleHero": "COCKTAILS DE L'AVENT",
-    "imgHero": ["medias/publicite_02.png"],
+    "imgHero": ["medias/calendrier_02.png"],
     "descriptionHero": "Réalisation d’un ensemble de 24 cartes illustrées présentant chacune une recette de cocktail et un fait anodin sur celui-ci.",
 
-    "imgObj": ["medias/publicite_01.png"],
+    "imgObj": ["medias/calendrier_03.png"],
 
     "classDonnees": "[ Design graphique ]",
     "collabDonnees": "[ Individuel ]",
@@ -124,9 +124,9 @@
     "objectifObj": "Le projet avait pour objectif de créer une série de petites cartes ludiques et esthétiques comme un calendrier de l'Avant permettant de découvrir des cocktails classiques et originaux. Chaque carte devait présenter la recette complète ainsi qu’un fait intéressant ou amusant lié au cocktail, afin d’enrichir l’expérience de lecture et de dégustation.",
 
     "text1Process": "Pour débuter, j’ai effectué une recherche sur différents types de cocktails populaires afin de sélectionner 24 recettes variées. J’ai également rassemblé pour chacun un petit fait insolite ou historique pour ajouter une touche informative et divertissante.",
-    "img1Process": ["medias/publicite_moodboard.png"],
+    "img1Process": ["medias/calendrier_01.png"],
     "text2Process": "Je me suis ensuite inspiré d'un style plus éditorial; la palette de couleurs et la typographie sont assez sobre. Le centre de l'attention est l'illustration du cocktail.",
-    "img2Process": ["medias/publicite_03.png"],
+    "img2Process": ["medias/calendrier_04.png"],
     "text3Process": "Finalement, j’ai réalisé la mise en page des 24 cartes en harmonisant les informations visuelles et textuelles. Chaque carte présente un équilibre entre la recette, l’illustration et le fait anodin, créant un objet graphique à la fois informatif et esthétique.",
     "creditsProcess": "Création personelle"
   }
