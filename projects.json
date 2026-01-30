@@ -1,6 +1,58 @@
 [
   {
     "id": 1,
+    "title": "Déconnexion",
+    "images": ["medias/paysage_03.jpg"],
+    "link": "https://youtu.be/oxHs42J_gNQ",
+
+    "titleHero": "DÉCONNEXION",
+    "imgHero": ["medias/paysage_03.jpg"],
+    "descriptionHero": "Réalisation de plusieurs séquences d’animations d’un environnement 3D, inspiré du montage sonore créé dans le cours d'audio. ",
+
+    "imgObj": ["medias/paysage_01.jpg"],
+
+    "classDonnees": "[ Animation 3D ]",
+    "collabDonnees": "[ Individuel ]",
+    "workDonnees": "[ Recherche d'inspirations, animation et montage ]",
+    "appDonnees": "[ MAYA & DaVinci ]",
+    
+    "objectifObj": "Le projet avait pour objectif de réaliser un court métrage d'un environnement 3D d’une durée minimale de 60 secondes. L’intention était de capter l’attention du spectateur et de faire vivre un court moment de contemplation ou d’émotions fortes.",
+
+    "text1Process": "Je suis partie de ma trame sonore, une ambiance de sortie en boîte de nuit créer dans le logiciel de traitement audio Max, guidant ainsi le choix des modèles 3D et de l'environnement visuel. J'ai d'ailleurs porté mon choix sur le modèle 3D créer par ONEROCKETT, illustrant un bar retro-futuriste à l'allure asiatique.",
+    "img1Process": ["medias/paysage_modele3D.png"],
+    "text2Process": "Une fois le modèle importé dans MAYA, j'ai refait la palette de couleur pour qu'il concorde avec mon ambiance désiré et enrichi l'éclairage pour renforcer l'immersion du spectateur. La caméra a ensuite été animée et la scène découpée et recréée pour l'animer. Je voulais recréer la sensation de chaos de formes, où les repères se dissolvent, le temps s'étire et le lâcher prise devient inévitable.",
+    "img2Process": ["medias/paysage_02.jpg"],
+    "text3Process": "Quatre séquences ont été rendues : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. Ces séquences ont ensuite été montées dans DaVinci, où les visuels et la trame sonore ont été combinés pour former une composition cohérente.",
+    "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
+  },
+  {
+    "id": 2,
+    "title": "Portfolio de photos",
+    "images": ["medias/portfolio_accueil.png"],
+    "link": "https://www.figma.com/design/PJl1QVdefYJRyqASUitmoR/hebert_jade__T04_582-201MO?t=oRpOyULxuzdznX5q-1",
+
+    "titleHero": "PORTFOLIO DE PHOTOS",
+    "imgHero": ["medias/portfolio_accueil.png"],
+    "descriptionHero": "Création d’un prototype interactif d’un portfolio créatif, original et qui reflète ma personnalité.",
+
+    "imgObj": ["medias/portfolio_graphique.png"],
+
+    "classDonnees": "[ Design graphique ]",
+    "collabDonnees": "[ Individuel ]",
+    "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphiques, création d'un prototype ]",
+    "appDonnees": "[ Figma ]",
+    
+    "objectifObj": "Le projet avait pour objectif de concevoir le design d’un portfolio à l’aide de Figma, en suivant un processus complet allant de la création de maquettes graphiques à la réalisation d’un prototype interactif : recherche d’inspirations et élaboration d’un moodboard, puis sélection et présentation des styles finaux dans une planche de styles.",
+
+    "text1Process": "Pour développer mon concept visuel, je me suis inspirée de sites web au design épuré et fonctionnel, combinant un esthétique moderne proche des magazines avec une expérience utilisateur intuitive. J’ai exploré différents styles visuels — du brutalisme digital à des compositions plus fluides et colorées.",
+    "img1Process": ["medias/portfolio_moodboard_01.png"],
+    "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une page de contact et un logo.",
+    "img2Process": ["medias/portfolio_prototype.png"],
+    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Finalement, j'ai créé un prototype interactif sur Figma, simulant les animations et le comportement de mon portfolio.",
+    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
+  },
+  {
+    "id": 3,
     "title": "Animation générative",
     "images": ["medias/animation_generative_01.jpg"],
     "link": "https://youtu.be/GNn2kjDuReM",
@@ -24,59 +76,6 @@
     "img2Process": ["medias/animation_generative_docu.png"],
     "text3Process": "Les images rendues ont été ensuite montées dans DaVinci, et le tout a été harmonisé en intégrant la bande sonore de DUNE, accentuant ainsi l’impact spectaculaire de l’animation malgré sa courte durée.",
     "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
-
-  },
-  {
-    "id": 2,
-    "title": "Portfolio de photos",
-    "images": ["medias/portfolio_accueil.png"],
-    "link": "https://www.figma.com/design/PJl1QVdefYJRyqASUitmoR/hebert_jade__T04_582-201MO?t=oRpOyULxuzdznX5q-1",
-
-    "titleHero": "PORTFOLIO DE PHOTOS",
-    "imgHero": ["medias/portfolio_accueil.png"],
-    "descriptionHero": "Création d’un prototype interactif d’un portfolio créatif, original et qui reflète ma personnalité.",
-
-    "imgObj": ["medias/portfolio_graphique.png"],
-
-    "classDonnees": "[ Design graphique ]",
-    "collabDonnees": "[ Individuel ]",
-    "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphiques, création d'un prototype ]",
-    "appDonnees": "[ Figma ]",
-    
-    "objectifObj": "Le projet avait pour objectif de concevoir le design d’un portfolio à l’aide de Figna, en suivant un processus complet allant de la création de maquettes graphiques à la réalisation d’un prototype interactif : recherche d’inspirations et élaboration d’un moodboard, puis sélection et présentation des styles finaux dans une planche de styles.",
-
-    "text1Process": "Pour développer mon concept visuel, je me suis inspirée de sites web au design épuré et fonctionnel, combinant un esthétique moderne proche des magazines avec une expérience utilisateur intuitive. J’ai exploré différents styles visuels — du brutalisme digital à des compositions plus fluides et colorées.",
-    "img1Process": ["medias/portfolio_moodboard_01.png"],
-    "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une page de contact et un logo.",
-    "img2Process": ["medias/portfolio_prototype.png"],
-    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Finalement, j'ai créé un prototype interactif sur Figma, simulant les animations et le comportement de mon portfolio.",
-    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
-  },
-  {
-    "id": 3,
-    "title": "Déconnexion",
-    "images": ["medias/paysage_03.jpg"],
-    "link": "https://youtu.be/oxHs42J_gNQ",
-
-    "titleHero": "DÉCONNEXION",
-    "imgHero": ["medias/paysage_03.jpg"],
-    "descriptionHero": "Réalisation d’un environnement 3D et de plusieurs séquences d’animations autour du même thème, inspiré du montage sonore créé dans le cours d'audio. ",
-
-    "imgObj": ["medias/paysage_01.jpg"],
-
-    "classDonnees": "[ Animation 3D ]",
-    "collabDonnees": "[ Individuel ]",
-    "workDonnees": "[ Recherche d'inspirations, animation et montage ]",
-    "appDonnees": "[ MAYA & DaVinci ]",
-    
-    "objectifObj": "Le projet avait pour objectif de réaliser un court métrage d'un environnement 3D d’une durée minimale de 60 secondes. L’intention était de capter l’attention du spectateur et de faire vivre un court moment de contemplation ou d’émotions fortes.",
-
-    "text1Process": "Je suis partie de ma trame sonore, une ambiance de sortie en boîte de nuit créer dans le logiciel de traitement audio Max, guidant ainsi le choix des modèles 3D et de l'environnement visuel. J'ai d'ailleurs porté mon choix sur le modèle 3D créer par ONEROCKETT, illustrant un bar retro-futuriste à l'allure asiatique.",
-    "img1Process": ["medias/paysage_modele3D.png"],
-    "text2Process": "Une fois le modèle importé dans MAYA, j'ai refait la palette de couleur pour qu'il concorde avec mon ambiance désiré et enrichi l'éclairage pour renforcer l'immersion du spectateur. La caméra a ensuite été animée et la scène découpée et recréée pour l'animer. Je voulais recréer la sensation de chaos de formes, où les repères se dissolvent, le temps s'étire et le lâcher prise devient inévitable.",
-    "img2Process": ["medias/paysage_02.jpg"],
-    "text3Process": "Quatre séquences ont été rendues : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. Ces séquences ont ensuite été montées dans DaVinci, où les visuels et la trame sonore ont été combinés pour former une composition cohérente.",
-    "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
   },
   {
     "id": 4,
@@ -99,13 +98,39 @@
 
     "text1Process": "Puique j'aime beaucoup les festivals de musique, j'ai décidé de faire une campagne sur le célèbre festival d'OSHEAGA. Pour développer mon concept visuel, je me suis inspirée d'images mêlant le glitch, le collage et l'effet thermique, d'où j'en ai tiré ma palette de couleurs.",
     "img1Process": ["medias/publicite_moodboard.png"],
-    "text2Process": "La campagne devait respecter les structures de communication et une analyse du message devait être élaborée. Suite à quoi, j'ai conçu en premier lieu une bannière de type pop-up, en y intégrant les éléments de ma planche de styles.",
+    "text2Process": "La campagne devait s’appuyer sur les structures de communication et sur une analyse du message orientée utilisateur. Dans cette optique, j’ai d’abord conçu une bannière de type pop-up, pensée comme un point de contact clé, en intégrant les éléments de la planche de styles afin d’assurer une cohérence visuelle et la clarté du message",
     "img2Process": ["medias/publicite_03.png"],
     "text3Process": "Finalement, j'ai conçu trois différentes formes de publicité médiatique selon des modèles préconçus. J'ai adapté mon modèle de publicité original pour que ce dernier s'adapte aux différentes applications (Instagram et Facebook) en respectant les règles du design.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   },
-  {
+    {
     "id": 5,
+    "title": "OSMOSE",
+    "images": ["medias/OSMOSE2.jpeg"],
+    "link": "",
+
+    "titleHero": "OSMOSE",
+    "imgHero": ["medias/OSMOSE3.jpeg"],
+    "descriptionHero": "Court-métrage collaboratif explorant la féminité à travers l’intelligence artificielle et la création artistique.",
+
+    "imgObj": ["medias/OSMOSE4.jpeg"],
+
+    "classDonnees": "[ Montage vidéo ]",
+    "collabDonnees": "[ Meggie Cloutier Hamel, Sarah Septembre, Naomi Chouinard, Gitane Céré Tremblay ]",
+    "workDonnees": "[ Traitement d'images et vidéos à la postproduction ]",
+    "appDonnees": "[ DaVinci & Freepik ]",
+    
+    "objectifObj": "L’objectif de ce projet était de créer un court-métrage collaboratif servant à la fois d’exploration artistique et de démarche d’insertion professionnelle. Il visait à offrir une première expérience de création intégrant l’intelligence artificielle, tout en favorisant la collaboration entre étudiantes de différentes institutions.",
+
+    "text1Process": "J’ai eu la chance d’être invitée à travailler sur le projet OSMOSE, un court-métrage qui explore le thème de la féminité à travers des regards pluriels, sensibles et contemporains.",
+    "img1Process": ["medias/OSMOSE6.jpeg"],
+    "text2Process": "Mon rôle consistait à expérimenter et intégrer des techniques d’upscaling d’images et de vidéos en postproduction afin d’améliorer la qualité visuelle et la cohérence esthétique, en s’appuyant sur des outils d’intelligence artificielle.",
+    "img2Process": ["medias/OSMOSE.jpeg"],
+    "text3Process": "Sous l’accompagnement de Françoise Lavoie-Pilote, l’ensemble de l'équipe de création et moi avons développé des compétences en rédaction de prompts et en utilisation de divers outils d’intelligence artificielle, notamment Runway, Midjourney et Freepik.",
+    "creditsProcess": "Projet subventionné par le Pôle Lavallois d'enseignement supérieur"
+  },
+  {
+    "id": 6,
     "title": "Cocktails de l'Avent",
     "images": ["medias/calendrier_01.png"],
     "link": "https://www.canva.com/design/DAGWf2aV2Yk/xzuQSpn_TLjJj8-Q1FUjRg/view?utm_content=DAGWf2aV2Yk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb991a82282",
