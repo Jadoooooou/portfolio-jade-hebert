@@ -42,13 +42,13 @@
     "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphiques, création d'un prototype ]",
     "appDonnees": "[ Figma ]",
     
-    "objectifObj": "Le projet avait pour objectif de concevoir le design d’un portfolio à l’aide de Figma, en suivant un processus complet allant de la création de maquettes graphiques à la réalisation d’un prototype interactif : recherche d’inspirations et élaboration d’un moodboard, puis sélection et présentation des styles finaux dans une planche de styles.",
+    "objectifObj": "Ce projet avait pour objectif de concevoir l’identité visuelle et l’architecture interactive d’un portfolio à l’aide de Figma, capable de répondre à des critères précis de structure et d’interactivité. Le projet impliquait la réalisation d’un processus structuré comprenant la recherche d’inspirations, la création d’un moodboard, l’élaboration de maquettes graphiques, puis la conception d’un prototype interactif simulant le comportement réel du site.",
 
-    "text1Process": "Pour développer mon concept visuel, je me suis inspirée de sites web au design épuré et fonctionnel, combinant un esthétique moderne proche des magazines avec une expérience utilisateur intuitive. J’ai exploré différents styles visuels — du brutalisme digital à des compositions plus fluides et colorées.",
+    "text1Process": "Le développement du concept visuel s’est appuyé sur la recherche de sites au design épuré et fonctionnel, combinant une esthétique contemporaine inspirée des mises en page éditoriales à une expérience utilisateur intuitive. Cette exploration m’a permis d’analyser différentes approches graphiques, allant du brutalisme numérique à des compositions plus organiques et colorées. De ces références, j’ai réaliser une planche de moodboard",
     "img1Process": ["medias/portfolio_moodboard_01.png"],
     "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une page de contact et un logo.",
     "img2Process": ["medias/portfolio_prototype.png"],
-    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Finalement, j'ai créé un prototype interactif sur Figma, simulant les animations et le comportement de mon portfolio.",
+    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Enfin, la réalisation du prototype interactif dans Figma a permis de simuler les comportements dynamiques du site.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   },
   {
