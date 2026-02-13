@@ -7,7 +7,7 @@
 
     "titleHero": "DÉCONNEXION",
     "imgHero": ["medias/paysage_03.jpg"],
-    "descriptionHero": "Réalisation de plusieurs séquences d’animations d’un environnement 3D, inspiré du montage sonore créé dans le cours d'audio. ",
+    "descriptionHero": "Réalisation de plusieurs séquences d’animations d’un environnement 3D, conçu à partir d’un montage sonore développé dans le cadre d’un cours d’audio. ",
 
     "imgObj": ["medias/paysage_01.jpg"],
 
@@ -16,13 +16,13 @@
     "workDonnees": "[ Recherche d'inspirations, animation et montage ]",
     "appDonnees": "[ MAYA & DaVinci ]",
     
-    "objectifObj": "Le projet avait pour objectif de réaliser un court métrage d'un environnement 3D d’une durée minimale de 60 secondes. L’intention était de capter l’attention du spectateur et de faire vivre un court moment de contemplation ou d’émotions fortes.",
+    "objectifObj": "Le projet avait pour objectif la réalisation d’un court métrage d’animation 3D d’une durée minimale de soixante secondes. L’intention principale était de créer une expérience immersive capable de capter l’attention du spectateur et de susciter un état de contemplation.",
 
-    "text1Process": "Je suis partie de ma trame sonore, une ambiance de sortie en boîte de nuit créer dans le logiciel de traitement audio Max, guidant ainsi le choix des modèles 3D et de l'environnement visuel. J'ai d'ailleurs porté mon choix sur le modèle 3D créer par ONEROCKETT, illustrant un bar retro-futuriste à l'allure asiatique.",
+    "text1Process": "Le processus de création s’est amorcé à partir de la trame sonore, une ambiance de sortie en boîte de nuit conçue dans le logiciel Max, qui a servi de fondation conceptuelle et rythmique à l’ensemble du projet. Cette approche inversée (partir du son pour construire l’image) a guidé le choix d’un modèle 3D d’un bar rétro-futuriste à l’esthétique asiatique réalisé par ONEROCKETT.",
     "img1Process": ["medias/paysage_modele3D.png"],
-    "text2Process": "Une fois le modèle importé dans MAYA, j'ai refait la palette de couleur pour qu'il concorde avec mon ambiance désiré et enrichi l'éclairage pour renforcer l'immersion du spectateur. La caméra a ensuite été animée et la scène découpée et recréée pour l'animer. Je voulais recréer la sensation de chaos de formes, où les repères se dissolvent, le temps s'étire et le lâcher prise devient inévitable.",
+    "text2Process": "Une fois importé dans MAYA, la palette de couleur a été retravaillée afin d’harmoniser l’environnement avec l’atmosphère sonore, et enrichissement de l’éclairage pour renforcer l’immersion. L’animation de la caméra a ensuite été pensée pour recréer une sensation progressive de désorientation et de chaos visuel où les repères spatiaux se fragmentent, le temps semble se dilater et le lâcher prise devient inévitable.",
     "img2Process": ["medias/paysage_02.jpg"],
-    "text3Process": "Quatre séquences ont été rendues : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. Ces séquences ont ensuite été montées dans DaVinci, où les visuels et la trame sonore ont été combinés pour former une composition cohérente.",
+    "text3Process": "Quatre séquences distinctes ont été produites : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. afin d’orchestrer un montage cohérent entre image et son. Ce travail de postproduction a permis de synchroniser les variations visuelles aux intensités sonores, consolidant ainsi l’expérience immersive recherchée.",
     "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
   },
   {
