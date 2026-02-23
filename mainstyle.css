@@ -95,7 +95,7 @@ header, section, div {
 /* ----- ANIMATION FONT ---- */
 /* ----- https://codepen.io/Juxtopposed/pen/OJrLZvb?editors=1100 ---- */
 .key {
-  font-size: 6.2rem;
+  font-size: 6rem;
   display: inline-block;
   letter-spacing: -1vw;
   transition: transform 0.2s;
@@ -489,6 +489,20 @@ header, section, div {
 }
 
 /* ---------- MOBILE ---------- */
+@media (max-width: 375px) {
+
+  .text-wrapper-projet::after {
+    content: ""; 
+    position: absolute;
+    right: 0;
+    padding-right: 2vw;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: black;
+    animation: none;
+  }
+
+}
 @media (max-width: 390px) {
 
   .key {
@@ -581,7 +595,7 @@ header, section, div {
     color: #e63946;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.6vw;
+    font-size: 0.8vw;
     margin-left: 1vw;
     animation: pulse 1.8s infinite;
   }

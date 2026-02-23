@@ -43,12 +43,25 @@ const app = Vue.createApp({
       // Créer le swiper sur le container
       const projetsSwiper = new Swiper('.projets-container', {
         slidesPerView: 'auto',
+        freeMode: false,
         spaceBetween: 8,
+        slidesOffsetAfter: 40,
         grabCursor: true, // Le curseur affiche une main qui aggripe
         mousewheel: {
           forceToAxis: true,
         },
+        speed: 600,
       });
+
+      // Lie la flèche au swiper
+      const fleche = document.querySelector(".text-wrapper-projet");
+      if (fleche) {
+        fleche.style.cursor = "pointer";
+        fleche.addEventListener("click", () => {
+          projetsSwiper.slideNext();
+        });
+      }
+
     },
   
     // Dévoilement vertical
