@@ -1,0 +1,278 @@
+<!-- Section Projets -->
+<section id="projets">
+
+  <div class="projets-header">
+    <h2>PROJETS</h2>
+    <span class="projets-count">[ 0{{ projects.length }} ]</span>
+  </div>
+
+  <div class="projets-grid">
+
+    <article
+      class="projet-card"
+      v-for="project in projects"
+      :key="project.id"
+      :class="{ 'projet-card--featured': project.id === 1 }"
+      @click="voirPlus(project)"
+    >
+      <img class="projet-card__img" :src="project.images[0]" :alt="project.title" />
+
+      <div class="projet-card__hover-overlay"></div>
+
+      <div class="projet-card__top">
+        <span class="projet-card__num">0{{ project.id }}</span>
+        <span v-if="project.id === 1" class="coup-de-coeur">♥ Prix coup de cœur</span>
+      </div>
+
+      <div class="projet-card__bottom">
+        <h3 class="projet-card__title">{{ project.title }}</h3>
+        <div class="projet-card__footer">
+          <span class="projet-card__tag" v-for="tag in project.tags" :key="tag">{{ tag }}</span>
+          <button class="projet-card__lien" @click.stop="voirPlus(project)">voir plus</button>
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ===================== CSS ===================== -->
+<style>
+/* ── Variables ── */
+:root {
+  --accent:   #D4537E;
+  --accent2:  #7F77DD;
+  --mono:     'Space Mono', monospace;
+  --gap:      10px;
+}
+
+/* ── Header de section ── */
+#projets {
+  padding: 4rem 2rem;
+}
+
+.projets-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.projets-header h2 {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.projets-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* ── Grille layout C ── */
+.projets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 380px 200px 200px;
+  gap: var(--gap);
+}
+
+/* Projet 1 : pleine largeur */
+.projet-card--featured {
+  grid-column: span 2;
+}
+
+/* ── Card ── */
+.projet-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #1a1a1a;
+}
+
+.projet-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              filter 0.5s ease;
+  filter: grayscale(20%) brightness(0.9);
+}
+
+.projet-card:hover .projet-card__img {
+  transform: scale(1.04);
+  filter: grayscale(0%) brightness(1);
+}
+
+/* Gradient permanent bas */
+.projet-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Overlay hover */
+.projet-card__hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.projet-card:hover .projet-card__hover-overlay {
+  opacity: 1;
+}
+
+/* ── Haut de la carte ── */
+.projet-card__top {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 14px 16px;
+}
+
+.projet-card__num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.08em;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.coup-de-coeur {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  background: var(--accent);
+  color: #fff;
+  padding: 3px 9px;
+  border-radius: 2px;
+}
+
+/* ── Bas de la carte ── */
+.projet-card__bottom {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 2;
+  padding: 14px 16px;
+}
+
+/* Ligne de séparation au hover */
+.projet-card__bottom::before {
+  content: '';
+  display: block;
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.12);
+  margin-bottom: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.projet-card:hover .projet-card__bottom::before {
+  transform: scaleX(1);
+}
+
+.projet-card__title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin-bottom: 7px;
+  transition: letter-spacing 0.3s ease;
+}
+
+.projet-card--featured .projet-card__title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.projet-card:hover .projet-card__title {
+  letter-spacing: 0.01em;
+}
+
+.projet-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.projet-card__tag {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.55);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 2px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.projet-card:hover .projet-card__tag {
+  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.projet-card__lien {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s;
+}
+
+.projet-card__lien::after {
+  content: '→';
+  transition: transform 0.2s;
+}
+
+.projet-card:hover .projet-card__lien {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.projet-card:hover .projet-card__lien::after {
+  transform: translateX(3px);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .projets-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px repeat(4, 200px);
+  }
+
+  .projet-card--featured {
+    grid-column: span 1;
+  }
+}
+</style>

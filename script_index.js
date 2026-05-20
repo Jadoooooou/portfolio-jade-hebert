@@ -16,8 +16,8 @@ const app = Vue.createApp({
 
         // Attends que le DOM soit mis à jour avant d’exécuter le code suivant
         this.$nextTick(() => {
-          this.initSwiper(); // Section horizontal des projets
           this.initTextAnimations(); // Devoilement vertical
+          this.initParallax(); // Parallax 3D
         });
     });
   },
@@ -28,40 +28,28 @@ const app = Vue.createApp({
       window.location.href = `projets.html?id=${project.id}`; // pages de projet
     },
 
-    // Section horizontale des projets
-    initSwiper() {
-      const container = document.querySelector(".projets-container");
-      if (!container) return;  // S'il n'y pas de .projets-container, n'applique pas le reste de la fonction
+    initParallax() {
+      const cards = document.querySelectorAll('.projet img')
+      
+      cards.forEach(card => {
+        gsap.to(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,  // lié directement au scroll
+            onUpdate: (self) => {
+              //console.log('progress:', self.progress) // ← doit changer en scrollant
+              // progress : 0 (carte en bas) → 0.5 (centre écran) → 1 (carte en haut)
+              const offset = (self.progress - 0.5) * 2
+              const shadowBlur = 20 + Math.abs(offset) * 40
+              const shadowOpacity = 0.1 + Math.abs(offset) * 0.3
 
-      // Pour mobiles
-      if (window.innerWidth < 400) { // Si l'écran est moins de 400px
-        gsap.set(container, { xPercent: 0 }); // Désactive GSAP
-        ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // Enlève les ScrollTriggers
-        return;
-      }
-
-      // Créer le swiper sur le container
-      const projetsSwiper = new Swiper('.projets-container', {
-        slidesPerView: 'auto',
-        freeMode: false,
-        spaceBetween: 8,
-        slidesOffsetAfter: 40,
-        grabCursor: true, // Le curseur affiche une main qui aggripe
-        mousewheel: {
-          forceToAxis: true,
-        },
-        speed: 600,
-      });
-
-      // Lie la flèche au swiper
-      const fleche = document.querySelector(".text-wrapper-projet");
-      if (fleche) {
-        fleche.style.cursor = "pointer";
-        fleche.addEventListener("click", () => {
-          projetsSwiper.slideNext();
-        });
-      }
-
+              card.style.boxShadow = `0 0 ${shadowBlur}px ${shadowBlur * 0.3}px rgba(0,0,0,${shadowOpacity})`
+            }
+          }
+        })
+      })
     },
   
     // Dévoilement vertical

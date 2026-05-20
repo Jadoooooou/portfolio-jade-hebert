@@ -194,6 +194,7 @@ header, section, div {
   display: grid;
   grid-template-rows: auto 1fr;
   padding-left: 2vh;
+  padding-right: 2vh;
   width: 100%;
   box-sizing: border-box;
 }
@@ -204,40 +205,44 @@ header, section, div {
   position: relative;
 }
 
-.text-wrapper-projet::after {
-  content: "➔"; 
-  position: absolute;
-  right: 0;
-  padding-right: 2vw;
-  transform: translateY(-50%);
-  font-size: 5rem;
-  color: black;
-  animation: arrow 1.8s infinite;
+.projets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 400px 400px 400px;
+  gap: 50px;
 }
 
-@keyframes arrow {
-  0%, 100% { transform: translateX(-50%); }
-  50% { transform: translateX(0%); }
+.projet p {
+  margin: 1rem 0;
 }
 
-/* ----- HORIZONTAL ---- */
-.swiper.projets-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  padding-left: 1vh;
+.projet:nth-child(1) {
+  grid-column: span 2;
 }
 
-.swiper-wrapper {
-  display: flex;
-  align-items: center; 
+.projet:nth-child(2) {
+  grid-column: 2 / span 2;
+  grid-row: 3;
 }
 
-.swiper-slide {
-  flex-shrink: 0;
-  width: 60vw !important; /* pour écraser le style de base */
-  margin-right: 20vw !important;
-  scroll-snap-align: start;
+.projet:nth-child(3) {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+.projet:nth-child(4) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.projet:nth-child(5) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.projet:nth-child(6) {
+  grid-column: span 2;
+  grid-row: 4;
 }
 
 .coup-de-coeur {
@@ -245,39 +250,22 @@ header, section, div {
 }
 
 .projet {
-  width: 80%;
-  position: relative; 
-  display: inline-block; 
-  justify-items: start;
-  padding-left: 2vw;
-  gap: 1rem;
+  height: 100%;
 }
 
 .projet img {
-  width: auto;
-  height: 40vw;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin-top: 4vh;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease, transform 0.4s ease;
 }
 
-.button-projet {
-  width: 60%;
-  font-size: clamp(15px, 1.5vw, 22px);
-  padding: clamp(10px, 1vw, 20px) clamp(20px, 2vw, 40px);
-  margin-top: 2vh;        
-  z-index: 2;  
-  border: 2px solid black;
-  color: black;
-  background: #e1e1de;
-  box-shadow: 3px 3px 0px black;
-  font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.button-projet:hover {
+.projet img:hover {
+  filter: grayscale(0%);
   transform: translate(-2px, -2px);
-  box-shadow: 5px 15px 0px black;
+  transition-delay: 0.1s;
 }
 
 /* ---------- À PROPOS ---------- */
@@ -489,78 +477,62 @@ header, section, div {
 }
 
 /* ---------- MOBILE ---------- */
-@media (max-width: 375px) {
+@media (max-width: 760px) {
 
-  .text-wrapper-projet::after {
-    content: ""; 
-    position: absolute;
-    right: 0;
-    padding-right: 2vw;
-    transform: translateY(-50%);
-    font-size: 5rem;
-    color: black;
-    animation: none;
+  .projets-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 270px 270px 270px 270px;
+    gap: 0px;
+  }
+
+  .projet img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .projet p {
+    font-size: 14px;
+    margin: 0.4rem 0;
   }
 
 }
-@media (max-width: 390px) {
+@media (max-width: 490px) {
 
   .key {
     font-size: 5rem;
   }
 
   .projets {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 2vh 2vh;
-    margin-bottom: 10vh;
+    padding: 2vh;
   }
 
   .coup-de-coeur {
     display: none;
   }
 
-  /* Désactivation du Swiper */
-  .swiper.projets-container {
-    width: 100%;
-    height: auto;
-    overflow: visible;
-  }
-
-  .swiper-wrapper {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
-
-  .swiper-slide {
-    width: 100% !important;
-    margin-bottom: 4rem;
+  .projets-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px 120px 120px;
+    gap: 6px;
   }
 
   .projet {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.2rem;
-    position: relative;
+    overflow: hidden;
+    height: 100%;
   }
 
   .projet img {
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .button-projet {
-    width: 50%;
-    position: absolute;
-    bottom: -30px;
-    left: 45%;           
-    z-index: 2;  
+  .projet p {
+    font-size: 10px;
+    margin: 0.4rem 0;
   }
+
 
   .portrait {
     display: none;

@@ -51,7 +51,7 @@
       <!-- <img src="medias/image_banner.png" alt="Bannière du portfolio">-->
       <div class="name">
         <p></p>
-        <p>Étudiante en intégration multimédia, je crée des expériences numériques qui éveillent l’émotion.</p>
+        <p></p>
       </div>
     </section>
 
@@ -60,20 +60,19 @@
       <h2 class="text-wrapper-projet">PROJETS</h2>
 
       <!-- Container de projets -->
-      <div class=" swiper projets-container">
-        <div class="swiper-wrapper">
+      <div class="projets-container">
 
           <!-- Récupération des données de chaque projets dans le tableau projects par une boucle (v-for)-->
-          <div class="swiper-slide projet" v-for="project in projects" :key="project.id"> 
+          <div class="projet" v-for="project in projects" :key="project.id" :class="{ 'projet--featured': project.id === 1 }"> 
             <!-- Affiche le titre et le ID des projets (boucle) + affiche la mention coup de coeur au projet -->
             <p>[ {{ project.id }} ] {{ project.title }} <span v-if="project.id === 1" class="coup-de-coeur">♥ Prix coup de cœur</span> </p>
-            <img :src="project.images[0]" :alt="'Projet ${project.title}'">
+            <img :src="project.images[0]" :alt="'Projet ${project.title}'" @click="voirPlus(project)">
             <!-- Bouton qui amène l'utilisateur à la page Projets et charge les données selon une méthode Vue -->
-            <button class="button button-projet" @click="voirPlus(project)">voir plus</button>
           </div>
 
-        </div>
       </div>
+
+    
     </section>
 
     <!-- Section À propos -->

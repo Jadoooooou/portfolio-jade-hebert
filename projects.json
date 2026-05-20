@@ -27,32 +27,6 @@
   },
   {
     "id": 2,
-    "title": "Portfolio de photos",
-    "images": ["medias/portfolio_accueil.png"],
-    "link": "https://www.figma.com/design/PJl1QVdefYJRyqASUitmoR/hebert_jade__T04_582-201MO?t=oRpOyULxuzdznX5q-1",
-
-    "titleHero": "PORTFOLIO DE PHOTOS",
-    "imgHero": ["medias/portfolio_accueil.png"],
-    "descriptionHero": "Création d’un prototype interactif d’un portfolio créatif, original et qui reflète ma personnalité.",
-
-    "imgObj": ["medias/portfolio_graphique.png"],
-
-    "classDonnees": "[ Design graphique ]",
-    "collabDonnees": "[ Individuel ]",
-    "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphiques, création d'un prototype ]",
-    "appDonnees": "[ Figma ]",
-    
-    "objectifObj": "Ce projet avait pour objectif de concevoir l’identité visuelle et l’architecture interactive d’un portfolio à l’aide de Figma, capable de répondre à des critères précis de structure et d’interactivité. Le projet impliquait la réalisation d’un processus structuré comprenant la recherche d’inspirations, la création d’un moodboard, l’élaboration de maquettes graphiques, puis la conception d’un prototype interactif simulant le comportement réel du site.",
-
-    "text1Process": "Le développement du concept visuel s’est appuyé sur la recherche de sites au design épuré et fonctionnel, combinant une esthétique contemporaine inspirée des mises en page éditoriales à une expérience utilisateur intuitive. Cette exploration m’a permis d’analyser différentes approches graphiques, allant du brutalisme numérique à des compositions plus organiques et colorées. De ces références, j’ai réaliser une planche de moodboard",
-    "img1Process": ["medias/portfolio_moodboard_01.png"],
-    "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une page de contact et un logo.",
-    "img2Process": ["medias/portfolio_prototype.png"],
-    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Enfin, la réalisation du prototype interactif dans Figma a permis de simuler les comportements dynamiques du site.",
-    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
-  },
-  {
-    "id": 3,
     "title": "Animation générative",
     "images": ["medias/animation_generative_01.jpg"],
     "link": "https://youtu.be/GNn2kjDuReM",
@@ -78,9 +52,36 @@
     "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
   },
   {
+    "id": 3,
+    "title": "OSMOSE",
+    "images": ["medias/OSMOSE2.jpeg"],
+    "link": "https://cmontmorency365-my.sharepoint.com/:v:/r/personal/2366906_cmontmorency_qc_ca/Documents/osmose_version_francais_web.mov?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qCjM8s",
+
+    "titleHero": "OSMOSE",
+    "imgHero": ["medias/OSMOSE3.jpeg"],
+    "descriptionHero": "Court-métrage collaboratif explorant la féminité à travers l’intelligence artificielle et la création artistique.",
+
+    "imgObj": ["medias/OSMOSE4.jpeg"],
+
+    "classDonnees": "[ Montage vidéo ]",
+    "collabDonnees": "[ Meggie Cloutier Hamel, Sarah Septembre, Naomi Chouinard, Gitane Céré Tremblay ]",
+    "workDonnees": "[ Traitement d'images et vidéos à la postproduction ]",
+    "appDonnees": "[ DaVinci & Freepik ]",
+    
+    "objectifObj": "L’objectif de ce projet était de créer un court-métrage collaboratif servant à la fois d’exploration artistique et de démarche d’insertion professionnelle. Il visait à offrir une première expérience de création intégrant l’intelligence artificielle, tout en favorisant la collaboration entre étudiantes de différentes institutions.",
+
+    "text1Process": "J’ai eu la chance d’être invitée à travailler sur le projet OSMOSE, un court-métrage qui explore le thème de la féminité à travers des regards pluriels, sensibles et contemporains.",
+    "img1Process": ["medias/OSMOSE6.jpeg"],
+    "text2Process": "Mon rôle consistait à expérimenter et intégrer des techniques d’upscaling d’images et de vidéos en postproduction afin d’améliorer la qualité visuelle et la cohérence esthétique, en s’appuyant sur des outils d’intelligence artificielle.",
+    "img2Process": ["medias/OSMOSE.jpeg"],
+    "text3Process": "Sous l’accompagnement de Françoise Lavoie-Pilote, l’ensemble de l'équipe de création et moi avons développé des compétences en rédaction de prompts et en utilisation de divers outils d’intelligence artificielle, notamment Runway, Midjourney et Freepik.",
+    "creditsProcess": "Projet subventionné par le Pôle Lavallois d'enseignement supérieur"
+
+  },
+  {
     "id": 4,
     "title": "Publicité web",
-    "images": ["medias/publicite_02.png"],
+    "images": ["medias/publicite_04.png"],
     "link": "https://www.figma.com/design/NMTBFsotgb1tqf7dX7TT7C/hebert_jade__T02_582-201MO?t=oRpOyULxuzdznX5q-1",
 
     "titleHero": "PUBLICITÉ WEB",
@@ -103,56 +104,56 @@
     "text3Process": "Finalement, j'ai conçu trois différentes formes de publicité médiatique selon des modèles préconçus. J'ai adapté mon modèle de publicité original pour que ce dernier s'adapte aux différentes applications (Instagram et Facebook) en respectant les règles du design.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
   },
-    {
-    "id": 5,
-    "title": "OSMOSE",
-    "images": ["medias/OSMOSE2.jpeg"],
-    "link": "",
-
-    "titleHero": "OSMOSE",
-    "imgHero": ["medias/OSMOSE3.jpeg"],
-    "descriptionHero": "Court-métrage collaboratif explorant la féminité à travers l’intelligence artificielle et la création artistique.",
-
-    "imgObj": ["medias/OSMOSE4.jpeg"],
-
-    "classDonnees": "[ Montage vidéo ]",
-    "collabDonnees": "[ Meggie Cloutier Hamel, Sarah Septembre, Naomi Chouinard, Gitane Céré Tremblay ]",
-    "workDonnees": "[ Traitement d'images et vidéos à la postproduction ]",
-    "appDonnees": "[ DaVinci & Freepik ]",
-    
-    "objectifObj": "L’objectif de ce projet était de créer un court-métrage collaboratif servant à la fois d’exploration artistique et de démarche d’insertion professionnelle. Il visait à offrir une première expérience de création intégrant l’intelligence artificielle, tout en favorisant la collaboration entre étudiantes de différentes institutions.",
-
-    "text1Process": "J’ai eu la chance d’être invitée à travailler sur le projet OSMOSE, un court-métrage qui explore le thème de la féminité à travers des regards pluriels, sensibles et contemporains.",
-    "img1Process": ["medias/OSMOSE6.jpeg"],
-    "text2Process": "Mon rôle consistait à expérimenter et intégrer des techniques d’upscaling d’images et de vidéos en postproduction afin d’améliorer la qualité visuelle et la cohérence esthétique, en s’appuyant sur des outils d’intelligence artificielle.",
-    "img2Process": ["medias/OSMOSE.jpeg"],
-    "text3Process": "Sous l’accompagnement de Françoise Lavoie-Pilote, l’ensemble de l'équipe de création et moi avons développé des compétences en rédaction de prompts et en utilisation de divers outils d’intelligence artificielle, notamment Runway, Midjourney et Freepik.",
-    "creditsProcess": "Projet subventionné par le Pôle Lavallois d'enseignement supérieur"
-  },
   {
-    "id": 6,
-    "title": "Cocktails de l'Avent",
-    "images": ["medias/calendrier_01.png"],
-    "link": "https://www.canva.com/design/DAGWf2aV2Yk/xzuQSpn_TLjJj8-Q1FUjRg/view?utm_content=DAGWf2aV2Yk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb991a82282",
+    "id": 5,
+    "title": "Portfolio de photos",
+    "images": ["medias/portfolio_mac.png"],
+    "link": "https://www.figma.com/design/PJl1QVdefYJRyqASUitmoR/hebert_jade__T04_582-201MO?t=oRpOyULxuzdznX5q-1",
 
-    "titleHero": "COCKTAILS DE L'AVENT",
-    "imgHero": ["medias/calendrier_02.png"],
-    "descriptionHero": "Réalisation d’un ensemble de 24 cartes illustrées présentant chacune une recette de cocktail et un fait anodin sur celui-ci.",
+    "titleHero": "PORTFOLIO DE PHOTOS",
+    "imgHero": ["medias/portfolio_accueil.png"],
+    "descriptionHero": "Création d’un prototype interactif d’un portfolio créatif, original et qui reflète ma personnalité.",
 
-    "imgObj": ["medias/calendrier_03.png"],
+    "imgObj": ["medias/portfolio_graphique.png"],
 
     "classDonnees": "[ Design graphique ]",
     "collabDonnees": "[ Individuel ]",
-    "workDonnees": "[ Recherche de recettes, conception graphique et mise en page ]",
-    "appDonnees": "[ Canva ]",
+    "workDonnees": "[ Recherche d'inspirations, création d'un moodboard et de maquettes graphiques, création d'un prototype ]",
+    "appDonnees": "[ Figma ]",
     
-    "objectifObj": "Le projet avait pour objectif de créer une série de petites cartes ludiques et esthétiques comme un calendrier de l'Avant permettant de découvrir des cocktails classiques et originaux. Chaque carte devait présenter la recette complète ainsi qu’un fait intéressant ou amusant lié au cocktail, afin d’enrichir l’expérience de lecture et de dégustation.",
+    "objectifObj": "Ce projet avait pour objectif de concevoir l’identité visuelle et l’architecture interactive d’un portfolio à l’aide de Figma, capable de répondre à des critères précis de structure et d’interactivité. Le projet impliquait la réalisation d’un processus structuré comprenant la recherche d’inspirations, la création d’un moodboard, l’élaboration de maquettes graphiques, puis la conception d’un prototype interactif simulant le comportement réel du site.",
 
-    "text1Process": "Pour débuter, j’ai effectué une recherche sur différents types de cocktails populaires afin de sélectionner 24 recettes variées. J’ai également rassemblé pour chacun un petit fait insolite ou historique pour ajouter une touche informative et divertissante.",
-    "img1Process": ["medias/calendrier_01.png"],
-    "text2Process": "Je me suis ensuite inspiré d'un style plus éditorial; la palette de couleurs et la typographie sont assez sobre. Le centre de l'attention est l'illustration du cocktail.",
-    "img2Process": ["medias/calendrier_04.png"],
-    "text3Process": "Finalement, j’ai réalisé la mise en page des 24 cartes en harmonisant les informations visuelles et textuelles. Chaque carte présente un équilibre entre la recette, l’illustration et le fait anodin, créant un objet graphique à la fois informatif et esthétique.",
-    "creditsProcess": "Création personelle"
-  }
+    "text1Process": "Le développement du concept visuel s’est appuyé sur la recherche de sites au design épuré et fonctionnel, combinant une esthétique contemporaine inspirée des mises en page éditoriales à une expérience utilisateur intuitive. Cette exploration m’a permis d’analyser différentes approches graphiques, allant du brutalisme numérique à des compositions plus organiques et colorées. De ces références, j’ai réaliser une planche de moodboard",
+    "img1Process": ["medias/portfolio_moodboard_01.png"],
+    "text2Process": "Le site devait intégrer plusieurs éléments fonctionnels et visuels : une animation automatique au chargement, deux animations déclenchées par des interactions (clic, scroll, hover, etc.), six images minimum, en plus de suivre une structure obligatoire : une page d'accueil, une section secondaire, une page de contact et un logo.",
+    "img2Process": ["medias/portfolio_prototype.png"],
+    "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Enfin, la réalisation du prototype interactif dans Figma a permis de simuler les comportements dynamiques du site.",
+    "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
+    },
+    {
+    "id": 6,
+    "title": "Les Pitchs Porte Parole",
+    "images": ["medias/pitch1.jpg"],
+    "link": "https://porteparole.org/fr/hub-documentaire/les-pitchs-porte-parole/les-pitchs-porte-parole-2026/",
+
+    "titleHero": "LES PITCHS PORTE PAROLE",
+    "imgHero": ["medias/PITCHS2026.jpg"],
+    "descriptionHero": "Réalisation de montages vidéos pour la soirée des Pitchs Porte-Parole 2026 et pour les médias sociaux.",
+
+    "imgObj": ["medias/pitch1.jpg"],
+
+    "classDonnees": "[ Montage vidéo ]",
+    "collabDonnees": "[ Stage ]",
+    "workDonnees": "[ Assemblage narratif, effets visuels et sonores, colorisation et sous-titrage ]",
+    "appDonnees": "[ Adobe Premiere Pro & After Effects ]",
+    
+    "objectifObj": "Ce stage avait pour objectif de réaliser le montage des vidéos de présentation des participants à la soirée des Pitchs Porte-Parole 2026, tout en réalisant la création de contenus destinés aux médias sociaux. Le mandat impliquait un processus complet comprenant l’assemblage narratif et sonore, la recherche de médias externes visuels et audio, ainsi que la présentation de versions afin de recueillir des corrections.",
+
+    "text1Process": "",
+    "img1Process": ["medias/pitch3.png"],
+    "text2Process": "",
+    "img2Process": ["medias/pitch2.jpg"],
+    "text3Process": "",
+    "creditsProcess": "Sous la direction de l'équipe des Productions Porte-Parole 2026"
+    }
 ]
