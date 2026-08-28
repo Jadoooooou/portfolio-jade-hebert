@@ -25,11 +25,32 @@
       <!-- Navigation pour renvoyer à des sections dans la page -->
       <nav class="nav">
         [ 
-        <a href="#projets">Projets</a>, 
-        <a href="#a-propos">À propos</a>, 
+        <a href="#projets">Projets </a> , 
+        <a href="#a-propos">À propos </a> , 
         <a href="#contact">Contact</a> 
         ]
       </nav>
+
+      <!-- Icons de mes réseaux sociaux -->
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/jade-hebert-0958562b9/" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.53 1.72-2.53 3.48V23h-4V8z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/jademshebert/" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/jademariesonia.hebert/?locale=fr_CA" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M22 12a10 10 0 1 0-11.56 9.87v-6.98H7.9V12h2.54V9.8c0-2.5 1.5-3.89 3.78-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.98A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+      </div>
     </header>
 
     <!-- Section Hero -->
@@ -82,7 +103,6 @@
         <div class="a-propos-text">
           <p>Design numérique ou réalisation d'images médiatiques, j’aime combiner mes compétences 
             en design graphique et traitement audiovisuel pour concevoir des projets visuellement percutants </p>
-          <p>[Languages - HTML & CSS]</p>
           <div class="logiciels">
             <img src="medias/touch_logo.png" alt="Logo de TouchDesigner">
             <img src="medias/figma_logo.png" alt="Logo de Figma">
@@ -91,7 +111,48 @@
             <img src="medias/vs_logo.png" alt="Logo de Visual Studio Code">
           </div>
         </div>
-        <img class="portrait" src="medias/photo_pro.jpg" alt="Portrait de Jade Hébert">
+        <div class="portrait-wrapper">
+          <img class="portrait" src="medias/photo_pro.jpg" alt="Portrait de Jade Hébert">
+          <svg class="doodle-overlay" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Cercle scribble autour du visage 
+            <g class="doodle-float f1" transform="translate(140,70) scale(2.3)">
+              <circle cx="60" cy="60" r="35" fill="none" stroke="#ec4899" stroke-width="1.5" transform="rotate(-8 60 60)"/>
+              <circle cx="60" cy="60" r="38" fill="none" stroke="#ec4899" stroke-width="1.5" transform="rotate(12 60 60)"/>
+              <circle cx="58" cy="58" r="33" fill="none" stroke="#ec4899" stroke-width="1.5" transform="rotate(35 60 60)"/>
+              <circle cx="62" cy="62" r="36" fill="none" stroke="#ec4899" stroke-width="1.5" transform="rotate(-25 60 60)"/>
+            </g> -->
+
+            <!-- Flèche double-trait pointant vers le visage -->
+            <g class="doodle-float f2" transform="translate(10,200) scale(1.4)">
+              <path d="M20 90 L100 30" stroke="#ec4899" stroke-width="2" stroke-linecap="round" fill="none" transform="rotate(-2 60 60)"/>
+              <path d="M20 88 L98 32" stroke="#ec4899" stroke-width="2" stroke-linecap="round" fill="none" transform="rotate(3 60 60)"/>
+              <path d="M100 30 L82 32 M100 30 L96 46" stroke="#ec4899" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <path d="M98 32 L80 36 M98 32 L94 48" stroke="#ec4899" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- Étoile scribble décorative (coin supérieur droit) -->
+            <g class="doodle-float f3" transform="translate(280,60) scale(0.9)">
+              <path d="M60 20 L67 48 L95 50 L70 65 L78 92 L60 75 L42 92 L50 65 L25 50 L53 48 Z" fill="none" stroke="#ec4899" stroke-width="2.5" transform="rotate(-4 60 60)"/>
+              <path d="M60 22 L66 49 L94 51 L69 66 L77 90 L60 74 L43 90 L51 66 L27 51 L54 49 Z" fill="none" stroke="#ec4899" stroke-width="2.5" transform="rotate(6 60 60)"/>
+            </g>
+
+            <!-- Vaguelettes multi-lignes -->
+            <g class="doodle-float f4" transform="translate(260,320) scale(1.3)">
+              <path d="M25 45 Q35 30,45 45 T65 45 T85 45 T105 45" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round"/>
+              <path d="M25 55 Q35 40,45 55 T65 55 T85 55 T105 55" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round"/>
+              <path d="M25 65 Q35 50,45 65 T65 65 T85 65 T105 65" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <!-- Griffonnage énergique -->
+            <g class="doodle-float f5" transform="translate(20,380) scale(1.2)">
+              <path d="M20 90 C40 60,45 100,60 70 C75 40,85 90,100 60" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" transform="rotate(-3 60 60)"/>
+              <path d="M20 85 C40 55,45 95,60 65 C75 35,85 85,100 55" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" transform="rotate(4 60 60)"/>
+              <path d="M20 95 C40 65,45 105,60 75 C75 45,85 95,100 65" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round" transform="rotate(-6 60 60)"/>
+            </g>
+
+          </svg>
+        </div>
       </div>
     </section>
 

@@ -18,6 +18,7 @@ const app = Vue.createApp({
         this.$nextTick(() => {
           this.initTextAnimations(); // Devoilement vertical
           this.initParallax(); // Parallax 3D
+          this.initLogicielsAnimation(); // Animation des icônes logiciels
         });
     });
   },
@@ -101,6 +102,28 @@ const app = Vue.createApp({
 
       // Force un refresh une fois les animations créées
       ScrollTrigger.refresh();
+    },
+
+    initLogicielsAnimation() {
+      const icons = gsap.utils.toArray('.logiciels img');
+
+      gsap.fromTo(
+        icons,
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "power2.out",
+          stagger: 0.12, // délai entre chaque icône
+          scrollTrigger: {
+            trigger: '.logiciels',
+            start: "top 85%", // se déclenche un peu avant que la section soit pleinement visible
+            toggleActions: "play none none reverse",
+            invalidateOnRefresh: true,
+          },
+        }
+      );
     },
   },
 });

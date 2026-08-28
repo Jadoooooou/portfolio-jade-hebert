@@ -6,6 +6,7 @@ body, html{
   margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* cursor: url('medias/icons8-cursor-48.png') 0 0, auto;*/
 }
 
 body {
@@ -34,7 +35,7 @@ header, section, div {
 /* ---------- HEADER ---------- */
 .header {
   display: grid;
-  grid-template-columns: auto 60% 10px;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   border-bottom: 3px solid black;
   padding: 2vh;
@@ -50,28 +51,37 @@ header, section, div {
 .nav {
   font-weight: 500;
   font-size: 1.5rem;
-  text-align: right;
+  text-align: center;
+  justify-self: center; /* centre horizontalement dans sa colonne */
 }
 
 .nav a {
   color: #000;
   text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* ----- ANIMATION FONT ---- */
 .nav a:hover {
-  animation: titre 1s infinite;
+  opacity: 0.55;
+  transform: scale(1.06);
 }
 
-@keyframes titre {
-  0%, 100% {
-    font-family: "Goma", sans-serif;
-    letter-spacing: 1px;
-  }
-  50% {
-    font-family: "Blob", sans-serif;
-    letter-spacing: -1px;
-  }
+.socials {
+  display: flex;
+  gap: 16px;
+  justify-self: end;
+}
+
+.socials a {
+  color: #000;
+  display: inline-flex;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  opacity: 0.55;
+  transform: scale(1.15);
 }
 
 /* ---------- HERO ---------- */
@@ -312,6 +322,7 @@ header, section, div {
   width: 10%;
   filter: grayscale(100%);
   transition: filter 0.4s ease, transform 0.4s ease;
+  opacity: 0; /* état initial avant l'animation GSAP */
 }
 
 .logiciels img:last-child {
@@ -326,6 +337,57 @@ header, section, div {
 
 .portrait {
   display: none;
+}
+
+.doodle-float {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.f1 { animation: jitter1 2s steps(1) infinite; }
+.f2 { animation: jitter2 3s steps(1) infinite; }
+.f3 { animation: jitter3 2s steps(1) infinite; }
+.f4 { animation: jitter4 4s steps(1) infinite; }
+.f5 { animation: jitter5 2s steps(1) infinite; }
+
+@keyframes jitter1 {
+  0%   { translate: 0 0; rotate: 0deg; }
+  20%  { translate: 8px -6px; rotate: -3deg; }
+  45%  { translate: -5px 4px; rotate: 2deg; }
+  70%  { translate: 4px 7px; rotate: -1deg; }
+  100% { translate: 0 0; rotate: 0deg; }
+}
+
+@keyframes jitter2 {
+  0%   { translate: 0 0; rotate: 0deg; }
+  30%  { translate: -6px -4px; rotate: 4deg; }
+  55%  { translate: 5px 6px; rotate: -2deg; }
+  80%  { translate: -3px 3px; rotate: 3deg; }
+  100% { translate: 0 0; rotate: 0deg; }
+}
+
+@keyframes jitter3 {
+  0%   { translate: 0 0; rotate: 0deg; }
+  25%  { translate: 6px 5px; rotate: -4deg; }
+  50%  { translate: -7px -3px; rotate: 2deg; }
+  75%  { translate: 3px -5px; rotate: -2deg; }
+  100% { translate: 0 0; rotate: 0deg; }
+}
+
+@keyframes jitter4 {
+  0%   { translate: 0 0; rotate: 0deg; }
+  35%  { translate: -4px 6px; rotate: 3deg; }
+  60%  { translate: 6px -4px; rotate: -3deg; }
+  85%  { translate: -6px -2px; rotate: 1deg; }
+  100% { translate: 0 0; rotate: 0deg; }
+}
+
+@keyframes jitter5 {
+  0%   { translate: 0 0; rotate: 0deg; }
+  20%  { translate: 5px 3px; rotate: -2deg; }
+  50%  { translate: -6px -5px; rotate: 4deg; }
+  75%  { translate: 4px -3px; rotate: -3deg; }
+  100% { translate: 0 0; rotate: 0deg; }
 }
 
 /* ---------- COMPETENCES ---------- */
@@ -479,10 +541,43 @@ header, section, div {
 /* ---------- MOBILE ---------- */
 @media (max-width: 760px) {
 
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+      "title nav"
+      "socials socials";
+    align-items: center;
+    row-gap: 1rem;
+    padding: 3vh 2vh;
+  }
+
+  .text-wrapper {
+    grid-area: title;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .nav {
+    grid-area: nav;
+    font-size: 0.9rem;
+    text-align: right;
+    justify-self: end;
+  }
+
+  .socials {
+    grid-area: socials;
+    justify-self: end;
+  }
+
   .projets-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 270px 270px 270px 270px;
-    gap: 0px;
+    gap: 16px; /* était 0px */
+  }
+
+  .projet {
+    overflow: visible; /* laisse sortir l'ombre */
   }
 
   .projet img {
@@ -503,6 +598,23 @@ header, section, div {
     font-size: 5rem;
   }
 
+  .text-wrapper {
+    font-size: 18px;
+  }
+
+  .nav {
+    font-size: 0.85rem;
+  }
+
+  .socials {
+    gap: 12px;
+  }
+
+  .socials svg {
+    width: 18px;
+    height: 18px;
+  }
+
   .projets {
     padding: 2vh;
   }
@@ -514,11 +626,11 @@ header, section, div {
   .projets-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px 120px 120px 120px;
-    gap: 6px;
+    gap: 14px; /* était 6px */
   }
 
   .projet {
-    overflow: hidden;
+    overflow: visible; /* était overflow: hidden */
     height: 100%;
   }
 
@@ -596,14 +708,41 @@ header, section, div {
     font-size: 35px;
   }
 
-  .a-propos .portrait {
+  .portrait-wrapper {
+  position: relative;
+  display: unset;
+  width: 80%;
+  justify-self: end;
+  }
+
+  .portrait-wrapper .portrait {
     display: unset;
-    width: 80%;
+    width: 100%;
     height: auto;
-    justify-self: end;
     filter: grayscale(100%);
     border: 2px solid black;
     box-shadow: 3px 3px 0px black;
+  }
+
+  .doodle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .doodle {
+    fill: none;
+    stroke: #ec4899;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .doodle-thin {
+    stroke-width: 2;
   }
 
   .competences {
