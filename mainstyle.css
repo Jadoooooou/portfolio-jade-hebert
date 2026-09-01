@@ -573,7 +573,7 @@ header, section, div {
   .projets-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 270px 270px 270px 270px;
-    gap: 16px; /* était 0px */
+    gap: 20px; /* était 0px */
   }
 
   .projet {
@@ -626,7 +626,7 @@ header, section, div {
   .projets-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 120px 120px 120px 120px;
-    gap: 14px; /* était 6px */
+    gap: 22px;  /*était 6px */
   }
 
   .projet {
@@ -797,8 +797,12 @@ header, section, div {
     padding: 0 8vw 0 8vw;
   }
 
+  .text-wrapper-propos {
+    margin-top: 30vh;
+  }
+
   .a-propos-content {
-    grid-template-columns: 60% 1fr;
+    grid-template-columns: 65% 1fr; /* était 60% 1fr — donne plus de place à l'image */
   }
 
   .a-propos-text p {
@@ -806,9 +810,9 @@ header, section, div {
     font-size: 50px;
   }
 
-  .a-propos .portrait {
-    width: 60%;
-    margin-right: 30%;
+  .portrait-wrapper {
+    width: 90%; /* était 60% sur .a-propos .portrait */
+    margin-right: 5%; /* était 30% — l'image se rapproche moins du centre, prend plus large */
   }
 
   .logiciels {
