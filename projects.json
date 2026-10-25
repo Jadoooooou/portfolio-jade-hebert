@@ -134,8 +134,8 @@
     "img2Process": ["medias/portfolio_prototype.png"],
     "text3Process": "J’ai ensuite réalisé une planche de wireframes définissant la structure souhaitée pour mon portfolio. Puis, j'ai incorporé mes couleurs de mon moodboard ainsi que ma police et les élements UI (boutons et carroussels). Enfin, la réalisation du prototype interactif dans Figma a permis de simuler les comportements dynamiques du site.",
     "creditsProcess": "Sous la direction artistique et technique de Marie-Michelle Ouellet"
-    },
-    {
+  },
+  {
     "id": 6,
     "numero": "Montage vidéo",
     "title": "Les Pitchs Porte Parole",
@@ -161,5 +161,32 @@
     "img2Process": ["medias/pitch2.jpg"],
     "text3Process": "",
     "creditsProcess": "Sous la direction de l'équipe des Productions Porte-Parole 2026"
-    }
+  },
+  {
+    "id": 7,
+    "numero": "Montage vidéo",
+    "title": "DÉSINFORMATION",
+    "images": ["medias/fq_expand.png"],
+    "link": "https://faitque.ca/",
+
+    "titleHero": "Fait Que - DÉSINFORMATION",
+    "imgHero": ["medias/fq_mockup.png"],
+    "descriptionHero": "Réalisation d'une courte animation sur la désinformation, édition de fin octobre pour la revue numérique Fait Que.",
+
+    "imgObj": ["medias/fq_miniature.png"],
+
+    "classDonnees": "[ Montage vidéo ]",
+    "collabDonnees": "[ Contrat ]",
+    "workDonnees": "[ Effets visuels et colorisation]",
+    "appDonnees": "[ After Effects ]",
+    
+    "objectifObj": "",
+
+    "text1Process": "",
+    "img1Process": ["medias/fq_ideations.png"],
+    "text2Process": "",
+    "img2Process": ["medias/fq_ae.png"],
+    "text3Process": "",
+    "creditsProcess": "Sous la direction de Rémi Leroux, rédacteur en chef, et Alexandre Couture, chef de pupitre"
+  }
 ]
