@@ -31,7 +31,7 @@
         ]
       </nav>
 
-      <!-- Icons de mes réseaux sociaux -->
+      <!-- Icons réseaux sociaux -->
       <div class="socials">
         <a href="https://www.linkedin.com/in/jade-hebert-0958562b9/" target="_blank" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
@@ -84,10 +84,11 @@
       <div class="projets-container">
 
           <!-- Récupération des données de chaque projets dans le tableau projects par une boucle (v-for)-->
-          <div class="projet" v-for="project in projects" :key="project.id" :class="{ 'projet--featured': project.id === 1 }"> 
+          <div class="projet" v-for="project in projects" :key="project.id" :class="{ 'projet--featured': project.numero === 1 }"> 
             <!-- Affiche le titre et le ID des projets (boucle) + affiche la mention coup de coeur au projet -->
-            <p>[ {{ project.id }} ] {{ project.title }} <span v-if="project.id === 1" class="coup-de-coeur">♥ Prix coup de cœur</span> </p>
-            <img :src="project.images[0]" :alt="'Projet ${project.title}'" @click="voirPlus(project)">
+            <span class="projet-titre">{{ project.title }}</span><span class="projet-categorie">  [ {{ project.numero }} ]</span>
+            <span v-if="project.id === 1" class="coup-de-coeur">♥ Prix coup de cœur</span> <p></p>
+            <img :src="project.images[0]" :alt="`Projet ${project.title}`" @click="voirPlus(project)">
             <!-- Bouton qui amène l'utilisateur à la page Projets et charge les données selon une méthode Vue -->
           </div>
 

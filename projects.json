@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "numero": "Animation 3D",
     "title": "Déconnexion",
     "images": ["medias/paysage_03.jpg"],
     "link": "https://youtu.be/oxHs42J_gNQ",
@@ -27,6 +28,7 @@
   },
   {
     "id": 2,
+    "numero": "Animation 3D",
     "title": "Animation générative",
     "images": ["medias/animation_generative_01.jpg"],
     "link": "https://youtu.be/GNn2kjDuReM",
@@ -53,6 +55,7 @@
   },
   {
     "id": 3,
+    "numero": "Montage vidéo",
     "title": "OSMOSE",
     "images": ["medias/OSMOSE2.jpeg"],
     "link": "https://cmontmorency365-my.sharepoint.com/:v:/r/personal/2366906_cmontmorency_qc_ca/Documents/osmose_version_francais_web.mov?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=qCjM8s",
@@ -80,6 +83,7 @@
   },
   {
     "id": 4,
+    "numero": "Design web",
     "title": "Publicité web",
     "images": ["medias/publicite_04.png"],
     "link": "https://www.figma.com/design/NMTBFsotgb1tqf7dX7TT7C/hebert_jade__T02_582-201MO?t=oRpOyULxuzdznX5q-1",
@@ -106,7 +110,8 @@
   },
   {
     "id": 5,
-    "title": "Portfolio de photos",
+    "numero": "Design web",
+    "title": "Portfolio",
     "images": ["medias/portfolio_mac.png"],
     "link": "https://www.figma.com/design/PJl1QVdefYJRyqASUitmoR/hebert_jade__T04_582-201MO?t=oRpOyULxuzdznX5q-1",
 
@@ -132,6 +137,7 @@
     },
     {
     "id": 6,
+    "numero": "Montage vidéo",
     "title": "Les Pitchs Porte Parole",
     "images": ["medias/pitch1.jpg"],
     "link": "https://porteparole.org/fr/hub-documentaire/les-pitchs-porte-parole/les-pitchs-porte-parole-2026/",
