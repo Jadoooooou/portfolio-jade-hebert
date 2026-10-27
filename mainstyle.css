@@ -291,6 +291,54 @@ header, section, div {
   transition-delay: 0.1s;
 }
 
+/* ---------- GRAFITI ---------- */
+.projet {
+  position: relative;
+  isolation: isolate;
+}
+
+.spray {
+  position: absolute;
+  left: 50%;
+  top: 55%;                 
+  width: 150%;
+  height: 150%;
+  translate: -50% -50%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(circle closest-side, var(--c) 0 30%, transparent 100%);
+  filter: blur(26px);
+  opacity: 0;
+  transform: scale(.3) rotate(var(--r, 0deg));
+  transition: opacity .25s ease-out,
+              transform .45s cubic-bezier(.2, .9, .3, 1.2);
+}
+
+/* Couleurs */
+.projet:nth-child(1) { --c: #ff1493; --r: 0deg; }    /* rose */
+.projet:nth-child(2) { --c: #ff8214; --r: 0deg; }    /* orange */
+.projet:nth-child(3) { --c: #538e6a; --r: 0deg; }    /* vert */
+.projet:nth-child(4) { --c: #7726c8; --r: 0deg; }    /* vert */
+.projet:nth-child(5) { --c: #ff8214; --r: 0deg; }    /* orange */
+.projet:nth-child(6) { --c: #ffd900; --r: 0deg; }    /* jaune */
+.projet:nth-child(7) { --c: #00075e; --r: 0deg; }    /* bleu */
+
+/* seulement sur appareils avec souris  */
+@media (hover: hover) {
+  .projet:hover .spray {
+    opacity: .95;
+    transform: scale(1) rotate(var(--r, 0deg));
+  }
+}
+
+@media (max-width: 760px) {
+  .spray { filter: blur(14px); } 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spray { transition: none; }
+}
+
 /* ---------- À PROPOS ---------- */
 .a-propos {
   position: relative;

@@ -86,6 +86,7 @@
           <!-- Récupération des données de chaque projets dans le tableau projects par une boucle (v-for)-->
           <div class="projet" v-for="project in projects" :key="project.id" :class="{ 'projet--featured': project.numero === 1 }"> 
             <!-- Affiche le titre et le ID des projets (boucle) + affiche la mention coup de coeur au projet -->
+            <div class="spray"></div> <!-- Effet de grafitti -->
             <span class="projet-titre">{{ project.title }}</span><span class="projet-categorie">  [ {{ project.numero }} ]</span>
             <span v-if="project.id === 1" class="coup-de-coeur">♥ Prix coup de cœur</span> <p></p>
             <img :src="project.images[0]" :alt="`Projet ${project.title}`" @click="voirPlus(project)">
@@ -94,7 +95,6 @@
 
       </div>
 
-    
     </section>
 
     <!-- Section À propos -->
