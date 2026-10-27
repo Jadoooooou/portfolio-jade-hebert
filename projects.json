@@ -20,9 +20,9 @@
     "objectifObj": "Le projet avait pour objectif la réalisation d’un court métrage d’animation 3D d’une durée minimale de soixante secondes. L’intention principale était de créer une expérience immersive capable de capter l’attention du spectateur et de susciter un état de contemplation.",
 
     "text1Process": "Le processus de création s’est amorcé à partir de la trame sonore, une ambiance de sortie en boîte de nuit conçue dans le logiciel Max, qui a servi de fondation conceptuelle et rythmique à l’ensemble du projet. Cette approche inversée (partir du son pour construire l’image) a guidé le choix d’un modèle 3D d’un bar rétro-futuriste à l’esthétique asiatique réalisé par ONEROCKETT.",
-    "img1Process": ["medias/paysage_modele3D.png"],
+    "img1Process": ["medias/paysage_02.jpg"],
     "text2Process": "Une fois importé dans MAYA, la palette de couleur a été retravaillée afin d’harmoniser l’environnement avec l’atmosphère sonore, et enrichissement de l’éclairage pour renforcer l’immersion. L’animation de la caméra a ensuite été pensée pour recréer une sensation progressive de désorientation et de chaos visuel où les repères spatiaux se fragmentent, le temps semble se dilater et le lâcher prise devient inévitable.",
-    "img2Process": ["medias/paysage_02.jpg"],
+    "img2Process": ["medias/paysage_modele3D.png"],
     "text3Process": "Quatre séquences distinctes ont été produites : trois animations de caméra dans l'environnement du bar, et une animation de caméra et de distorsion dans un univers plus abstrait. afin d’orchestrer un montage cohérent entre image et son. Ce travail de postproduction a permis de synchroniser les variations visuelles aux intensités sonores, consolidant ainsi l’expérience immersive recherchée.",
     "creditsProcess": "Sous la direction artistique et technique de Charlène Gilbert"
   },
@@ -156,9 +156,9 @@
     "objectifObj": "Ce stage avait pour objectif de réaliser le montage des vidéos de présentation des participants à la soirée des Pitchs Porte-Parole 2026, tout en réalisant la création de contenus destinés aux médias sociaux. Le mandat impliquait un processus complet comprenant l’assemblage narratif et sonore, la recherche de médias externes visuels et audio, ainsi que la présentation de versions afin de recueillir des corrections.",
 
     "text1Process": "",
-    "img1Process": ["medias/pitch3.png"],
+    "img1Process": ["medias/pitch2.jpg"],
     "text2Process": "",
-    "img2Process": ["medias/pitch2.jpg"],
+    "img2Process": ["medias/pitch3.png"],
     "text3Process": "",
     "creditsProcess": "Sous la direction de l'équipe des Productions Porte-Parole 2026"
   },

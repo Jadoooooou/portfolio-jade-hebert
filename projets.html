@@ -71,18 +71,19 @@
     <section id="processus">
       <h2>PROCESSUS</h2>
 
-      <div class="processus-step">
-        <p>{{ projet.text1Process }}</p>
-        <img :src="projet.img1Process[0]" alt="Premier rendu">
-      </div>
+      <div class="mag">
+        <p class="txt txt-a">{{ projet.text1Process }}</p>
 
-      <div class="processus-step">
-        <p>{{ projet.text2Process }}</p>
-        <img :src="projet.img2Process[0]" alt="Texture 3D">
-      </div>
+        <figure class="img-a">
+          <img :src="projet.img1Process[0]" alt="Premier rendu">
+        </figure>
 
-      <div class="processus-step">
-        <p>{{ projet.text3Process }}</p>
+        <figure class="img-b">
+          <img :src="projet.img2Process[0]" alt="Texture 3D">
+        </figure>
+
+        <p class="txt txt-b">{{ projet.text2Process }}</p>
+        <p class="txt txt-c">{{ projet.text3Process }}</p>
       </div>
 
       <button class="button-voir" @click="voirProjet">voir le projet</button>
