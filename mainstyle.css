@@ -338,6 +338,16 @@ header, section, div {
   opacity: 0; /* état initial avant l'animation GSAP */
 }
 
+.logiciels img:nth-child(3) {
+  width: 8.5%;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.logiciels img:nth-child(4) {
+  width: 8.5%;
+  margin-bottom: 5px;
+}
+
 .logiciels img:last-child {
   width: 8%;
 }
