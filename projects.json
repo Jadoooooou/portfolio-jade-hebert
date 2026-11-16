@@ -155,11 +155,11 @@
     
     "objectifObj": "Ce stage avait pour objectif de réaliser le montage des vidéos de présentation des participants à la soirée des Pitchs Porte-Parole 2026, tout en réalisant la création de contenus destinés aux médias sociaux. Le mandat impliquait un processus complet comprenant l’assemblage narratif et sonore, la recherche de médias externes visuels et audio, ainsi que la présentation de versions afin de recueillir des corrections.",
 
-    "text1Process": "",
+    "text1Process": "Comme premier livrable, j’ai été chargée de réaliser le montage de vidéos promotionnelles au format portrait mettant en valeur les différents participants. Le processus a débuté par une phase d’assemblage narratif, au cours de laquelle deux propositions de montage ont été développées afin d’explorer différentes structures et approches de présentation. À la suite de la validation de la direction retenue, un travail de montage sonore était demis, à la suite de'un problème de saturation. Par la suite, je devais faire une recherche d’ajout d’effets visuels et de pistes sonores. La dernière étape a consisté à intégrer les sous-titres afin de faciliter l'accessibilité du contenu et d'assurer sa compréhension, notamment dans un contexte de diffusion sur les réseaux sociaux où les vidéos sont fréquemment visionnées sans le son.",
     "img1Process": ["medias/pitch2.jpg"],
-    "text2Process": "",
+    "text2Process": "En complément des vidéos à titre de promotion pour les médias sociaux, j’ai également réalisé le montage de la vidéo de présentation de la soirée des Pitchs Porte-Parole 2026, ainsi que les vidéos d'introduction des projets. Le processus a été similaire à celui des vidéos portraits, mais avec un objectif de créer un montage plus dynamique et rythmé, pour maintenir l’attention du spectateur, en plus de faire un travail de colorisation.",
     "img2Process": ["medias/pitch3.png"],
-    "text3Process": "",
+    "text3Process": "Ce stage m’a permis de développer mes compétences en montage vidéo dans les logiciels Premiere Pro et After Effects. La diversité des mandats m’a amenée à adapter mes méthodes de travail en fonction des objectifs de communication, des publics ciblés et des formats de diffusion. Au-delà des compétences logicielles, cette expérience m’a familiarisée avec les réalités d’un environnement professionnel en création : gestion des priorités, respect des échéanciers, intégration des commentaires et ajustement des livrables selon les attentes de l’équipe.",
     "creditsProcess": "Sous la direction de l'équipe des Productions Porte-Parole 2026"
   },
   {
@@ -167,7 +167,7 @@
     "numero": "Montage vidéo",
     "title": "DÉSINFORMATION",
     "images": ["medias/fq_expand.png"],
-    "link": "https://faitque.ca/",
+    "link": "https://faitque.ca/editions/faitque-39-desinformation",
 
     "titleHero": "Fait Que - DÉSINFORMATION",
     "imgHero": ["medias/fq_mockup.png"],
